@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     38584,       1002]
-NotebookOptionsPosition[     37304,        953]
-NotebookOutlinePosition[     37648,        968]
-CellTagsIndexPosition[     37605,        965]
+NotebookDataLength[     38569,       1002]
+NotebookOptionsPosition[     37286,        953]
+NotebookOutlinePosition[     37633,        968]
+CellTagsIndexPosition[     37590,        965]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -474,8 +474,8 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 1.0179996490478516`, Typeset`show$$ = 
-    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`t$$ = 0., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`t$$], 0, "time"}, 0, 10}}, Typeset`size$$ = {
@@ -604,7 +604,7 @@ Cell[BoxData[
     Method->"Preemptive"], ",", 
    DynamicBox[ToBoxes[
      Refresh[$CellContext`x, UpdateInterval -> 0], StandardForm],
-    ImageSizeCache->{16., {0., 8.}}]}], "}"}]], "Output",
+    ImageSizeCache->{8., {0., 6.}}]}], "}"}]], "Output",
  CellChangeTimes->{3.6434727970901546`*^9}]
 }, Open  ]],
 
@@ -951,8 +951,8 @@ Cell[BoxData[
  CellChangeTimes->{3.643477798989555*^9}]
 }, Open  ]]
 },
-WindowSize->{1680, 968},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+WindowSize->{1680, 1008},
+WindowMargins->{{1672, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -977,32 +977,32 @@ Cell[11243, 291, 6036, 120, 546, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[17316, 416, 2521, 55, 52, "Input"],
-Cell[19840, 473, 1848, 36, 368, "Output"]
+Cell[19840, 473, 1831, 36, 368, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21725, 514, 281, 5, 31, "Input"],
-Cell[22009, 521, 283, 7, 42, "Output"]
+Cell[21708, 514, 281, 5, 31, "Input"],
+Cell[21992, 521, 283, 7, 42, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[22329, 533, 1998, 54, 112, "Input"],
-Cell[24330, 589, 632, 18, 42, "Output"]
+Cell[22312, 533, 1998, 54, 112, "Input"],
+Cell[24313, 589, 631, 18, 42, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[24999, 612, 579, 14, 52, "Input"],
-Cell[25581, 628, 460, 12, 42, "Output"]
+Cell[24981, 612, 579, 14, 52, "Input"],
+Cell[25563, 628, 460, 12, 42, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26078, 645, 515, 13, 52, "Input"],
-Cell[26596, 660, 464, 12, 42, "Output"]
+Cell[26060, 645, 515, 13, 52, "Input"],
+Cell[26578, 660, 464, 12, 42, "Output"]
 }, Open  ]],
-Cell[27075, 675, 92, 1, 31, "Input"],
+Cell[27057, 675, 92, 1, 31, "Input"],
 Cell[CellGroupData[{
-Cell[27192, 680, 1669, 53, 152, "Input"],
-Cell[28864, 735, 997, 29, 93, "Output"]
+Cell[27174, 680, 1669, 53, 152, "Input"],
+Cell[28846, 735, 997, 29, 93, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[29898, 769, 4476, 115, 192, "Input"],
-Cell[34377, 886, 2911, 64, 428, "Output"]
+Cell[29880, 769, 4476, 115, 192, "Input"],
+Cell[34359, 886, 2911, 64, 428, "Output"]
 }, Open  ]]
 }
 ]
