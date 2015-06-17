@@ -1,0 +1,338 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13260,        329]
+NotebookOptionsPosition[     12777,        308]
+NotebookOutlinePosition[     13124,        323]
+CellTagsIndexPosition[     13081,        320]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"oneS", " ", "=", " ", "0.1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"twoS", " ", "=", " ", "0.2"}], ";", 
+  RowBox[{"Orbits", " ", "=", 
+   RowBox[{"Manipulate", "[", 
+    RowBox[{
+     RowBox[{"Graphics", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"Thick", ",", "Red", ",", 
+         RowBox[{"Circle", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}], ",", "oneS"}], "]"}], ",", "Red", 
+         ",", 
+         RowBox[{"PointSize", "[", ".02", "]"}], ",", 
+         RowBox[{"Point", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"oneS", "*", 
+             RowBox[{"Cos", "[", 
+              RowBox[{"2", "*", "t"}], "]"}]}], ",", 
+            RowBox[{"oneS", "*", 
+             RowBox[{"Sin", "[", 
+              RowBox[{"2", "*", "t"}], "]"}]}]}], "}"}], "]"}], ",", "Thick", 
+         ",", "Blue", ",", 
+         RowBox[{"Circle", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}], ",", "twoS"}], "]"}], ",", "Blue",
+          ",", 
+         RowBox[{"PointSize", "[", ".02", "]"}], ",", 
+         RowBox[{"Point", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"twoS", "*", 
+             RowBox[{"Cos", "[", 
+              RowBox[{"2", "*", "t"}], "]"}]}], ",", 
+            RowBox[{"twoS", "*", 
+             RowBox[{"Sin", "[", 
+              RowBox[{"2", "*", "t"}], "]"}]}]}], "}"}], "]"}]}], "}"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1.5"}], ",", "3"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}]}], "}"}]}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "450"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", "\"\<time\>\""}], "}"}], ",", "0", ",", 
+       "10", ",", 
+       RowBox[{"ControlType", "\[Rule]", " ", "Trigger"}]}], "}"}], ",", 
+     RowBox[{"Alignment", "\[Rule]", "Center"}]}], "]"}]}]}]}], "Input",
+ CellChangeTimes->{{3.643563716206876*^9, 3.6435637407716722`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`t$$ = 0., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`t$$], 0, "time"}, 0, 10}}, Typeset`size$$ = {
+    450., {148., 152.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$35118$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$35118$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics[{Thick, Red, 
+         Circle[{0, 0}, $CellContext`oneS], Red, 
+         PointSize[0.02], 
+         Point[{$CellContext`oneS Cos[2 $CellContext`t$$], $CellContext`oneS 
+           Sin[2 $CellContext`t$$]}], Thick, Blue, 
+         Circle[{0, 0}, $CellContext`twoS], Blue, 
+         PointSize[0.02], 
+         Point[{$CellContext`twoS Cos[2 $CellContext`t$$], $CellContext`twoS 
+           Sin[2 $CellContext`t$$]}]}, PlotRange -> {{-1.5, 3}, {-1.5, 1.5}}, 
+        ImageSize -> 450], 
+      "Specifications" :> {{{$CellContext`t$$, 0, "time"}, 0, 10, ControlType -> 
+         Trigger}}, "Options" :> {Alignment -> Center}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{501., {193., 200.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.6435637417068806`*^9, 3.64356524599576*^9, 
+  3.643567165336689*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "locimg", "}"}], ",", 
+     RowBox[{
+      RowBox[{"locimg", " ", "=", " ", 
+       RowBox[{"Switch", "[", 
+        RowBox[{"image", ",", "1", ",", 
+         RowBox[{"ExampleData", "[", 
+          RowBox[{"{", 
+           RowBox[{"\"\<TestImage\>\"", ",", "\"\<Lena\>\""}], "}"}], "]"}], 
+         ",", "2", ",", 
+         RowBox[{"ExampleData", "[", 
+          RowBox[{"{", 
+           RowBox[{"\"\<TestImage\>\"", ",", "\"\<Mandrill\>\""}], "}"}], 
+          "]"}], ",", "3", ",", 
+         RowBox[{"ExampleData", "[", 
+          RowBox[{"{", 
+           RowBox[{"\"\<TestImage\>\"", ",", "\"\<Peppers\>\""}], "}"}], 
+          "]"}], ",", "4", ",", 
+         RowBox[{"ExampleData", "[", 
+          RowBox[{"{", 
+           RowBox[{"\"\<TestImage\>\"", ",", "\"\<Tiffany\>\""}], "}"}], 
+          "]"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Image", "[", 
+       RowBox[{"locimg", ",", 
+        RowBox[{"ImageSize", "\[Rule]", "370"}]}], "]"}]}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Grid", "[", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Control", "[", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"image", ",", "2"}], "}"}], ",", 
+          RowBox[{"Dynamic", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "\[Rule]", " ", 
+               RowBox[{"ImageResize", "[", 
+                RowBox[{
+                 RowBox[{"ExampleData", "[", 
+                  RowBox[{"{", 
+                   RowBox[{"\"\<TestImage\>\"", ",", "\"\<Lena\>\""}], "}"}], 
+                  "]"}], ",", "50"}], "]"}]}], ",", "\[IndentingNewLine]", 
+              RowBox[{"2", "\[Rule]", " ", 
+               RowBox[{"ImageResize", "[", 
+                RowBox[{
+                 RowBox[{"ExampleData", "[", 
+                  RowBox[{"{", 
+                   RowBox[{"\"\<TestImage\>\"", ",", "\"\<Mandrill\>\""}], 
+                   "}"}], "]"}], ",", "50"}], "]"}]}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"3", " ", "\[Rule]", " ", 
+               RowBox[{"ImageResize", "[", 
+                RowBox[{
+                 RowBox[{"ExampleData", "[", 
+                  RowBox[{"{", 
+                   RowBox[{"\"\<TestImage\>\"", ",", "\"\<Peppers\>\""}], 
+                   "}"}], "]"}], ",", "50"}], "]"}]}], ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"4", "\[Rule]", " ", 
+               RowBox[{"ImageResize", "[", 
+                RowBox[{
+                 RowBox[{"ExampleData", "[", 
+                  RowBox[{"{", 
+                   RowBox[{"\"\<TestImage\>\"", ",", "\"\<Tiffany\>\""}], 
+                   "}"}], "]"}], ",", "50"}], "]"}]}]}], "}"}], ",", 
+            RowBox[{"SynchronousUpdating", "\[Rule]", " ", "False"}]}], "]"}],
+           ",", "\[IndentingNewLine]", 
+          RowBox[{"ControlType", "\[Rule]", " ", "SetterBar"}]}], "}"}], 
+        "]"}], ",", 
+       RowBox[{"Spacer", "[", "20", "]"}]}], "\[IndentingNewLine]", "}"}], 
+     "}"}], "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"TrackedSymbols", "\[RuleDelayed]", "True"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"SynchronousInitialization", "\[Rule]", "False"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"AutorunSequencing", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"2", ",", "3"}], "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"ContentSize", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"600", ",", " ", "425"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.643564019626588*^9, 3.6435651418623476`*^9}, 
+   3.6435652307592363`*^9, {3.643565775162961*^9, 3.643565850114961*^9}, 
+   3.6435666780149612`*^9, {3.643566735472707*^9, 3.643566746335793*^9}, {
+   3.6435667834125004`*^9, 3.6435667860337625`*^9}, {3.643566859990157*^9, 
+   3.643566861059264*^9}, {3.643566947577915*^9, 3.6435669554307003`*^9}, {
+   3.643567025341691*^9, 3.6435671483029857`*^9}, {3.6435672776659207`*^9, 
+   3.6435672784159956`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{CloudObject`Private`image$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[CloudObject`Private`image$$], 2}, 
+      Dynamic[{1 -> ImageResize[
+          ExampleData[{"TestImage", "Lena"}], 50], 2 -> ImageResize[
+          ExampleData[{"TestImage", "Mandrill"}], 50], 3 -> ImageResize[
+          ExampleData[{"TestImage", "Peppers"}], 50], 4 -> ImageResize[
+          ExampleData[{"TestImage", "Tiffany"}], 50]}, SynchronousUpdating -> 
+       False]}, {
+      Hold[
+       Grid[{{
+          Manipulate`Place[1], 
+          Spacer[20]}}]], Manipulate`Dump`ThisIsNotAControl}}, 
+    Typeset`size$$ = Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     2, StandardForm, "Variables" :> {CloudObject`Private`image$$ = 2}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{CloudObject`Private`locimg$}, 
+        CloudObject`Private`locimg$ = Switch[CloudObject`Private`image$$, 1, 
+           ExampleData[{"TestImage", "Lena"}], 2, 
+           ExampleData[{"TestImage", "Mandrill"}], 3, 
+           ExampleData[{"TestImage", "Peppers"}], 4, 
+           ExampleData[{"TestImage", "Tiffany"}]]; 
+        Image[CloudObject`Private`locimg$, ImageSize -> 370]], 
+      "Specifications" :> {{{CloudObject`Private`image$$, 2}, 
+         Dynamic[{1 -> ImageResize[
+             ExampleData[{"TestImage", "Lena"}], 50], 2 -> ImageResize[
+             ExampleData[{"TestImage", "Mandrill"}], 50], 3 -> ImageResize[
+             ExampleData[{"TestImage", "Peppers"}], 50], 4 -> ImageResize[
+             ExampleData[{"TestImage", "Tiffany"}], 50]}, SynchronousUpdating -> 
+          False], ControlType -> SetterBar, ControlPlacement -> 1}, 
+        Grid[{{
+           Manipulate`Place[1], 
+           Spacer[20]}}]}, 
+      "Options" :> {
+       TrackedSymbols :> True, SynchronousInitialization -> False, 
+        AutorunSequencing -> {2, 3}, ContentSize -> {600, 425}}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{620., {261., 268.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>(CloudObject`Private`colorName[
+        Pattern[CloudObject`Private`col, 
+         Blank[]]] := Apply[Rule, 
+        Map[Reverse, 
+         Apply[List, 
+          ColorData[CloudObject`Private`col, "ColorRules"], 2]], {1}]; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->False,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.6435666784790077`*^9, {3.6435667670948687`*^9, 3.64356679011217*^9}, 
+   3.643566995923749*^9, 3.6435670875159073`*^9, {3.6435671381599717`*^9, 
+   3.6435671654877043`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.643565226408801*^9, 3.6435652264718075`*^9}}]
+},
+WindowSize->{1680, 1008},
+WindowMargins->{{1672, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2337, 63, 132, "Input"],
+Cell[2920, 87, 2148, 43, 410, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5105, 135, 4162, 95, 332, "Input"],
+Cell[9270, 232, 3394, 70, 546, "Output"]
+}, Open  ]],
+Cell[12679, 305, 94, 1, 31, InheritFromParent]
+}
+]
+*)
+
+(* End of internal cache information *)
