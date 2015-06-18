@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13260,        329]
-NotebookOptionsPosition[     12777,        308]
-NotebookOutlinePosition[     13124,        323]
-CellTagsIndexPosition[     13081,        320]
+NotebookDataLength[     17817,        440]
+NotebookOptionsPosition[     17267,        416]
+NotebookOutlinePosition[     17611,        431]
+CellTagsIndexPosition[     17568,        428]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -88,17 +88,17 @@ Cell[BoxData[{
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 0., Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`t$$ = 1.154393196105957, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`t$$], 0, "time"}, 0, 10}}, Typeset`size$$ = {
     450., {148., 152.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`t$35118$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$1559$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$35118$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$1559$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -128,7 +128,7 @@ Cell[BoxData[
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{3.6435637417068806`*^9, 3.64356524599576*^9, 
-  3.643567165336689*^9}]
+  3.643567165336689*^9, 3.6436279361872663`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -233,11 +233,11 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{CloudObject`Private`image$$ = 1, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`image$$ = 2, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[CloudObject`Private`image$$], 2}, 
+       Hold[$CellContext`image$$], 2}, 
       Dynamic[{1 -> ImageResize[
           ExampleData[{"TestImage", "Lena"}], 50], 2 -> ImageResize[
           ExampleData[{"TestImage", "Mandrill"}], 50], 3 -> ImageResize[
@@ -249,23 +249,23 @@ Cell[BoxData[
           Manipulate`Place[1], 
           Spacer[20]}}]], Manipulate`Dump`ThisIsNotAControl}}, 
     Typeset`size$$ = Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False}, 
+    Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
-     2, StandardForm, "Variables" :> {CloudObject`Private`image$$ = 2}, 
+     2, StandardForm, "Variables" :> {$CellContext`image$$ = 2}, 
       "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> 
-      Module[{CloudObject`Private`locimg$}, 
-        CloudObject`Private`locimg$ = Switch[CloudObject`Private`image$$, 1, 
+      Module[{$CellContext`locimg$}, $CellContext`locimg$ = 
+         Switch[$CellContext`image$$, 1, 
            ExampleData[{"TestImage", "Lena"}], 2, 
            ExampleData[{"TestImage", "Mandrill"}], 3, 
            ExampleData[{"TestImage", "Peppers"}], 4, 
            ExampleData[{"TestImage", "Tiffany"}]]; 
-        Image[CloudObject`Private`locimg$, ImageSize -> 370]], 
-      "Specifications" :> {{{CloudObject`Private`image$$, 2}, 
+        Image[$CellContext`locimg$, ImageSize -> 370]], 
+      "Specifications" :> {{{$CellContext`image$$, 2}, 
          Dynamic[{1 -> ImageResize[
              ExampleData[{"TestImage", "Lena"}], 50], 2 -> ImageResize[
              ExampleData[{"TestImage", "Mandrill"}], 50], 3 -> ImageResize[
@@ -283,13 +283,6 @@ Cell[BoxData[
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>(CloudObject`Private`colorName[
-        Pattern[CloudObject`Private`col, 
-         Blank[]]] := Apply[Rule, 
-        Map[Reverse, 
-         Apply[List, 
-          ColorData[CloudObject`Private`col, "ColorRules"], 2]], {1}]; 
-     Typeset`initDone$$ = True),
     SynchronousInitialization->False,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
     UnsavedVariables:>{Typeset`initDone$$},
@@ -300,14 +293,129 @@ Cell[BoxData[
  CellChangeTimes->{
   3.6435666784790077`*^9, {3.6435667670948687`*^9, 3.64356679011217*^9}, 
    3.643566995923749*^9, 3.6435670875159073`*^9, {3.6435671381599717`*^9, 
-   3.6435671654877043`*^9}}]
+   3.6435671654877043`*^9}, 3.6436279363588023`*^9, 3.643631757337682*^9}]
 }, Open  ]],
 
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.643565226408801*^9, 3.6435652264718075`*^9}}]
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"oneS", " ", "=", " ", "0.1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"twoS", " ", "=", " ", "0.2"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Orbitals", "[", 
+    RowBox[{"Dynamic", "[", "t_", "]"}], "]"}], " ", ":=", " ", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Thick", ",", "Red", ",", 
+       RowBox[{"Circle", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", "oneS"}], "]"}], ",", "Red", 
+       ",", 
+       RowBox[{"PointSize", "[", ".02", "]"}], ",", 
+       RowBox[{"Point", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"oneS", "*", 
+           RowBox[{"Cos", "[", 
+            RowBox[{"2", "*", "t"}], "]"}]}], ",", 
+          RowBox[{"oneS", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{"2", "*", "t"}], "]"}]}]}], "}"}], "]"}], ",", "Thick", 
+       ",", "Blue", ",", 
+       RowBox[{"Circle", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", "twoS"}], "]"}], ",", "Blue", 
+       ",", 
+       RowBox[{"PointSize", "[", ".02", "]"}], ",", 
+       RowBox[{"Point", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"twoS", "*", 
+           RowBox[{"Cos", "[", 
+            RowBox[{"2", "*", "t"}], "]"}]}], ",", 
+          RowBox[{"twoS", "*", 
+           RowBox[{"Sin", "[", 
+            RowBox[{"2", "*", "t"}], "]"}]}]}], "}"}], "]"}]}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "1.5"}], ",", "3"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "450"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Orbitals", "[", 
+    RowBox[{"Dynamic", "[", "t", "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "\"\<time\>\""}], "}"}], ",", "0", ",", 
+     "10", ",", 
+     RowBox[{"ControlType", "\[Rule]", " ", "Trigger"}]}], "}"}], ",", 
+   RowBox[{"Alignment", "\[Rule]", "Center"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.643565226408801*^9, 3.6435652264718075`*^9}, {
+   3.643630808215557*^9, 3.6436308827544622`*^9}, {3.6436310076580873`*^9, 
+   3.643631012232545*^9}, {3.643631048121133*^9, 3.643631100252346*^9}, {
+   3.643631143948715*^9, 3.6436311440587263`*^9}, {3.6436312566929884`*^9, 
+   3.643631329195238*^9}, {3.643631362680586*^9, 3.6436314038186994`*^9}, {
+   3.643631495072824*^9, 3.6436314978401003`*^9}, {3.643631581974513*^9, 
+   3.643631680701682*^9}, {3.6436318073846817`*^9, 3.6436318135096817`*^9}, {
+   3.643631895939682*^9, 3.643631936273682*^9}, {3.6436319989426823`*^9, 
+   3.643632032188682*^9}, 3.6436325587401943`*^9, {3.6436326414004593`*^9, 
+   3.643632672070526*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`t$$ = 1.1481142044067383`, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`t$$], 0, "time"}, 0, 10}}, Typeset`size$$ = {
+    450., {148., 152.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$16575$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$16575$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> CloudObject`Private`Orbitals[
+        Dynamic[$CellContext`t$$]], 
+      "Specifications" :> {{{$CellContext`t$$, 0, "time"}, 0, 10, ControlType -> 
+         Trigger}}, "Options" :> {Alignment -> Center}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{501., {193., 200.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.6436308503769875`*^9, 3.643631145047825*^9, {3.643631500771394*^9, 
+   3.6436315080601225`*^9}, 3.6436316263916817`*^9, 3.6436326750268216`*^9}]
+}, Open  ]]
 },
-WindowSize->{1680, 1008},
-WindowMargins->{{1672, Automatic}, {Automatic, -8}},
+WindowSize->{1680, 968},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -324,13 +432,16 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 2337, 63, 132, "Input"],
-Cell[2920, 87, 2148, 43, 410, "Output"]
+Cell[2920, 87, 2185, 43, 410, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5105, 135, 4162, 95, 332, "Input"],
-Cell[9270, 232, 3394, 70, 546, "Output"]
+Cell[5142, 135, 4162, 95, 332, "Input"],
+Cell[9307, 232, 3106, 63, 546, "Output"]
 }, Open  ]],
-Cell[12679, 305, 94, 1, 31, InheritFromParent]
+Cell[CellGroupData[{
+Cell[12450, 300, 2980, 75, 132, "Input"],
+Cell[15433, 377, 1818, 36, 410, "Output"]
+}, Open  ]]
 }
 ]
 *)
