@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17817,        440]
-NotebookOptionsPosition[     17267,        416]
-NotebookOutlinePosition[     17611,        431]
-CellTagsIndexPosition[     17568,        428]
+NotebookDataLength[     18687,        454]
+NotebookOptionsPosition[     18137,        430]
+NotebookOutlinePosition[     18481,        445]
+CellTagsIndexPosition[     18438,        442]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -233,7 +233,7 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`image$$ = 2, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`image$$ = 4, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
@@ -303,60 +303,56 @@ Cell[BoxData[{
   RowBox[{"oneS", " ", "=", " ", "0.1"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"twoS", " ", "=", " ", "0.2"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"Orbitals", "[", 
-    RowBox[{"Dynamic", "[", "t_", "]"}], "]"}], " ", ":=", " ", 
-   RowBox[{"Graphics", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"Thick", ",", "Red", ",", 
-       RowBox[{"Circle", "[", 
-        RowBox[{
-         RowBox[{"{", 
-          RowBox[{"0", ",", "0"}], "}"}], ",", "oneS"}], "]"}], ",", "Red", 
-       ",", 
-       RowBox[{"PointSize", "[", ".02", "]"}], ",", 
-       RowBox[{"Point", "[", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"oneS", "*", 
-           RowBox[{"Cos", "[", 
-            RowBox[{"2", "*", "t"}], "]"}]}], ",", 
-          RowBox[{"oneS", "*", 
-           RowBox[{"Sin", "[", 
-            RowBox[{"2", "*", "t"}], "]"}]}]}], "}"}], "]"}], ",", "Thick", 
-       ",", "Blue", ",", 
-       RowBox[{"Circle", "[", 
-        RowBox[{
-         RowBox[{"{", 
-          RowBox[{"0", ",", "0"}], "}"}], ",", "twoS"}], "]"}], ",", "Blue", 
-       ",", 
-       RowBox[{"PointSize", "[", ".02", "]"}], ",", 
-       RowBox[{"Point", "[", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"twoS", "*", 
-           RowBox[{"Cos", "[", 
-            RowBox[{"2", "*", "t"}], "]"}]}], ",", 
-          RowBox[{"twoS", "*", 
-           RowBox[{"Sin", "[", 
-            RowBox[{"2", "*", "t"}], "]"}]}]}], "}"}], "]"}]}], "}"}], ",", 
-     RowBox[{"PlotRange", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"-", "1.5"}], ",", "3"}], "}"}], ",", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}]}], "}"}]}], ",", 
-     RowBox[{"ImageSize", "\[Rule]", "450"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
  RowBox[{"Manipulate", "[", 
   RowBox[{
-   RowBox[{"Orbitals", "[", 
-    RowBox[{"Dynamic", "[", "t", "]"}], "]"}], ",", 
+   RowBox[{"DynamicModule", "[", 
+    RowBox[{
+     RowBox[{"{", "t", "}"}], ",", 
+     RowBox[{"Graphics", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"Thick", ",", "Red", ",", 
+         RowBox[{"Circle", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}], ",", "oneS"}], "]"}], ",", "Red", 
+         ",", 
+         RowBox[{"PointSize", "[", ".02", "]"}], ",", 
+         RowBox[{"Point", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"oneS", "*", 
+             RowBox[{"Cos", "[", 
+              RowBox[{"2", "*", "t1"}], "]"}]}], ",", 
+            RowBox[{"oneS", "*", 
+             RowBox[{"Sin", "[", 
+              RowBox[{"2", "*", "t1"}], "]"}]}]}], "}"}], "]"}], ",", "Thick",
+          ",", "Blue", ",", 
+         RowBox[{"Circle", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}], ",", "twoS"}], "]"}], ",", "Blue",
+          ",", 
+         RowBox[{"PointSize", "[", ".02", "]"}], ",", 
+         RowBox[{"Point", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"twoS", "*", 
+             RowBox[{"Cos", "[", 
+              RowBox[{"2", "*", "t2"}], "]"}]}], ",", 
+            RowBox[{"twoS", "*", 
+             RowBox[{"Sin", "[", 
+              RowBox[{"2", "*", "t2"}], "]"}]}]}], "}"}], "]"}]}], "}"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1.5"}], ",", "3"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}]}], "}"}]}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "450"}]}], "]"}]}], "]"}], ",", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
@@ -373,28 +369,45 @@ Cell[BoxData[{
    3.643631680701682*^9}, {3.6436318073846817`*^9, 3.6436318135096817`*^9}, {
    3.643631895939682*^9, 3.643631936273682*^9}, {3.6436319989426823`*^9, 
    3.643632032188682*^9}, 3.6436325587401943`*^9, {3.6436326414004593`*^9, 
-   3.643632672070526*^9}}],
+   3.643632672070526*^9}, {3.6436328288001976`*^9, 3.643632882802597*^9}, {
+   3.6436329417304893`*^9, 3.6436330399933147`*^9}, {3.6436330721395288`*^9, 
+   3.643633112732588*^9}, {3.6436341463139353`*^9, 3.643634165737878*^9}, {
+   3.643634293838687*^9, 3.643634333569659*^9}, {3.643634393731675*^9, 
+   3.6436345002003207`*^9}, {3.643645011984475*^9, 3.643645015551475*^9}}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 1.1481142044067383`, Typeset`show$$ = 
-    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`t$$ = 10., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`t$$], 0, "time"}, 0, 10}}, Typeset`size$$ = {
     450., {148., 152.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`t$16575$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$34079$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$16575$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$34079$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, "Body" :> CloudObject`Private`Orbitals[
-        Dynamic[$CellContext`t$$]], 
+         Typeset`skipInitDone$$}, "Body" :> DynamicModule[{$CellContext`t$$}, 
+        Graphics[{Thick, Red, 
+          Circle[{0, 0}, $CellContext`oneS], Red, 
+          PointSize[0.02], 
+          
+          Point[{$CellContext`oneS 
+            Cos[2 CloudObject`Private`t1], $CellContext`oneS 
+            Sin[2 CloudObject`Private`t1]}], Thick, Blue, 
+          Circle[{0, 0}, $CellContext`twoS], Blue, 
+          PointSize[0.02], 
+          
+          Point[{$CellContext`twoS 
+            Cos[2 CloudObject`Private`t2], $CellContext`twoS 
+            Sin[2 CloudObject`Private`t2]}]}, 
+         PlotRange -> {{-1.5, 3}, {-1.5, 1.5}}, ImageSize -> 450]], 
       "Specifications" :> {{{$CellContext`t$$, 0, "time"}, 0, 10, ControlType -> 
          Trigger}}, "Options" :> {Alignment -> Center}, 
       "DefaultOptions" :> {}],
@@ -411,7 +424,8 @@ Cell[BoxData[
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{
   3.6436308503769875`*^9, 3.643631145047825*^9, {3.643631500771394*^9, 
-   3.6436315080601225`*^9}, 3.6436316263916817`*^9, 3.6436326750268216`*^9}]
+   3.6436315080601225`*^9}, 3.6436316263916817`*^9, 3.6436326750268216`*^9, 
+   3.643645017303475*^9}]
 }, Open  ]]
 },
 WindowSize->{1680, 968},
@@ -439,8 +453,8 @@ Cell[5142, 135, 4162, 95, 332, "Input"],
 Cell[9307, 232, 3106, 63, 546, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12450, 300, 2980, 75, 132, "Input"],
-Cell[15433, 377, 1818, 36, 410, "Output"]
+Cell[12450, 300, 3289, 75, 132, "Input"],
+Cell[15742, 377, 2379, 50, 410, "Output"]
 }, Open  ]]
 }
 ]
