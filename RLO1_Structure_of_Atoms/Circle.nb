@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     82363,       1900]
-NotebookOptionsPosition[     81680,       1872]
-NotebookOutlinePosition[     82023,       1887]
-CellTagsIndexPosition[     81980,       1884]
+NotebookDataLength[     88326,       2030]
+NotebookOptionsPosition[     87642,       2002]
+NotebookOutlinePosition[     87985,       2017]
+CellTagsIndexPosition[     87942,       2014]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -381,11 +381,11 @@ Cell[BoxData[
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`t$$], 0, "time"}, 0, 100}}, Typeset`size$$ = {
     600., {298., 302.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`t$90350$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$13851$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$90350$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$13851$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -484,7 +484,8 @@ Cell[BoxData[
    3.644005991542161*^9, 3.644006015223113*^9}, 3.6440061564776745`*^9, 
    3.644006212187632*^9, {3.6440062495186715`*^9, 3.644006292262945*^9}, 
    3.6440063952530465`*^9, 3.6440066911362157`*^9, 3.6440068140316067`*^9, 
-   3.6440068566510797`*^9}]
+   3.6440068566510797`*^9, 3.6440608011868134`*^9, 3.6440906603024764`*^9, 
+   3.6440924835151815`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -744,7 +745,7 @@ Cell[BoxData[
              RowBox[{"Background", "\[Rule]", " ", "Black"}], ",", 
              RowBox[{"ImageSize", "\[Rule]", 
               RowBox[{"{", 
-               RowBox[{"300", ",", "300"}], "}"}]}], ",", 
+               RowBox[{"500", ",", "500"}], "}"}]}], ",", 
              RowBox[{"ImagePadding", "\[Rule]", 
               RowBox[{"5", 
                RowBox[{"{", 
@@ -765,36 +766,134 @@ Cell[BoxData[
          RowBox[{"{", 
           RowBox[{"400", ",", "450"}], "}"}]}]}], "]"}], ",", 
       "\[IndentingNewLine]", 
-      RowBox[{"Row", "[", 
+      RowBox[{"Column", "[", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"Control", "[", 
+         RowBox[{"Row", "[", 
           RowBox[{"{", 
+           RowBox[{"Control", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"j", ",", "1", ",", "\"\<Orbital \>\""}], "}"}], ",", 
+              RowBox[{"Dynamic", "[", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"1", "\[Rule]", " ", "\"\<1s\>\""}], ",", 
+                  RowBox[{"2", "\[Rule]", " ", "\"\<2p_z\>\""}], ",", 
+                  RowBox[{"3", "\[Rule]", " ", "\"\<2p_x\>\""}], ",", 
+                  RowBox[{"4", "\[Rule]", " ", "\"\<2p_y\>\""}]}], "}"}], ",", 
+                RowBox[{"SynchronousUpdating", "\[Rule]", "False"}]}], "]"}], 
+              ",", 
+              RowBox[{"ControlType", "\[Rule]", " ", "SetterBar"}]}], "}"}], 
+            "]"}], "}"}], "]"}], ",", 
+         RowBox[{"Row", "[", 
+          RowBox[{"{", 
+           RowBox[{"Control", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"j", ",", "5"}], "}"}], ",", 
+              RowBox[{"Dynamic", "[", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"5", "\[Rule]", " ", "\"\<3d_z^2\>\""}], ",", 
+                  RowBox[{"6", "\[Rule]", " ", "\"\<3d_xz\>\""}], ",", 
+                  RowBox[{"7", "\[Rule]", " ", "\"\<3d_yz\>\""}], ",", 
+                  RowBox[{"8", "\[Rule]", " ", "\"\<3d_xy\>\""}]}], "}"}], 
+                ",", 
+                RowBox[{"SynchronousUpdating", "\[Rule]", "False"}]}], "]"}], 
+              ",", 
+              RowBox[{"ControlType", "\[Rule]", " ", "SetterBar"}]}], "}"}], 
+            "]"}], "}"}], "]"}], ",", 
+         RowBox[{"Row", "[", 
+          RowBox[{"{", 
+           RowBox[{"Control", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"j", ",", "9"}], "}"}], ",", 
+              RowBox[{"Dynamic", "[", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"9", "\[Rule]", "\"\<3d_(x^2-y^2)\>\""}], ",", 
+                  RowBox[{"10", "\[Rule]", " ", "\"\<4f_z^3\>\""}], ",", 
+                  RowBox[{"11", "\[Rule]", " ", "\"\<4f_xz^2\>\""}], ",", 
+                  RowBox[{"12", "\[Rule]", " ", "\"\<4f_yz^2\>\""}]}], "}"}], 
+                ",", 
+                RowBox[{"SynchronousUpdating", "\[Rule]", "False"}]}], "]"}], 
+              ",", 
+              RowBox[{"ControlType", "\[Rule]", " ", "SetterBar"}]}], "}"}], 
+            "]"}], "}"}], "]"}], ",", 
+         RowBox[{"Row", "[", 
+          RowBox[{"{", 
+           RowBox[{"Control", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"j", ",", "13"}], "}"}], ",", 
+              RowBox[{"Dynamic", "[", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"13", "\[Rule]", " ", "\"\<4f_xyz\>\""}], ",", 
+                  RowBox[{"14", "\[Rule]", " ", "\"\<4f_z(x^2-y^2)\>\""}], 
+                  ",", 
+                  RowBox[{"15", "\[Rule]", " ", "\"\<4f_x(x^2-3y^2)\>\""}], 
+                  ",", 
+                  RowBox[{"16", "\[Rule]", " ", "\"\<4f_y(3x^2-y^2)\>\""}]}], 
+                 "}"}], ",", 
+                RowBox[{"SynchronousUpdating", "\[Rule]", "False"}]}], "]"}], 
+              ",", 
+              RowBox[{"ControlType", "\[Rule]", " ", "SetterBar"}]}], "}"}], 
+            "]"}], "}"}], "]"}]}], "}"}], "]"}], "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"Control", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"j", ",", "1", ",", "\"\<orbital \>\""}], "}"}], ",", 
+          RowBox[{"Dynamic", "[", 
            RowBox[{
             RowBox[{"{", 
-             RowBox[{"j", ",", "1", ",", "\"\<orbital \>\""}], "}"}], ",", 
-            RowBox[{"Thread", "[", 
              RowBox[{
-              RowBox[{"Range", "[", "16", "]"}], "\[Rule]", " ", 
-              RowBox[{"{", "\[IndentingNewLine]", 
-               RowBox[{
-               "\"\<1s\>\"", ",", "\"\<2p_z\>\"", ",", "\"\<2p_x\>\"", ",", 
-                "\"\<2p_y\>\"", ",", "\"\<3d_z^2\>\"", ",", "\"\<3d_xz\>\"", 
-                ",", "\"\<3d_yz\>\"", ",", "\"\<3d_xy\>\"", ",", 
-                "\"\<3d_(x^2-y^2)\>\"", ",", "\"\<4f_z^3\>\"", ",", 
-                "\"\<4f_xz^2\>\"", ",", "\"\<4f_yz^2\>\"", ",", 
-                "\"\<4f_xyz\>\"", ",", "\"\<4f_z(x^2-y^2)\>\"", ",", 
-                "\"\<4f_x(x^2-3y^2)\>\"", ",", "\"\<4f_y(3x^2-y^2)\>\""}], 
-               "\[IndentingNewLine]", "}"}]}], "]"}]}], "}"}], "]"}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"Spacer", "[", "20", "]"}], ","}], "\[IndentingNewLine]", 
-        "}"}], "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"1", "\[Rule]", " ", "\"\<1s\>\""}], ",", 
+              RowBox[{"2", "\[Rule]", " ", "\"\<2p_z\>\""}], ",", 
+              RowBox[{"3", "\[Rule]", " ", "\"\<2p_x\>\""}], ",", 
+              RowBox[{"4", "\[Rule]", " ", "\"\<2p_y\>\""}], ",", 
+              RowBox[{"5", "\[Rule]", " ", "\"\<3d_z^2\>\""}], ",", 
+              RowBox[{"6", "\[Rule]", " ", "\"\<3d_xz\>\""}], ",", 
+              RowBox[{"7", "\[Rule]", " ", "\"\<3d_yz\>\""}], ",", 
+              RowBox[{"8", "\[Rule]", " ", "\"\<3d_xy\>\""}], ",", 
+              RowBox[{"9", "\[Rule]", "\"\<3d_(x^2-y^2)\>\""}], ",", 
+              RowBox[{"10", "\[Rule]", " ", "\"\<4f_z^3\>\""}], ",", 
+              RowBox[{"11", "\[Rule]", " ", "\"\<4f_xz^2\>\""}], ",", 
+              RowBox[{"12", "\[Rule]", " ", "\"\<4f_yz^2\>\""}], ",", 
+              RowBox[{"13", "\[Rule]", " ", "\"\<4f_xyz\>\""}], ",", 
+              RowBox[{"14", "\[Rule]", " ", "\"\<4f_z(x^2-y^2)\>\""}], ",", 
+              RowBox[{"15", "\[Rule]", " ", "\"\<4f_x(x^2-3y^2)\>\""}], ",", 
+              RowBox[{"16", "\[Rule]", " ", "\"\<4f_y(3x^2-y^2)\>\""}]}], 
+             "}"}], ",", 
+            RowBox[{"SynchronousUpdating", "\[Rule]", "False"}]}], "]"}], ",", 
+          RowBox[{"ControlType", "\[Rule]", " ", "SetterBar"}]}], "}"}], 
+        "]"}], "*)"}], ",", "\[IndentingNewLine]", 
       RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
        RowBox[{"{", "j", "}"}]}], ",", 
+      RowBox[{"SynchronousInitialization", "\[Rule]", "False"}], ",", 
       RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}]}]}]], "Input",
  CellChangeTimes->{{3.6440053326810236`*^9, 3.644005354708506*^9}, {
   3.6440061434733744`*^9, 3.6440062081472063`*^9}, {3.6440062836360903`*^9, 
-  3.644006287926118*^9}}],
+  3.644006287926118*^9}, {3.6440607893885264`*^9, 3.6440607980499673`*^9}, {
+  3.644090420326481*^9, 3.644090578659313*^9}, {3.644090628246271*^9, 
+  3.6440906483902855`*^9}, {3.6440906807285185`*^9, 3.644090768699315*^9}, {
+  3.644090805130958*^9, 3.644090979221365*^9}, {3.644091724082181*^9, 
+  3.6440917654991813`*^9}, {3.6440918250381813`*^9, 3.644091862622181*^9}, {
+  3.644091898252181*^9, 3.644092018632181*^9}, {3.6440921729061813`*^9, 
+  3.6440921750291815`*^9}, {3.6440922231161814`*^9, 3.644092238810181*^9}, {
+  3.6440922730571814`*^9, 3.6440924329321814`*^9}}],
 
 Cell[BoxData[
  TagBox[
@@ -803,22 +902,35 @@ Cell[BoxData[
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`j$$], 1, "orbital "}, {
-      1 -> "1s", 2 -> "2p_z", 3 -> "2p_x", 4 -> "2p_y", 5 -> "3d_z^2", 6 -> 
-       "3d_xz", 7 -> "3d_yz", 8 -> "3d_xy", 9 -> "3d_(x^2-y^2)", 10 -> 
-       "4f_z^3", 11 -> "4f_xz^2", 12 -> "4f_yz^2", 13 -> "4f_xyz", 14 -> 
-       "4f_z(x^2-y^2)", 15 -> "4f_x(x^2-3y^2)", 16 -> "4f_y(3x^2-y^2)"}}, {
+       Hold[$CellContext`j$$], 1, "Orbital "}, 
+      Dynamic[{1 -> "1s", 2 -> "2p_z", 3 -> "2p_x", 4 -> "2p_y"}, 
+       SynchronousUpdating -> False]}, {{
+       Hold[$CellContext`j$$], 5}, 
+      Dynamic[{5 -> "3d_z^2", 6 -> "3d_xz", 7 -> "3d_yz", 8 -> "3d_xy"}, 
+       SynchronousUpdating -> False]}, {{
+       Hold[$CellContext`j$$], 9}, 
+      Dynamic[{
+       9 -> "3d_(x^2-y^2)", 10 -> "4f_z^3", 11 -> "4f_xz^2", 12 -> "4f_yz^2"},
+        SynchronousUpdating -> False]}, {{
+       Hold[$CellContext`j$$], 13}, 
+      Dynamic[{
+       13 -> "4f_xyz", 14 -> "4f_z(x^2-y^2)", 15 -> "4f_x(x^2-3y^2)", 16 -> 
+        "4f_y(3x^2-y^2)"}, SynchronousUpdating -> False]}, {
       Hold[
-       Row[{
-         Manipulate`Place[1], 
-         Spacer[20], Null}]], Manipulate`Dump`ThisIsNotAControl}}, 
-    Typeset`size$$ = {400., {221., 229.}}, Typeset`update$$ = 0, 
-    Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`j$90581$$ = False}, 
+       Column[{
+         Row[{
+           Manipulate`Place[1]}], 
+         Row[{
+           Manipulate`Place[2]}], 
+         Row[{
+           Manipulate`Place[3]}], 
+         Row[{
+           Manipulate`Place[4]}]}]], Manipulate`Dump`ThisIsNotAControl}}, 
+    Typeset`size$$ = Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      2, StandardForm, "Variables" :> {$CellContext`j$$ = 1}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`j$$, $CellContext`j$90581$$, False]}, 
+      "ControllerVariables" :> {}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -827,21 +939,37 @@ Cell[BoxData[
         Column[{
           Show[
            $CellContext`OrbitalModel[$CellContext`j$$], Background -> Black, 
-           ImageSize -> {300, 300}, ImagePadding -> 5 {{1, 1}, {1, 1}}]}, 
+           ImageSize -> {500, 500}, ImagePadding -> 5 {{1, 1}, {1, 1}}]}, 
          Spacings -> 2, Alignment -> {Center, Center}], 
         Alignment -> {Center, Center}, ImageSize -> {400, 450}], 
-      "Specifications" :> {{{$CellContext`j$$, 1, "orbital "}, {
-         1 -> "1s", 2 -> "2p_z", 3 -> "2p_x", 4 -> "2p_y", 5 -> "3d_z^2", 6 -> 
-          "3d_xz", 7 -> "3d_yz", 8 -> "3d_xy", 9 -> "3d_(x^2-y^2)", 10 -> 
-          "4f_z^3", 11 -> "4f_xz^2", 12 -> "4f_yz^2", 13 -> "4f_xyz", 14 -> 
-          "4f_z(x^2-y^2)", 15 -> "4f_x(x^2-3y^2)", 16 -> "4f_y(3x^2-y^2)"}, 
-         ControlPlacement -> 1}, 
-        Row[{
-          Manipulate`Place[1], 
-          Spacer[20], Null}]}, 
-      "Options" :> {TrackedSymbols :> {$CellContext`j$$}}, 
-      "DefaultOptions" :> {}],
-     ImageSizeCache->{451., {270., 277.}},
+      "Specifications" :> {{{$CellContext`j$$, 1, "Orbital "}, 
+         Dynamic[{1 -> "1s", 2 -> "2p_z", 3 -> "2p_x", 4 -> "2p_y"}, 
+          SynchronousUpdating -> False], ControlType -> SetterBar, 
+         ControlPlacement -> 1}, {{$CellContext`j$$, 5}, 
+         Dynamic[{5 -> "3d_z^2", 6 -> "3d_xz", 7 -> "3d_yz", 8 -> "3d_xy"}, 
+          SynchronousUpdating -> False], ControlType -> SetterBar, 
+         ControlPlacement -> 2}, {{$CellContext`j$$, 9}, 
+         Dynamic[{
+          9 -> "3d_(x^2-y^2)", 10 -> "4f_z^3", 11 -> "4f_xz^2", 12 -> 
+           "4f_yz^2"}, SynchronousUpdating -> False], ControlType -> 
+         SetterBar, ControlPlacement -> 3}, {{$CellContext`j$$, 13}, 
+         Dynamic[{
+          13 -> "4f_xyz", 14 -> "4f_z(x^2-y^2)", 15 -> "4f_x(x^2-3y^2)", 16 -> 
+           "4f_y(3x^2-y^2)"}, SynchronousUpdating -> False], ControlType -> 
+         SetterBar, ControlPlacement -> 4}, 
+        Column[{
+          Row[{
+            Manipulate`Place[1]}], 
+          Row[{
+            Manipulate`Place[2]}], 
+          Row[{
+            Manipulate`Place[3]}], 
+          Row[{
+            Manipulate`Place[4]}]}]}, 
+      "Options" :> {
+       TrackedSymbols :> {$CellContext`j$$}, SynchronousInitialization -> 
+        False}, "DefaultOptions" :> {}],
+     ImageSizeCache->{451., {301., 308.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -921,7 +1049,7 @@ $CellContext`y3$}]]; $CellContext`fun1$ =
                "z", FontFamily -> "Cambria Math", FontSize -> Large, 
                 FontColor -> White], {0, 0, 0.85}]}]}]]}; 
      Typeset`initDone$$ = True),
-    SynchronousInitialization->True,
+    SynchronousInitialization->False,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
     UnsavedVariables:>{Typeset`initDone$$},
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
@@ -933,7 +1061,10 @@ $CellContext`y3$}]]; $CellContext`fun1$ =
    3.6440058717177925`*^9, 3.644005912699256*^9}, {3.6440059919165635`*^9, 
    3.6440060156287155`*^9}, 3.6440061567587028`*^9, 3.644006212484034*^9, {
    3.644006249893074*^9, 3.644006292528147*^9}, 3.6440063956150827`*^9, 
-   3.6440066914326177`*^9, 3.644006814437209*^9, 3.6440068569630814`*^9}]
+   3.6440066914326177`*^9, 3.644006814437209*^9, 3.6440068569630814`*^9, 
+   3.6440608015457563`*^9, 3.644090660629509*^9, 3.6440921964631815`*^9, 
+   3.6440922394701815`*^9, {3.6440923288801813`*^9, 3.644092364001181*^9}, {
+   3.644092399633181*^9, 3.6440924361991816`*^9}, 3.644092483785181*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -949,11 +1080,10 @@ Cell[BoxData[
       RowBox[{"Temperature", "-", 
        RowBox[{
        "Dependent", " ", "Rotational", " ", "Energy", " ", "Spectrum", "\n", 
-        "     ", 
-        RowBox[{"Edition", ":", 
-         RowBox[{"Version", " ", "10.1", "\n", "     ", "Publisher"}], ":", 
-         " ", 
-         RowBox[{"Wolfram", " ", "Research"}]}]}]}]}]}], ",", " ", 
+        "     ", "Edition"}]}], ":", 
+      RowBox[{"Version", " ", "10.1", "\n", "     ", 
+       RowBox[{"Publisher", ":", " ", 
+        RowBox[{"Wolfram", " ", "Research"}]}]}]}]}], ",", " ", 
     RowBox[{
      RowBox[{
       RowBox[{"Inc", ".", "\[IndentingNewLine]", "  ", "Place"}], " ", "of", 
@@ -1294,12 +1424,11 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{CloudObject`Private`J$$ = 0, 
-    CloudObject`Private`ratio$$ = 3, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[CloudObject`Private`ratio$$], 3, 
+   DynamicModuleBox[{$CellContext`J$$ = 0, $CellContext`ratio$$ = 3, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`ratio$$], 3, 
        Text[
         Style[
          Row[{
@@ -1307,134 +1436,114 @@ Cell[BoxData[
            Style["hc", Italic], 
            OverBar[
             Style["B", Italic]]}]]]}, 1., 25.}, {{
-       Hold[CloudObject`Private`J$$], 0, 
+       Hold[$CellContext`J$$], 0, 
        Style[
        "\!\(\*SubscriptBox[\(J\), \(i\)]\)", Italic, FontFamily -> "Times"]}, 
       0, 9, 1}}, Typeset`size$$ = {600., {198., 202.}}, Typeset`update$$ = 0, 
-    Typeset`initDone$$, Typeset`skipInitDone$$ = False, 
-    CloudObject`Private`ratio$90793$$ = 0, CloudObject`Private`J$90794$$ = 0}, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`ratio$14108$$ = 0, $CellContext`J$14109$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
-      "Variables" :> {
-       CloudObject`Private`J$$ = 0, CloudObject`Private`ratio$$ = 3}, 
+      "Variables" :> {$CellContext`J$$ = 0, $CellContext`ratio$$ = 3}, 
       "ControllerVariables" :> {
-        Hold[
-        CloudObject`Private`ratio$$, CloudObject`Private`ratio$90793$$, 0], 
-        Hold[CloudObject`Private`J$$, CloudObject`Private`J$90794$$, 0]}, 
+        Hold[$CellContext`ratio$$, $CellContext`ratio$14108$$, 0], 
+        Hold[$CellContext`J$$, $CellContext`J$14109$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, 
-      "Body" :> (CloudObject`Private`dat = Thread[{CloudObject`Private`freq, 
-           CloudObject`Private`int[CloudObject`Private`ratio$$]}]; 
-       CloudObject`Private`spec = 
-        ListPlot[
-         CloudObject`Private`dat, PlotMarkers -> None, Axes -> {True, False}, 
-          PlotRange -> {{0, 28}, {0, 4.4}}, Filling -> Axis, FillingStyle -> 
+      "Body" :> ($CellContext`dat = Thread[{$CellContext`freq, 
+           $CellContext`int[$CellContext`ratio$$]}]; $CellContext`spec = 
+        ListPlot[$CellContext`dat, PlotMarkers -> None, Axes -> {True, False},
+           PlotRange -> {{0, 28}, {0, 4.4}}, Filling -> Axis, FillingStyle -> 
           Thickness[0.008], Ticks -> {
-            Thread[{CloudObject`Private`freq, CloudObject`Private`labels}], {
-            None}}, TicksStyle -> Darker[Gray], AxesLabel -> {
+            Thread[{$CellContext`freq, $CellContext`labels}], {None}}, 
+          TicksStyle -> Darker[Gray], AxesLabel -> {
             Style["\!\(\*SuperscriptBox[\(\[Nu]\), \(\[Prime]\)]\)", 24, Red],
-             None}, AspectRatio -> 1]; 
-       CloudObject`Private`specline = Graphics[{Red, 
+             None}, AspectRatio -> 1]; $CellContext`specline = Graphics[{Red, 
            Thickness[0.01], 
            Line[{{
-              Part[CloudObject`Private`freq, CloudObject`Private`J$$ + 1], 
-              0}, {
-              Part[CloudObject`Private`freq, CloudObject`Private`J$$ + 1], 
+              Part[$CellContext`freq, $CellContext`J$$ + 1], 0}, {
+              Part[$CellContext`freq, $CellContext`J$$ + 1], 
               Part[
-               CloudObject`Private`int[CloudObject`Private`ratio$$], 
-               CloudObject`Private`J$$ + 1]}}]}]; 
-       CloudObject`Private`arrow1 = If[CloudObject`Private`J$$ == 0, 
+               $CellContext`int[$CellContext`ratio$$], $CellContext`J$$ + 
+               1]}}]}]; $CellContext`arrow1 = If[$CellContext`J$$ == 0, 
           Graphics[{Red, 
             Thickness[0.02], 
             Arrowheads[Small], 
-            
-            Arrow[{{0.5, CloudObject`Private`En[CloudObject`Private`J$$] + 
-               0.7}, {0.5, 
-               CloudObject`Private`En[CloudObject`Private`J$$ + 1]}}]}], 
+            Arrow[{{0.5, $CellContext`En[$CellContext`J$$] + 0.7}, {0.5, 
+               $CellContext`En[$CellContext`J$$ + 1]}}]}], 
           Graphics[{Red, 
             Thickness[0.01], 
             Arrowheads[Medium], 
             Arrow[{{0.5, 
-               CloudObject`Private`En[CloudObject`Private`J$$]}, {0.5, 
-               CloudObject`Private`En[CloudObject`Private`J$$ + 1]}}]}]]; 
-       CloudObject`Private`tlabel = Graphics[
+               $CellContext`En[$CellContext`J$$]}, {0.5, 
+               $CellContext`En[$CellContext`J$$ + 
+                1]}}]}]]; $CellContext`tlabel = Graphics[
           Style[
            Text[
             Row[{"\[CapitalDelta]E = ", 
               ToString[
-               NumberForm[
-               CloudObject`Private`En[CloudObject`Private`J$$ + 1] - 
-                CloudObject`Private`En[CloudObject`Private`J$$], 2]], 
+               
+               NumberForm[$CellContext`En[$CellContext`J$$ + 
+                  1] - $CellContext`En[$CellContext`J$$], 2]], 
               "\!\(\*OverscriptBox[\(B\), \(_\)]\)"}], {1.25, 118}], Italic, 
            Red, 16]]; GraphicsRow[{
-          Show[CloudObject`Private`spec, CloudObject`Private`specline], 
-          Show[
-          CloudObject`Private`levels, CloudObject`Private`arrow1, 
-           CloudObject`Private`tvec, CloudObject`Private`tvecA, 
-           CloudObject`Private`tlabel, CloudObject`Private`tJ, Axes -> False, 
+          Show[$CellContext`spec, $CellContext`specline], 
+          
+          Show[$CellContext`levels, $CellContext`arrow1, $CellContext`tvec, \
+$CellContext`tvecA, $CellContext`tlabel, $CellContext`tJ, Axes -> False, 
            AspectRatio -> 1.5, PlotRange -> {{0, 7}, {-5, 122}}]}, 
          ImageSize -> {600, 400}]), 
-      "Specifications" :> {{{CloudObject`Private`ratio$$, 3, 
-          Text[
-           Style[
-            Row[{
-              Style["\!\(\*SubscriptBox[\(k\), \(B\)]\)T", Italic], "/", 
-              Style["hc", Italic], 
-              OverBar[
-               Style["B", Italic]]}]]]}, 1., 25., Appearance -> "Labeled"}, {{
-         CloudObject`Private`J$$, 0, 
+      "Specifications" :> {{{$CellContext`ratio$$, 3, $CellContext`label2}, 
+         1., 25., Appearance -> "Labeled"}, {{$CellContext`J$$, 0, 
           Style[
           "\!\(\*SubscriptBox[\(J\), \(i\)]\)", Italic, FontFamily -> 
            "Times"]}, 0, 9, 1}}, 
       "Options" :> {
        ControlType -> {Slider, SetterBar}, 
-        TrackedSymbols :> {
-         CloudObject`Private`ratio$$, CloudObject`Private`J$$}}, 
+        TrackedSymbols :> {$CellContext`ratio$$, $CellContext`J$$}}, 
       "DefaultOptions" :> {}],
      ImageSizeCache->{651., {255., 262.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>((CloudObject`Private`En[
-         Pattern[CloudObject`Private`Jp, 
-          Blank[]]] := CloudObject`Private`Jp (CloudObject`Private`Jp + 1); 
-      CloudObject`Private`freq = 
-       Table[$CellContext`j, {$CellContext`j, 2, 28, 2}]; 
-      CloudObject`Private`labels = Table[
+    Initialization:>(($CellContext`En[
+         Pattern[$CellContext`Jp, 
+          Blank[]]] := $CellContext`Jp ($CellContext`Jp + 
+         1); $CellContext`freq = 
+       Table[$CellContext`j, {$CellContext`j, 2, 28, 2}]; $CellContext`labels = 
+       Table[
          Row[{$CellContext`j, 
            OverBar[
-            Style["B", Italic]]}], {$CellContext`j, 2, 28, 2}]; 
-      CloudObject`Private`label2 = Text[
+            Style["B", Italic]]}], {$CellContext`j, 2, 28, 
+          2}]; $CellContext`label2 = Text[
          Style[
           Row[{
             Style["\!\(\*SubscriptBox[\(k\), \(B\)]\)T", Italic], "/", 
             Style["hc", Italic], 
             OverBar[
-             Style["B", Italic]]}]]]; CloudObject`Private`int[
-         Pattern[CloudObject`Private`xp, 
+             Style["B", Italic]]}]]]; $CellContext`int[
+         Pattern[$CellContext`xp, 
           Blank[]]] := 
-       Table[(2. CloudObject`Private`Jp + 1.) 
-         Exp[(-(CloudObject`Private`Jp^2 + CloudObject`Private`Jp))/
-           CloudObject`Private`xp], {CloudObject`Private`Jp, 0, 13}]; 
-      CloudObject`Private`tvec = Table[
+       Table[(2. $CellContext`Jp + 1.) 
+         Exp[(-($CellContext`Jp^2 + $CellContext`Jp))/$CellContext`xp], \
+{$CellContext`Jp, 0, 13}]; $CellContext`tvec = Table[
          Graphics[
           Text[
            Style[
             ToString[
              NumberForm[$CellContext`j, 1]], Italic, 16], {
            1.28, $CellContext`j ($CellContext`j + 1)}]], {$CellContext`j, 1, 
-          10}]; CloudObject`Private`tvecA = Graphics[
+          10}]; $CellContext`tvecA = Graphics[
          Text[
-          Style["0", Italic, 12], {1.24, -2}]]; 
-      CloudObject`Private`tJ = Graphics[
+          Style["0", Italic, 12], {1.24, -2}]]; $CellContext`tJ = Graphics[
          Rotate[
           Text[
            Style[
             Row[{"\!\(\*SubscriptBox[\(J\), \(i\)]\)", " values"}], 14], {
-           1.95, 60}], Pi/2.]]; CloudObject`Private`levels = Plot[
+           1.95, 60}], Pi/2.]]; $CellContext`levels = Plot[
          Table[$CellContext`j ($CellContext`j + 1), {$CellContext`j, 0, 
            11}], {$CellContext`x, 0, 1}, PlotStyle -> {Thick, Black}, 
          PlotRange -> {{0, 2}, {-3, 140}}, AspectRatio -> 1]; Null); 
@@ -1447,7 +1556,8 @@ Cell[BoxData[
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{3.644006396171138*^9, 3.64400669180702*^9, 
-  3.644006814796011*^9, 3.644006857353084*^9}]
+  3.644006814796011*^9, 3.644006857353084*^9, 3.6440608019671235`*^9, 
+  3.644090660930539*^9, 3.6440924839981813`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1475,11 +1585,11 @@ Cell[BoxData[
      "\"untitled\"", Typeset`specs$$ = {{{
         Hold[$CellContext`t$$], 0, "time"}, 0, 100}}, Typeset`size$$ = {
      600., {298., 302.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-     Typeset`skipInitDone$$ = True, $CellContext`t$90956$$ = 0}, 
+     Typeset`skipInitDone$$ = True, $CellContext`t$14271$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
        "ControllerVariables" :> {
-         Hold[$CellContext`t$$, $CellContext`t$90956$$, 0]}, 
+         Hold[$CellContext`t$$, $CellContext`t$14271$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1578,26 +1688,39 @@ Cell[BoxData[
    Manipulate`InterpretManipulate[1]]}, {2,"\<\"Accurate Model\"\>"->
   TagBox[
    StyleBox[
-    DynamicModuleBox[{$CellContext`j$$ = 1, Typeset`show$$ = True, 
+    DynamicModuleBox[{$CellContext`j$$ = 3, Typeset`show$$ = True, 
      Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
      Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
      "\"untitled\"", Typeset`specs$$ = {{{
-        Hold[$CellContext`j$$], 1, "orbital "}, {
-       1 -> "1s", 2 -> "2p_z", 3 -> "2p_x", 4 -> "2p_y", 5 -> "3d_z^2", 6 -> 
-        "3d_xz", 7 -> "3d_yz", 8 -> "3d_xy", 9 -> "3d_(x^2-y^2)", 10 -> 
-        "4f_z^3", 11 -> "4f_xz^2", 12 -> "4f_yz^2", 13 -> "4f_xyz", 14 -> 
-        "4f_z(x^2-y^2)", 15 -> "4f_x(x^2-3y^2)", 16 -> "4f_y(3x^2-y^2)"}}, {
+        Hold[$CellContext`j$$], 1, "Orbital "}, 
+       Dynamic[{1 -> "1s", 2 -> "2p_z", 3 -> "2p_x", 4 -> "2p_y"}, 
+        SynchronousUpdating -> False]}, {{
+        Hold[$CellContext`j$$], 5}, 
+       Dynamic[{5 -> "3d_z^2", 6 -> "3d_xz", 7 -> "3d_yz", 8 -> "3d_xy"}, 
+        SynchronousUpdating -> False]}, {{
+        Hold[$CellContext`j$$], 9}, 
+       Dynamic[{
+        9 -> "3d_(x^2-y^2)", 10 -> "4f_z^3", 11 -> "4f_xz^2", 12 -> 
+         "4f_yz^2"}, SynchronousUpdating -> False]}, {{
+        Hold[$CellContext`j$$], 13}, 
+       Dynamic[{
+        13 -> "4f_xyz", 14 -> "4f_z(x^2-y^2)", 15 -> "4f_x(x^2-3y^2)", 16 -> 
+         "4f_y(3x^2-y^2)"}, SynchronousUpdating -> False]}, {
        Hold[
-        Row[{
-          Manipulate`Place[1], 
-          Spacer[20], Null}]], Manipulate`Dump`ThisIsNotAControl}}, 
-     Typeset`size$$ = {400., {221., 229.}}, Typeset`update$$ = 0, 
-     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-     False, $CellContext`j$90974$$ = False}, 
+        Column[{
+          Row[{
+            Manipulate`Place[1]}], 
+          Row[{
+            Manipulate`Place[2]}], 
+          Row[{
+            Manipulate`Place[3]}], 
+          Row[{
+            Manipulate`Place[4]}]}]], Manipulate`Dump`ThisIsNotAControl}}, 
+     Typeset`size$$ = Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
+     Typeset`skipInitDone$$ = False}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       2, StandardForm, "Variables" :> {$CellContext`j$$ = 1}, 
-       "ControllerVariables" :> {
-         Hold[$CellContext`j$$, $CellContext`j$90974$$, False]}, 
+       "ControllerVariables" :> {}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1606,21 +1729,41 @@ Cell[BoxData[
          Column[{
            Show[
             $CellContext`OrbitalModel[$CellContext`j$$], Background -> Black, 
-            ImageSize -> {300, 300}, ImagePadding -> 5 {{1, 1}, {1, 1}}]}, 
+            ImageSize -> {500, 500}, ImagePadding -> 5 {{1, 1}, {1, 1}}]}, 
           Spacings -> 2, Alignment -> {Center, Center}], 
          Alignment -> {Center, Center}, ImageSize -> {400, 450}], 
-       "Specifications" :> {{{$CellContext`j$$, 1, "orbital "}, {
-          1 -> "1s", 2 -> "2p_z", 3 -> "2p_x", 4 -> "2p_y", 5 -> "3d_z^2", 6 -> 
-           "3d_xz", 7 -> "3d_yz", 8 -> "3d_xy", 9 -> "3d_(x^2-y^2)", 10 -> 
-           "4f_z^3", 11 -> "4f_xz^2", 12 -> "4f_yz^2", 13 -> "4f_xyz", 14 -> 
-           "4f_z(x^2-y^2)", 15 -> "4f_x(x^2-3y^2)", 16 -> "4f_y(3x^2-y^2)"}, 
-          ControlPlacement -> 1}, 
-         Row[{
-           Manipulate`Place[1], 
-           Spacer[20], Null}]}, 
-       "Options" :> {TrackedSymbols :> {$CellContext`j$$}}, 
-       "DefaultOptions" :> {}],
-      ImageSizeCache->{451., {270., 277.}},
+       "Specifications" :> {{{$CellContext`j$$, 1, "Orbital "}, 
+          
+          Dynamic[{1 -> "1s", 2 -> "2p_z", 3 -> "2p_x", 4 -> "2p_y"}, 
+           SynchronousUpdating -> False], ControlType -> SetterBar, 
+          ControlPlacement -> 1}, {{$CellContext`j$$, 5}, 
+          
+          Dynamic[{5 -> "3d_z^2", 6 -> "3d_xz", 7 -> "3d_yz", 8 -> "3d_xy"}, 
+           SynchronousUpdating -> False], ControlType -> SetterBar, 
+          ControlPlacement -> 2}, {{$CellContext`j$$, 9}, 
+          
+          Dynamic[{
+           9 -> "3d_(x^2-y^2)", 10 -> "4f_z^3", 11 -> "4f_xz^2", 12 -> 
+            "4f_yz^2"}, SynchronousUpdating -> False], ControlType -> 
+          SetterBar, ControlPlacement -> 3}, {{$CellContext`j$$, 13}, 
+          
+          Dynamic[{
+           13 -> "4f_xyz", 14 -> "4f_z(x^2-y^2)", 15 -> "4f_x(x^2-3y^2)", 16 -> 
+            "4f_y(3x^2-y^2)"}, SynchronousUpdating -> False], ControlType -> 
+          SetterBar, ControlPlacement -> 4}, 
+         Column[{
+           Row[{
+             Manipulate`Place[1]}], 
+           Row[{
+             Manipulate`Place[2]}], 
+           Row[{
+             Manipulate`Place[3]}], 
+           Row[{
+             Manipulate`Place[4]}]}]}, 
+       "Options" :> {
+        TrackedSymbols :> {$CellContext`j$$}, SynchronousInitialization -> 
+         False}, "DefaultOptions" :> {}],
+      ImageSizeCache->{451., {301., 308.}},
       SingleEvaluation->True],
      Deinitialization:>None,
      DynamicModuleValues:>{},
@@ -1633,8 +1776,9 @@ $CellContext`b$, $CellContext`l$, $CellContext`m$, $CellContext`y1$, \
 $CellContext`y2$, $CellContext`y3$, $CellContext`\[Theta]$, $CellContext`\
 \[Phi]$, $CellContext`pos$}, $CellContext`pairs$ = Flatten[
              
-             Table[{$CellContext`i, FE`j$$306}, {$CellContext`i, 0, 5}, {
-              FE`j$$306, 0, $CellContext`i}], 1]; $CellContext`fun$ = {}; 
+             Table[{$CellContext`i, $CellContext`j$$}, {$CellContext`i, 0, 
+               5}, {$CellContext`j$$, 0, $CellContext`i}], 
+             1]; $CellContext`fun$ = {}; 
           Do[$CellContext`l$ = 
              Part[$CellContext`pairs$, $CellContext`i, 1]; $CellContext`m$ = 
              Part[$CellContext`pairs$, $CellContext`i, 2]; $CellContext`a$ = 
@@ -1645,7 +1789,7 @@ $CellContext`\[Theta]$, $CellContext`\[Phi]$]; $CellContext`y1$ = \
 $CellContext`b$; $CellContext`y2$ = 
              ExpToTrig[($CellContext`a$ - $CellContext`b$)/Sqrt[
                2]]; $CellContext`y3$ = 
-             ExpToTrig[($CellContext`a$ + $CellContext`b$)/(Sqrt[2] I)]; 
+             ExpToTrig[($CellContext`a$ + $CellContext`b$) Sqrt[2]^(-1)/I]; 
             If[$CellContext`m$ == 0, 
               AppendTo[$CellContext`fun$, $CellContext`y1$], 
               
@@ -1698,9 +1842,9 @@ $CellContext`y3$}]]; $CellContext`fun1$ =
                Text[
                 Style[
                 "z", FontFamily -> "Cambria Math", FontSize -> Large, 
-                 FontColor -> White], {0, 0, 0.85}]}]}]], FE`j$$306 = 1}; 
+                 FontColor -> White], {0, 0, 0.85}]}]}]]}; 
       Typeset`initDone$$ = True),
-     SynchronousInitialization->True,
+     SynchronousInitialization->False,
      UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
      UnsavedVariables:>{Typeset`initDone$$},
      UntrackedVariables:>{Typeset`size$$}], "Manipulate",
@@ -1709,12 +1853,11 @@ $CellContext`y3$}]]; $CellContext`fun1$ =
    Manipulate`InterpretManipulate[1]]}, {3,"\<\"Energy Levels\"\>"->
   TagBox[
    StyleBox[
-    DynamicModuleBox[{CloudObject`Private`J$$ = 0, 
-     CloudObject`Private`ratio$$ = 3, Typeset`show$$ = True, 
-     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-     "\"untitled\"", Typeset`specs$$ = {{{
-        Hold[CloudObject`Private`ratio$$], 3, 
+    DynamicModuleBox[{$CellContext`J$$ = 0, $CellContext`ratio$$ = 3, 
+     Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+        Hold[$CellContext`ratio$$], 3, 
         Text[
          Style[
           Row[{
@@ -1722,79 +1865,68 @@ $CellContext`y3$}]]; $CellContext`fun1$ =
             Style["hc", Italic], 
             OverBar[
              Style["B", Italic]]}]]]}, 1., 25.}, {{
-        Hold[CloudObject`Private`J$$], 0, 
+        Hold[$CellContext`J$$], 0, 
         Style[
         "\!\(\*SubscriptBox[\(J\), \(i\)]\)", Italic, FontFamily -> "Times"]},
         0, 9, 1}}, Typeset`size$$ = {600., {198., 202.}}, Typeset`update$$ = 
-     0, Typeset`initDone$$, Typeset`skipInitDone$$ = False, 
-     CloudObject`Private`ratio$90991$$ = 0, CloudObject`Private`J$90992$$ = 
-     0}, 
+     0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+     False, $CellContext`ratio$14304$$ = 0, $CellContext`J$14305$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       1, StandardForm, 
-       "Variables" :> {
-        CloudObject`Private`J$$ = 0, CloudObject`Private`ratio$$ = 3}, 
+       "Variables" :> {$CellContext`J$$ = 0, $CellContext`ratio$$ = 3}, 
        "ControllerVariables" :> {
-         Hold[
-         CloudObject`Private`ratio$$, CloudObject`Private`ratio$90991$$, 0], 
-         Hold[CloudObject`Private`J$$, CloudObject`Private`J$90992$$, 0]}, 
+         Hold[$CellContext`ratio$$, $CellContext`ratio$14304$$, 0], 
+         Hold[$CellContext`J$$, $CellContext`J$14305$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
          Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
          Typeset`initDone$$, Typeset`skipInitDone$$}, 
-       "Body" :> (CloudObject`Private`dat = Thread[{CloudObject`Private`freq, 
-            CloudObject`Private`int[CloudObject`Private`ratio$$]}]; 
-        CloudObject`Private`spec = 
-         ListPlot[
-          CloudObject`Private`dat, PlotMarkers -> None, Axes -> {True, False},
-            PlotRange -> {{0, 28}, {0, 4.4}}, Filling -> Axis, FillingStyle -> 
-           Thickness[0.008], Ticks -> {
-             Thread[{CloudObject`Private`freq, CloudObject`Private`labels}], {
-             None}}, TicksStyle -> Darker[Gray], AxesLabel -> {
+       "Body" :> ($CellContext`dat = Thread[{$CellContext`freq, 
+            $CellContext`int[$CellContext`ratio$$]}]; $CellContext`spec = 
+         ListPlot[$CellContext`dat, PlotMarkers -> None, 
+           Axes -> {True, False}, PlotRange -> {{0, 28}, {0, 4.4}}, Filling -> 
+           Axis, FillingStyle -> Thickness[0.008], Ticks -> {
+             Thread[{$CellContext`freq, $CellContext`labels}], {None}}, 
+           TicksStyle -> Darker[Gray], AxesLabel -> {
              Style[
              "\!\(\*SuperscriptBox[\(\[Nu]\), \(\[Prime]\)]\)", 24, Red], 
-             None}, AspectRatio -> 1]; 
-        CloudObject`Private`specline = Graphics[{Red, 
+             None}, AspectRatio -> 1]; $CellContext`specline = Graphics[{Red, 
             Thickness[0.01], 
             Line[{{
-               Part[CloudObject`Private`freq, CloudObject`Private`J$$ + 1], 
-               0}, {
-               Part[CloudObject`Private`freq, CloudObject`Private`J$$ + 1], 
+               Part[$CellContext`freq, $CellContext`J$$ + 1], 0}, {
+               Part[$CellContext`freq, $CellContext`J$$ + 1], 
                Part[
-                CloudObject`Private`int[CloudObject`Private`ratio$$], 
-                CloudObject`Private`J$$ + 1]}}]}]; 
-        CloudObject`Private`arrow1 = If[CloudObject`Private`J$$ == 0, 
+                $CellContext`int[$CellContext`ratio$$], $CellContext`J$$ + 
+                1]}}]}]; $CellContext`arrow1 = If[$CellContext`J$$ == 0, 
            Graphics[{Red, 
              Thickness[0.02], 
              Arrowheads[Small], 
-             
-             Arrow[{{0.5, CloudObject`Private`En[CloudObject`Private`J$$] + 
-                0.7}, {0.5, 
-                CloudObject`Private`En[CloudObject`Private`J$$ + 1]}}]}], 
+             Arrow[{{0.5, $CellContext`En[$CellContext`J$$] + 0.7}, {0.5, 
+                $CellContext`En[$CellContext`J$$ + 1]}}]}], 
            Graphics[{Red, 
              Thickness[0.01], 
              Arrowheads[Medium], 
              Arrow[{{0.5, 
-                CloudObject`Private`En[CloudObject`Private`J$$]}, {0.5, 
-                CloudObject`Private`En[CloudObject`Private`J$$ + 1]}}]}]]; 
-        CloudObject`Private`tlabel = Graphics[
+                $CellContext`En[$CellContext`J$$]}, {0.5, 
+                $CellContext`En[$CellContext`J$$ + 
+                 1]}}]}]]; $CellContext`tlabel = Graphics[
            Style[
             Text[
              Row[{"\[CapitalDelta]E = ", 
                ToString[
-                NumberForm[
-                CloudObject`Private`En[CloudObject`Private`J$$ + 1] - 
-                 CloudObject`Private`En[CloudObject`Private`J$$], 2]], 
+                
+                NumberForm[$CellContext`En[$CellContext`J$$ + 
+                   1] - $CellContext`En[$CellContext`J$$], 2]], 
                "\!\(\*OverscriptBox[\(B\), \(_\)]\)"}], {1.25, 118}], Italic, 
             Red, 16]]; GraphicsRow[{
-           Show[CloudObject`Private`spec, CloudObject`Private`specline], 
-           Show[
-           CloudObject`Private`levels, CloudObject`Private`arrow1, 
-            CloudObject`Private`tvec, CloudObject`Private`tvecA, 
-            CloudObject`Private`tlabel, CloudObject`Private`tJ, Axes -> False,
-             AspectRatio -> 1.5, PlotRange -> {{0, 7}, {-5, 122}}]}, 
+           Show[$CellContext`spec, $CellContext`specline], 
+           
+           Show[$CellContext`levels, $CellContext`arrow1, $CellContext`tvec, \
+$CellContext`tvecA, $CellContext`tlabel, $CellContext`tJ, Axes -> False, 
+            AspectRatio -> 1.5, PlotRange -> {{0, 7}, {-5, 122}}]}, 
           ImageSize -> {600, 400}]), 
-       "Specifications" :> {{{CloudObject`Private`ratio$$, 3, 
+       "Specifications" :> {{{$CellContext`ratio$$, 3, 
            Text[
             Style[
              Row[{
@@ -1802,57 +1934,53 @@ $CellContext`y3$}]]; $CellContext`fun1$ =
                Style["hc", Italic], 
                OverBar[
                 Style["B", Italic]]}]]]}, 1., 25., Appearance -> 
-          "Labeled"}, {{CloudObject`Private`J$$, 0, 
+          "Labeled"}, {{$CellContext`J$$, 0, 
            Style[
            "\!\(\*SubscriptBox[\(J\), \(i\)]\)", Italic, FontFamily -> 
             "Times"]}, 0, 9, 1}}, 
        "Options" :> {
         ControlType -> {Slider, SetterBar}, 
-         TrackedSymbols :> {
-          CloudObject`Private`ratio$$, CloudObject`Private`J$$}}, 
+         TrackedSymbols :> {$CellContext`ratio$$, $CellContext`J$$}}, 
        "DefaultOptions" :> {}],
       ImageSizeCache->{651., {255., 262.}},
       SingleEvaluation->True],
      Deinitialization:>None,
      DynamicModuleValues:>{},
-     Initialization:>((CloudObject`Private`En[
-          Pattern[CloudObject`Private`Jp, 
-           Blank[]]] := CloudObject`Private`Jp (CloudObject`Private`Jp + 1); 
-       CloudObject`Private`freq = 
-        Table[$CellContext`j, {$CellContext`j, 2, 28, 2}]; 
-       CloudObject`Private`labels = Table[
+     Initialization:>(($CellContext`En[
+          Pattern[$CellContext`Jp, 
+           Blank[]]] := $CellContext`Jp ($CellContext`Jp + 
+          1); $CellContext`freq = 
+        Table[$CellContext`j, {$CellContext`j, 2, 28, 
+           2}]; $CellContext`labels = Table[
           Row[{$CellContext`j, 
             OverBar[
-             Style["B", Italic]]}], {$CellContext`j, 2, 28, 2}]; 
-       CloudObject`Private`label2 = Text[
+             Style["B", Italic]]}], {$CellContext`j, 2, 28, 
+           2}]; $CellContext`label2 = Text[
           Style[
            Row[{
              Style["\!\(\*SubscriptBox[\(k\), \(B\)]\)T", Italic], "/", 
              Style["hc", Italic], 
              OverBar[
-              Style["B", Italic]]}]]]; CloudObject`Private`int[
-          Pattern[CloudObject`Private`xp, 
+              Style["B", Italic]]}]]]; $CellContext`int[
+          Pattern[$CellContext`xp, 
            Blank[]]] := 
-        Table[(2. CloudObject`Private`Jp + 1.) 
-          Exp[(-(CloudObject`Private`Jp^2 + CloudObject`Private`Jp))/
-            CloudObject`Private`xp], {CloudObject`Private`Jp, 0, 13}]; 
-       CloudObject`Private`tvec = Table[
+        Table[(2. $CellContext`Jp + 1.) 
+          Exp[(-($CellContext`Jp^2 + $CellContext`Jp))/$CellContext`xp], \
+{$CellContext`Jp, 0, 13}]; $CellContext`tvec = Table[
           Graphics[
            Text[
             Style[
              ToString[
               NumberForm[$CellContext`j, 1]], Italic, 16], {
             1.28, $CellContext`j ($CellContext`j + 1)}]], {$CellContext`j, 1, 
-           10}]; CloudObject`Private`tvecA = Graphics[
+           10}]; $CellContext`tvecA = Graphics[
           Text[
-           Style["0", Italic, 12], {1.24, -2}]]; 
-       CloudObject`Private`tJ = Graphics[
+           Style["0", Italic, 12], {1.24, -2}]]; $CellContext`tJ = Graphics[
           Rotate[
            Text[
             Style[
              Row[{"\!\(\*SubscriptBox[\(J\), \(i\)]\)", " values"}], 14], {
-            1.95, 60}], Pi/2.]]; CloudObject`Private`levels = Plot[
-          
+            1.95, 60}], Pi/2.]]; $CellContext`levels = Plot[
           Table[$CellContext`j ($CellContext`j + 1), {$CellContext`j, 0, 
             11}], {$CellContext`x, 0, 1}, PlotStyle -> {Thick, Black}, 
           PlotRange -> {{0, 2}, {-3, 140}}, AspectRatio -> 1]; Null); 
@@ -1863,14 +1991,16 @@ $CellContext`y3$}]]; $CellContext`fun1$ =
      UntrackedVariables:>{Typeset`size$$}], "Manipulate",
     Deployed->True,
     StripOnInput->False],
-   Manipulate`InterpretManipulate[1]]}}, 1,
+   Manipulate`InterpretManipulate[1]]}}, 2,
   ControlPlacement->Left]], "Output",
  CellChangeTimes->{
   3.644006636629466*^9, 3.644006691963021*^9, {3.644006799960316*^9, 
-   3.6440068697707634`*^9}}]
+   3.6440068697707634`*^9}, {3.6440607205577464`*^9, 
+   3.6440607513082104`*^9}, {3.6440608021231856`*^9, 3.644060805494125*^9}, 
+   3.644090661297576*^9, {3.6440924797881813`*^9, 3.6440924859321814`*^9}}]
 }, Open  ]]
 },
-WindowSize->{1680, 968},
+WindowSize->{1664, 968},
 WindowMargins->{{-8, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
@@ -1888,19 +2018,19 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 14291, 350, 552, "Input"],
-Cell[14874, 374, 5908, 112, 680, "Output"]
+Cell[14874, 374, 5984, 113, 680, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20819, 491, 13206, 305, 822, "Input"],
-Cell[34028, 798, 6958, 137, 564, "Output"]
+Cell[20895, 492, 17950, 403, 882, "Input"],
+Cell[38848, 897, 8245, 169, 626, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[41023, 940, 13801, 351, 788, "Input"],
-Cell[54827, 1293, 7084, 156, 534, "Output"]
+Cell[47130, 1071, 13786, 350, 788, "Input"],
+Cell[60919, 1423, 6302, 136, 534, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[61948, 1454, 598, 11, 31, "Input"],
-Cell[62549, 1467, 19115, 402, 729, "Output"]
+Cell[67258, 1564, 598, 11, 31, "Input"],
+Cell[67859, 1577, 19767, 422, 729, "Output"]
 }, Open  ]]
 }
 ]
