@@ -10,17 +10,18 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     35888,        912]
-NotebookOptionsPosition[     34528,        861]
-NotebookOutlinePosition[     34870,        876]
-CellTagsIndexPosition[     34827,        873]
+NotebookDataLength[     36286,        919]
+NotebookOptionsPosition[     34922,        868]
+NotebookOutlinePosition[     35269,        883]
+CellTagsIndexPosition[     35226,        880]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[
  RowBox[{
-  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}]], "Input"],
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}]], "Input",
+ CellChangeTimes->{3.6441519392433233`*^9}],
 
 Cell[CellGroupData[{
 
@@ -167,35 +168,32 @@ around 10^-12 meters\>\"", ",",
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`f$$ = 1, CloudObject`Private`text$$ = 10, 
+   DynamicModuleBox[{$CellContext`f$$ = 1, $CellContext`text$$ = 1, 
     Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`f$$], 1, "frequency"}, 1, 10, 1}, {{
-       Hold[CloudObject`Private`text$$], 1, "content"}, 1, 10, 1}}, 
+       Hold[$CellContext`text$$], 1, "content"}, 1, 10, 1}}, 
     Typeset`size$$ = {576., {223., 230.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`f$128162$$ = 0, CloudObject`Private`text$128163$$ = 
-    0}, 
+    False, $CellContext`f$16872$$ = 0, $CellContext`text$16873$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
-      "Variables" :> {$CellContext`f$$ = 1, CloudObject`Private`text$$ = 1}, 
+      "Variables" :> {$CellContext`f$$ = 1, $CellContext`text$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`f$$, $CellContext`f$128162$$, 0], 
-        Hold[
-        CloudObject`Private`text$$, CloudObject`Private`text$128163$$, 0]}, 
+        Hold[$CellContext`f$$, $CellContext`f$16872$$, 0], 
+        Hold[$CellContext`text$$, $CellContext`text$16873$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> Grid[{{
           Plot[
-           
-           CloudObject`Private`thisfunc[$CellContext`x, $CellContext`f$$], \
+           $CellContext`thisfunc[$CellContext`x, $CellContext`f$$], \
 {$CellContext`x, -50, 50}, PlotRange -> Automatic, ColorFunction -> "Rainbow",
             ImageSize -> Large]}, {
           Grid[{{
-             Switch[CloudObject`Private`text$$, 1, 
+             Switch[$CellContext`text$$, 1, 
               Style[
               " Long Radio Wave\n This is the Long Radio Wave\n It's wave \
 length is between 10^2 to 10^8 meters", FontFamily -> "Arial", 
@@ -239,27 +237,19 @@ meters", FontFamily -> "Arial",
                RGBColor[0.32, 0.42, 0.65], FontSize -> 20]]}}, Frame -> All, 
            Alignment -> Top, Background -> Pink]}}], 
       "Specifications" :> {{{$CellContext`f$$, 1, "frequency"}, 1, 10, 1, 
-         ControlType -> Slider}, {{CloudObject`Private`text$$, 1, "content"}, 
-         1, 10, 1, ControlType -> Slider}}, "Options" :> {}, 
-      "DefaultOptions" :> {}],
+         ControlType -> Slider}, {{$CellContext`text$$, 1, "content"}, 1, 10, 
+         1, ControlType -> Slider}}, "Options" :> {}, "DefaultOptions" :> {}],
      ImageSizeCache->{627., {284., 291.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({{CloudObject`Private`thisfunc[
-           Pattern[$CellContext`f, 
-            Blank[]], 
-           Pattern[$CellContext`x, 
-            Blank[]]] := 
-         Cos[$CellContext`f $CellContext`x] + 
-          Sin[$CellContext`f $CellContext`x], CloudObject`Private`text$$ = 
-         10}; CloudObject`Private`thisfunc[
-          Pattern[$CellContext`f, 
-           Blank[]], 
-          Pattern[$CellContext`x, 
-           Blank[]]] := 
-        Cos[$CellContext`f $CellContext`x] + 
-         Sin[$CellContext`f $CellContext`x]}; Typeset`initDone$$ = True),
+    Initialization:>($CellContext`thisfunc[
+        Pattern[$CellContext`f, 
+         Blank[]], 
+        Pattern[$CellContext`x, 
+         Blank[]]] := 
+      Cos[$CellContext`f $CellContext`x] + Sin[$CellContext`f $CellContext`x]; 
+     Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
     UnsavedVariables:>{Typeset`initDone$$},
@@ -270,7 +260,8 @@ meters", FontFamily -> "Arial",
  CellChangeTimes->{
   3.6440792366212225`*^9, {3.6440793941662226`*^9, 3.6440794218542223`*^9}, {
    3.6440796577192225`*^9, 3.6440796782772226`*^9}, {3.6440853904733176`*^9, 
-   3.6440853974710174`*^9}, 3.644089601439601*^9}]
+   3.6440853974710174`*^9}, 3.644089601439601*^9, {3.6441518346754184`*^9, 
+   3.644151857320595*^9}, 3.6441518975112753`*^9, 3.6441541675324297`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -313,13 +304,13 @@ Cell[BoxData[
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`n$$ = 5, CloudObject`Private`data$$ = {
-  0.25954947883980517`, 0.39568601493411304`, 0.36585364676221444`, 
-  0.2456629016716969, 0.52763341093565, 0.45422255194656724`, 
-  0.11256756050810979`, 0.5095821277775492, 0.10970035394036604`, 
-  0.3568714730720921, 0.8134763886275767, 0.31608619048600506`, 
-  0.694556109672714, 0.8963430762990787, 0.5398732376911035, 
-  0.18528190159377456`, 0.28853014606584027`, 0.11603536705628792`, 
-  0.9343764792236458, 0.814969982921603}}, 
+  0.6445420575839793, 0.9288473128244532, 0.6669730587654263, 
+  0.8979255227411889, 0.6990833648794827, 0.45668858007974733`, 
+  0.13328688819093726`, 0.31917806322110565`, 0.9292292139964233, 
+  0.4809373314139005, 0.45534735730289055`, 0.4798121441041643, 
+  0.5458051375255646, 0.7809223166179218, 0.022630154382953682`, 
+  0.9060395101020524, 0.4175112980288396, 0.2522194484661753, 
+  0.6291846115993875, 0.8166520256282357}}, 
   TagBox[GridBox[{
      {
       SliderBox[Dynamic[$CellContext`n$$], {1, 20, 1}]},
@@ -340,7 +331,9 @@ Cell[BoxData[
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Column"],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.6440798523882227`*^9, 3.6440896015076075`*^9}]
+ CellChangeTimes->{
+  3.6440798523882227`*^9, 3.6440896015076075`*^9, {3.6441518347378445`*^9, 
+   3.644151857398628*^9}, 3.644151897573702*^9, 3.6441541675724297`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -372,36 +365,35 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{CloudObject`Private`m$$ = 1, $CellContext`n$$ = 1, 
+   DynamicModuleBox[{$CellContext`m$$ = 1, $CellContext`n$$ = 1, 
     Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`n$$], 1, 10, 1}, {
-      Hold[CloudObject`Private`m$$], 1, 
+      Hold[$CellContext`m$$], 1, 
       Dynamic[$CellContext`n$$], 1}}, Typeset`size$$ = {56., {9., 16.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`n$128214$$ = 0, CloudObject`Private`m$128215$$ = 0}, 
+    True, $CellContext`n$16929$$ = 0, $CellContext`m$16930$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
-      "Variables" :> {CloudObject`Private`m$$ = 1, $CellContext`n$$ = 1}, 
+      "Variables" :> {$CellContext`m$$ = 1, $CellContext`n$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`n$$, $CellContext`n$128214$$, 0], 
-        Hold[CloudObject`Private`m$$, CloudObject`Private`m$128215$$, 0]}, 
+        Hold[$CellContext`n$$, $CellContext`n$16929$$, 0], 
+        Hold[$CellContext`m$$, $CellContext`m$16930$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, 
       "Body" :> (
-       If[CloudObject`Private`m$$ > $CellContext`n$$, 
-         CloudObject`Private`m$$ = $CellContext`n$$]; Row[{"(", 
-          Column[{$CellContext`n$$, CloudObject`Private`m$$}, Center], ") = ", 
-          Binomial[$CellContext`n$$, CloudObject`Private`m$$]}]), 
-      "Specifications" :> {{$CellContext`n$$, 1, 10, 1}, {
-        CloudObject`Private`m$$, 1, 
+       If[$CellContext`m$$ > $CellContext`n$$, $CellContext`m$$ = \
+$CellContext`n$$]; Row[{"(", 
+          Column[{$CellContext`n$$, $CellContext`m$$}, Center], ") = ", 
+          Binomial[$CellContext`n$$, $CellContext`m$$]}]), 
+      "Specifications" :> {{$CellContext`n$$, 1, 10, 1}, {$CellContext`m$$, 1, 
          Dynamic[$CellContext`n$$], 1}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{365., {70., 77.}},
+     ImageSizeCache->{260., {70., 77.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -412,7 +404,9 @@ Cell[BoxData[
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.6440802490902224`*^9, 3.6440896015266094`*^9}]
+ CellChangeTimes->{
+  3.6440802490902224`*^9, 3.6440896015266094`*^9, {3.6441518347534513`*^9, 
+   3.6441518574142346`*^9}, 3.6441518975893083`*^9, 3.6441541676434298`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -455,24 +449,22 @@ Cell[BoxData[
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`n$$], 1, 10, 1}}, Typeset`size$$ = {268., {51., 58.}},
      Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`n$128243$$ = 0}, 
+    True, $CellContext`n$16958$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`n$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`n$$, $CellContext`n$128243$$, 0]}, 
+        Hold[$CellContext`n$$, $CellContext`n$16958$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, "Body" :> 
-      With[{CloudObject`Private`value = Table[
+         Typeset`skipInitDone$$}, "Body" :> With[{$CellContext`value = Table[
            $CellContext`c[$CellContext`i], {$CellContext`i, 
-            1, $CellContext`n$$}], CloudObject`Private`controls = 
-         Apply[Sequence, 
+            1, $CellContext`n$$}], $CellContext`controls = Apply[Sequence, 
            Table[{
              $CellContext`c[$CellContext`i], 0, 1}, {$CellContext`i, 
              1, $CellContext`n$$}]]}, 
-        Manipulate[CloudObject`Private`value, CloudObject`Private`controls]], 
+        Manipulate[$CellContext`value, $CellContext`controls]], 
       "Specifications" :> {{$CellContext`n$$, 1, 10, 1}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
      ImageSizeCache->{319., {98., 105.}},
@@ -486,7 +478,9 @@ Cell[BoxData[
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.6440802829292226`*^9, 3.6440896015876155`*^9}]
+ CellChangeTimes->{
+  3.6440802829292226`*^9, 3.6440896015876155`*^9, {3.644151834800271*^9, 
+   3.6441518574766607`*^9}, 3.6441518976517344`*^9, 3.6441541677394295`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -532,12 +526,12 @@ Cell[BoxData[
      SliderBox[Dynamic[$CellContext`n], {1, 10}]},
     {
      DynamicBox[ToBoxes[
-       Module[{CloudObject`Private`n1 = $CellContext`n}, 
+       Module[{$CellContext`n1 = $CellContext`n}, 
         Graphics[
          Line[
           Table[{$CellContext`x, 
-            Sin[CloudObject`Private`n1 $CellContext`x]}, {$CellContext`x, 0, 
-            2 Pi, 0.0001}]]]], StandardForm],
+            Sin[$CellContext`n1 $CellContext`x]}, {$CellContext`x, 0, 2 Pi, 
+            0.0001}]]]], StandardForm],
       ImageSizeCache->{180., {29., 34.}},
       SynchronousUpdating->False]}
    },
@@ -545,7 +539,9 @@ Cell[BoxData[
    GridBoxAlignment->{"Columns" -> {{Left}}},
    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   "Column"]], "Output",
- CellChangeTimes->{3.644085177995072*^9, 3.644089601673624*^9}]
+ CellChangeTimes->{
+  3.644085177995072*^9, 3.644089601673624*^9, {3.6441518348783045`*^9, 
+   3.6441518575703006`*^9}, 3.644151897729768*^9, 3.6441541677484293`*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -623,7 +619,9 @@ Cell[BoxData[
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Column"],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.6440852187401457`*^9, 3.6440896016936264`*^9}]
+ CellChangeTimes->{
+  3.6440852187401457`*^9, 3.6440896016936264`*^9, {3.644151834893911*^9, 
+   3.644151857585907*^9}, 3.644151897745374*^9, 3.6441541677714295`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -670,14 +668,14 @@ Cell[BoxData[
  CellChangeTimes->{{3.6440852432775993`*^9, 3.6440852432806*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`n$$ = 5, CloudObject`Private`data$$ = {
-  0.8412985734959193, 0.24639522984623463`, 0.4809868068666201, 
-  0.34352329601749587`, 0.5461704642547929, 0.35971593475763597`, 
-  0.2991831649809982, 0.08181133039004118, 0.17961390978252578`, 
-  0.8422639339217233, 0.8593050275626064, 0.4359583803550431, 
-  0.22861332184663175`, 0.3197702963820115, 0.8071202001158673, 
-  0.889119195843938, 0.6005531222754037, 0.31674767378559987`, 
-  0.9724839465073856, 0.6834681264731164}}, 
+ DynamicModuleBox[{$CellContext`n$$ = 1, CloudObject`Private`data$$ = {0.124, 
+  0.7342846588660301, 0.3736170943919266, 0.11630930362464853`, 
+  0.9529490276589494, 0.17271239074532874`, 0.4347596266568674, 
+  0.2786866039385658, 0.15563131681236309`, 0.3058294919413387, 
+  0.43800637711109514`, 0.6164074614583137, 0.3714058407251255, 
+  0.7382585754722193, 0.978351723920083, 0.11053111281665551`, 
+  0.5195901260361886, 0.3964197440334556, 0.9218931063648064, 
+  0.598345590444459}}, 
   TagBox[GridBox[{
      {
       SliderBox[Dynamic[$CellContext`n$$], {1, 20, 1}]},
@@ -693,14 +691,16 @@ Cell[BoxData[
              Part[
              CloudObject`Private`data$$, $CellContext`i$]]}], \
 {$CellContext`i, $CellContext`n$$}]], StandardForm],
-       ImageSizeCache->{273., {64., 71.}}]}
+       ImageSizeCache->{249., {8., 15.}}]}
     },
     DefaultBaseStyle->"Column",
     GridBoxAlignment->{"Columns" -> {{Left}}},
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Column"],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.644085243934665*^9, 3.6440896017176285`*^9}]
+ CellChangeTimes->{
+  3.644085243934665*^9, 3.6440896017176285`*^9, {3.6441518349095173`*^9, 
+   3.644151857601514*^9}, 3.6441518977609806`*^9, 3.6441541677834296`*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -769,7 +769,9 @@ Cell[BoxData[
    ViewPoint->Dynamic[CloudObject`Private`vp$$],
    ViewVertical->Dynamic[CloudObject`Private`vv$$]],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.6440858029695635`*^9, 3.6440896017436314`*^9}]
+ CellChangeTimes->{
+  3.6440858029695635`*^9, 3.6440896017436314`*^9, {3.644151834925124*^9, 
+   3.6441518576327267`*^9}, 3.644151897792194*^9, 3.6441541678144293`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -785,13 +787,17 @@ Cell[BoxData[
        RowBox[{"Switch", "[", 
         RowBox[{
         "f", ",", "1", ",", "\"\<ya\>\"", ",", "2", ",", "\"\<yo\>\"", ",", 
-         "3", ",", "\"\<yu\>\"", ",", "4", ",", "\"\<yeh\>\""}], "]"}]}], 
-      ";"}]}], "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+         "3", ",", "\"\<yu\>\"", ",", "4", ",", "\"\<yeh\>\""}], "]"}]}], ";",
+       "\[IndentingNewLine]", 
+      RowBox[{"Grid", "[", 
+       RowBox[{"{", 
+        RowBox[{"{", "text", "}"}], "}"}], "]"}]}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"f", ",", "1", ",", "\"\<content\>\""}], "}"}], ",", "1", ",", 
-     "10", ",", "1", ",", 
+     "4", ",", "1", ",", 
      RowBox[{"ControlType", "\[Rule]", " ", "Slider"}]}], "}"}], ",", 
    "\[IndentingNewLine]", 
    RowBox[{"TrackedSymbols", "\[RuleDelayed]", "True"}], ",", 
@@ -811,7 +817,8 @@ Cell[BoxData[
    3.644088662473714*^9, 3.644088678558322*^9}, {3.64408907207867*^9, 
    3.644089114431905*^9}, {3.644089150528514*^9, 3.644089248770337*^9}, {
    3.6440893872911882`*^9, 3.6440895162390814`*^9}, {3.6440895928507423`*^9, 
-   3.644089592961753*^9}, {3.644089647684225*^9, 3.644089656388095*^9}}],
+   3.644089592961753*^9}, {3.644089647684225*^9, 3.644089656388095*^9}, {
+   3.6441518071297693`*^9, 3.644151850297625*^9}}],
 
 Cell[BoxData[
  TagBox[
@@ -820,23 +827,22 @@ Cell[BoxData[
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`f$$], 1, "content"}, 1, 10, 1}}, Typeset`size$$ = 
+       Hold[$CellContext`f$$], 1, "content"}, 1, 4, 1}}, Typeset`size$$ = 
     Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`f$128308$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`f$17024$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`f$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`f$$, $CellContext`f$128308$$, 0]}, 
+        Hold[$CellContext`f$$, $CellContext`f$17024$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> 
-      Module[{CloudObject`Private`text$, CloudObject`Private`content$}, 
-        CloudObject`Private`text$ = 
-         Switch[CloudObject`Private`content$, 1, "ya", 2, "yo", 3, "yu", 4, 
-           "yeh"]; CloudObject`Private`content$ = $CellContext`f$$; Null], 
-      "Specifications" :> {{{$CellContext`f$$, 1, "content"}, 1, 10, 1, 
+      Module[{$CellContext`text$}, $CellContext`text$ = 
+         Switch[$CellContext`f$$, 1, "ya", 2, "yo", 3, "yu", 4, "yeh"]; 
+        Grid[{{$CellContext`text$}}]], 
+      "Specifications" :> {{{$CellContext`f$$, 1, "content"}, 1, 4, 1, 
          ControlType -> Slider}}, 
       "Options" :> {
        TrackedSymbols :> True, SynchronousInitialization -> False, 
@@ -856,11 +862,12 @@ Cell[BoxData[
  CellChangeTimes->{{3.6440884990315943`*^9, 3.644088512983594*^9}, 
    3.6440886267181387`*^9, 3.644088665451011*^9, 3.6440892524717073`*^9, {
    3.6440894176872272`*^9, 3.6440894398114395`*^9}, {3.644089495463004*^9, 
-   3.644089518731331*^9}, 3.644089601776634*^9}]
+   3.644089518731331*^9}, 3.644089601776634*^9, 3.644151834971944*^9, 
+   3.644151897823407*^9, 3.6441541678334293`*^9}]
 }, Open  ]]
 },
-WindowSize->{1666, 968},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{1680, 1008},
+WindowMargins->{{1672, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -875,44 +882,44 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 94, 2, 31, "Input"],
+Cell[558, 20, 138, 3, 31, "Input"],
 Cell[CellGroupData[{
-Cell[677, 26, 6625, 138, 332, "Input"],
-Cell[7305, 166, 5216, 106, 592, "Output"]
+Cell[721, 27, 6625, 138, 312, "Input"],
+Cell[7349, 167, 4903, 96, 592, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12558, 277, 1172, 34, 31, "Input"],
-Cell[13733, 313, 1228, 29, 180, "Output"]
+Cell[12289, 268, 1172, 34, 31, "Input"],
+Cell[13464, 304, 1324, 31, 180, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14998, 347, 797, 22, 52, "Input"],
-Cell[15798, 371, 2165, 43, 164, "Output"]
+Cell[14825, 340, 797, 22, 52, "Input"],
+Cell[15625, 364, 2172, 44, 164, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18000, 419, 958, 27, 31, "Input"],
-Cell[18961, 448, 1966, 40, 220, "Output"]
+Cell[17834, 413, 958, 27, 31, "Input"],
+Cell[18795, 442, 2022, 40, 220, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20964, 493, 1191, 33, 52, "Input"],
-Cell[22158, 528, 692, 19, 108, "Output"]
+Cell[20854, 487, 1191, 33, 52, "Input"],
+Cell[22048, 522, 781, 21, 108, "Output"]
 }, Open  ]],
-Cell[22865, 550, 94, 1, 31, "Input"],
+Cell[22844, 546, 94, 1, 31, "Input"],
 Cell[CellGroupData[{
-Cell[22984, 555, 1664, 44, 72, "Input"],
-Cell[24651, 601, 875, 24, 345, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[25563, 630, 1368, 39, 31, "Input"],
-Cell[26934, 671, 1312, 31, 180, "Output"]
-}, Open  ]],
-Cell[28261, 705, 94, 1, 31, "Input"],
-Cell[CellGroupData[{
-Cell[28380, 710, 1448, 43, 52, "Input"],
-Cell[29831, 755, 690, 16, 375, "Output"]
+Cell[22963, 551, 1664, 44, 72, "Input"],
+Cell[24630, 597, 974, 26, 345, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30558, 776, 1733, 37, 152, "Input"],
-Cell[32294, 815, 2218, 43, 512, "Output"]
+Cell[25641, 628, 1368, 39, 31, "Input"],
+Cell[27012, 669, 1397, 33, 68, "Output"]
+}, Open  ]],
+Cell[28424, 705, 94, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[28543, 710, 1448, 43, 52, "Input"],
+Cell[29994, 755, 791, 18, 375, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30822, 778, 1888, 42, 152, "Input"],
+Cell[32713, 822, 2193, 43, 512, "Output"]
 }, Open  ]]
 }
 ]
