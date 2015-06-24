@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    160247,       3157]
-NotebookOptionsPosition[    157898,       3074]
-NotebookOutlinePosition[    158242,       3089]
-CellTagsIndexPosition[    158199,       3086]
+NotebookDataLength[    160083,       3147]
+NotebookOptionsPosition[    157820,       3068]
+NotebookOutlinePosition[    158164,       3083]
+CellTagsIndexPosition[    158121,       3080]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1148,8 +1148,6 @@ Cell[BoxData[
    3.6440788780957212`*^9}}]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"Grid", "[", 
   RowBox[{
@@ -1174,8 +1172,7 @@ Cell[BoxData[
    RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]], "Output",
  CellChangeTimes->{
   3.644063525124319*^9, 3.644063633391799*^9, 3.6440787881107235`*^9, {
-   3.644078838249737*^9, 3.644078878102722*^9}}]
-}, Open  ]],
+   3.644078838249737*^9, 3.644078878102722*^9}}],
 
 Cell[CellGroupData[{
 
@@ -2532,8 +2529,6 @@ Cell[BoxData[""], "Input",
    3.6440687733800497`*^9, 3.6440687851370497`*^9}, {3.64406891460205*^9, 
    3.6440690126290493`*^9}, 3.6440788758604975`*^9}],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  TagBox[
   StyleBox[
@@ -2605,8 +2600,7 @@ Cell[BoxData[
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{
-  3.6440787883587484`*^9, {3.644078838540766*^9, 3.644078878322744*^9}}]
-}, Open  ]],
+  3.6440787883587484`*^9, {3.644078838540766*^9, 3.644078878322744*^9}}],
 
 Cell[CellGroupData[{
 
@@ -2617,8 +2611,8 @@ Cell[BoxData["\[IndentingNewLine]"], "Input",
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"ReplaceAll", "::", "reps"}], "MessageName"], 
-  RowBox[{":", " "}], "\"\<\[NoBreak]\!\({\*
+   RowBox[{"ReplaceAll", "::", "reps"}], "MessageName"], ":", 
+  " ", "\<\"\[NoBreak]\!\({\*
 GraphicsBox[{},
 AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
 Axes->{True, True},
@@ -2653,7 +2647,7 @@ table, and so cannot be used for replacing. \!\(\*ButtonBox[\\\"\
 Appearance->{Automatic, None},
 BaseStyle->\\\"Link\\\",
 ButtonData:>\\\"paclet:ref/message/ReplaceAll/reps\\\",
-ButtonNote->\\\"ReplaceAll::reps\\\"]\)\>\""}]], "Message", "MSG",
+ButtonNote->\\\"ReplaceAll::reps\\\"]\)\"\>"}]], "Message", "MSG",
  GeneratedCell->False,
  CellAutoOverwrite->False,
  CellChangeTimes->{{3.644078789514864*^9, 3.6440788101709294`*^9}, {
@@ -3108,56 +3102,52 @@ Cell[CellGroupData[{
 Cell[61447, 1125, 309, 8, 31, "Input"],
 Cell[61759, 1135, 440, 12, 33, "Output"]
 }, Open  ]],
+Cell[62214, 1150, 388, 10, 33, "Input"],
+Cell[62605, 1162, 460, 12, 33, "Output"],
 Cell[CellGroupData[{
-Cell[62236, 1152, 388, 10, 33, InheritFromParent],
-Cell[62627, 1164, 460, 12, 33, "Output"]
+Cell[63090, 1178, 381, 9, 31, "Input"],
+Cell[63474, 1189, 467, 12, 52, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[63124, 1181, 381, 9, 31, "Input"],
-Cell[63508, 1192, 467, 12, 52, "Output"]
+Cell[63978, 1206, 507, 14, 31, "Input"],
+Cell[64488, 1222, 641, 17, 51, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[64012, 1209, 507, 14, 31, "Input"],
-Cell[64522, 1225, 641, 17, 51, "Output"]
+Cell[65166, 1244, 290, 7, 31, "Input"],
+Cell[65459, 1253, 482, 13, 41, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[65200, 1247, 290, 7, 31, "Input"],
-Cell[65493, 1256, 482, 13, 41, "Output"]
+Cell[65978, 1271, 1460, 36, 52, "Input"],
+Cell[67441, 1309, 58335, 1011, 238, "Output"]
+}, Open  ]],
+Cell[125791, 2323, 93, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[125909, 2328, 1798, 43, 52, "Input"],
+Cell[127710, 2373, 2059, 44, 466, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[66012, 1274, 1460, 36, 52, "Input"],
-Cell[67475, 1312, 58335, 1011, 271, "Output"]
+Cell[129806, 2422, 2072, 56, 92, "Input"],
+Cell[131881, 2480, 1423, 43, 303, "Output"]
 }, Open  ]],
-Cell[125825, 2326, 93, 1, 31, "Input"],
+Cell[133319, 2526, 222, 3, 31, "Input"],
+Cell[133544, 2531, 1720, 34, 468, "Input"],
+Cell[135267, 2567, 1746, 35, 468, "Output"],
 Cell[CellGroupData[{
-Cell[125943, 2331, 1798, 43, 52, "Input"],
-Cell[127744, 2376, 2059, 44, 466, "Output"]
+Cell[137038, 2606, 193, 2, 52, "Input"],
+Cell[137234, 2610, 1784, 43, 429, "Message"]
 }, Open  ]],
+Cell[139033, 2656, 120, 2, 31, "Input"],
 Cell[CellGroupData[{
-Cell[129840, 2425, 2072, 56, 92, "Input"],
-Cell[131915, 2483, 1423, 43, 303, "Output"]
-}, Open  ]],
-Cell[133353, 2529, 222, 3, 31, "Input"],
-Cell[CellGroupData[{
-Cell[133600, 2536, 1720, 34, 468, InheritFromParent],
-Cell[135323, 2572, 1746, 35, 468, "Output"]
+Cell[139178, 2662, 1125, 30, 52, "Input"],
+Cell[140306, 2694, 1962, 43, 460, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[137106, 2612, 193, 2, 52, "Input"],
-Cell[137302, 2616, 1794, 43, 429, "Message"]
-}, Open  ]],
-Cell[139111, 2662, 120, 2, 31, "Input"],
-Cell[CellGroupData[{
-Cell[139256, 2668, 1125, 30, 52, "Input"],
-Cell[140384, 2700, 1962, 43, 460, "Output"]
+Cell[142305, 2742, 794, 22, 31, "Input"],
+Cell[143102, 2766, 1829, 36, 468, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[142383, 2748, 794, 22, 31, "Input"],
-Cell[143180, 2772, 1829, 36, 468, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[145046, 2813, 7293, 145, 292, "Input"],
-Cell[152342, 2960, 5540, 111, 625, "Output"]
+Cell[144968, 2807, 7293, 145, 292, "Input"],
+Cell[152264, 2954, 5540, 111, 592, "Output"]
 }, Open  ]]
 }
 ]

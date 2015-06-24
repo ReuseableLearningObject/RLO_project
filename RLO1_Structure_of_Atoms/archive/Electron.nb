@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     42854,       1126]
-NotebookOptionsPosition[     41302,       1068]
-NotebookOutlinePosition[     41646,       1083]
-CellTagsIndexPosition[     41603,       1080]
+NotebookDataLength[     45798,       1189]
+NotebookOptionsPosition[     44168,       1128]
+NotebookOutlinePosition[     44512,       1143]
+CellTagsIndexPosition[     44469,       1140]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -62,11 +62,11 @@ Cell[BoxData[
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0.001, 4 Pi}}, Typeset`size$$ = {
     360., {178., 181.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`t$22594$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$5601$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0.001}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$22594$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$5601$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -99,7 +99,8 @@ Cell[BoxData[
  CellChangeTimes->{
   3.643456381557003*^9, 3.6434567179780025`*^9, {3.643456843991003*^9, 
    3.6434568507870026`*^9}, 3.6434571121860027`*^9, 3.643464130871478*^9, {
-   3.643464254833873*^9, 3.643464277248114*^9}, 3.643466194620832*^9}]
+   3.643464254833873*^9, 3.643464277248114*^9}, 3.643466194620832*^9, 
+   3.644148691195632*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -292,59 +293,40 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{CloudObject`Private`carbon$$ = True, 
-    CloudObject`Private`fast$$ = True, CloudObject`Private`nitrogen$$ = True, 
-    CloudObject`Private`oxygen$$ = True, CloudObject`Private`pt$$ = {0, 0}, 
-    CloudObject`Private`sulfur$$ = True, CloudObject`Private`zoom$$ = 0, 
-    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[CloudObject`Private`pt$$], {0, 0}, "rotation"}, {0, 0}, {
-      2 Pi, Pi}}, {{
-       Hold[CloudObject`Private`fast$$], True, "fast mode"}, {True, False}}, {{
-       Hold[CloudObject`Private`nitrogen$$], True, "show nitrogen"}, {
+   DynamicModuleBox[{$CellContext`carbon$$ = True, $CellContext`fast$$ = 
+    True, $CellContext`nitrogen$$ = True, $CellContext`oxygen$$ = 
+    True, $CellContext`pt$$ = {0, 0}, $CellContext`sulfur$$ = 
+    True, $CellContext`zoom$$ = 0, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`pt$$], {0, 0}, "rotation"}, {0, 0}, {2 Pi, Pi}}, {{
+       Hold[$CellContext`fast$$], True, "fast mode"}, {True, False}}, {{
+       Hold[$CellContext`nitrogen$$], True, "show nitrogen"}, {
       True, False}}, {{
-       Hold[CloudObject`Private`oxygen$$], True, "show oxygen"}, {
-      True, False}}, {{
-       Hold[CloudObject`Private`carbon$$], True, "show carbon"}, {
-      True, False}}, {{
-       Hold[CloudObject`Private`sulfur$$], True, "show sulfur"}, {
-      True, False}}, {{
-       Hold[CloudObject`Private`zoom$$], 0, "zoom"}, 0, Rational[1, 8] Pi}}, 
+       Hold[$CellContext`oxygen$$], True, "show oxygen"}, {True, False}}, {{
+       Hold[$CellContext`carbon$$], True, "show carbon"}, {True, False}}, {{
+       Hold[$CellContext`sulfur$$], True, "show sulfur"}, {True, False}}, {{
+       Hold[$CellContext`zoom$$], 0, "zoom"}, 0, Rational[1, 8] Pi}}, 
     Typeset`size$$ = {381., {196., 201.}}, Typeset`update$$ = 0, 
-    Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
-    CloudObject`Private`pt$10106$$ = {0, 0}, 
-    CloudObject`Private`fast$10107$$ = False, 
-    CloudObject`Private`nitrogen$10108$$ = False, 
-    CloudObject`Private`oxygen$10109$$ = False, 
-    CloudObject`Private`carbon$10110$$ = False, 
-    CloudObject`Private`sulfur$10111$$ = False, 
-    CloudObject`Private`zoom$10112$$ = 0}, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`pt$5653$$ = {0, 0}, $CellContext`fast$5654$$ = 
+    False, $CellContext`nitrogen$5655$$ = False, $CellContext`oxygen$5656$$ = 
+    False, $CellContext`carbon$5657$$ = False, $CellContext`sulfur$5658$$ = 
+    False, $CellContext`zoom$5659$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
-      "Variables" :> {
-       CloudObject`Private`carbon$$ = True, CloudObject`Private`fast$$ = True,
-         CloudObject`Private`nitrogen$$ = True, CloudObject`Private`oxygen$$ = 
-        True, CloudObject`Private`pt$$ = {0, 0}, CloudObject`Private`sulfur$$ = 
-        True, CloudObject`Private`zoom$$ = 0}, "ControllerVariables" :> {
-        Hold[
-        CloudObject`Private`pt$$, CloudObject`Private`pt$10106$$, {0, 0}], 
-        Hold[
-        CloudObject`Private`fast$$, CloudObject`Private`fast$10107$$, False], 
-        Hold[
-        CloudObject`Private`nitrogen$$, CloudObject`Private`nitrogen$10108$$, 
-         False], 
-        Hold[
-        CloudObject`Private`oxygen$$, CloudObject`Private`oxygen$10109$$, 
-         False], 
-        Hold[
-        CloudObject`Private`carbon$$, CloudObject`Private`carbon$10110$$, 
-         False], 
-        Hold[
-        CloudObject`Private`sulfur$$, CloudObject`Private`sulfur$10111$$, 
-         False], 
-        Hold[
-        CloudObject`Private`zoom$$, CloudObject`Private`zoom$10112$$, 0]}, 
+      "Variables" :> {$CellContext`carbon$$ = True, $CellContext`fast$$ = 
+        True, $CellContext`nitrogen$$ = True, $CellContext`oxygen$$ = 
+        True, $CellContext`pt$$ = {0, 0}, $CellContext`sulfur$$ = 
+        True, $CellContext`zoom$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`pt$$, $CellContext`pt$5653$$, {0, 0}], 
+        Hold[$CellContext`fast$$, $CellContext`fast$5654$$, False], 
+        Hold[$CellContext`nitrogen$$, $CellContext`nitrogen$5655$$, False], 
+        Hold[$CellContext`oxygen$$, $CellContext`oxygen$5656$$, False], 
+        Hold[$CellContext`carbon$$, $CellContext`carbon$5657$$, False], 
+        Hold[$CellContext`sulfur$$, $CellContext`sulfur$5658$$, False], 
+        Hold[$CellContext`zoom$$, $CellContext`zoom$5659$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -352,55 +334,48 @@ Cell[BoxData[
          Typeset`skipInitDone$$}, "Body" :> Graphics3D[{
          Specularity[White, 50], 
          Dynamic[
-          If[CloudObject`Private`nitrogen$$, CloudObject`Private`n, {}]], 
+          If[$CellContext`nitrogen$$, $CellContext`n, {}]], 
          Dynamic[
-          CloudObject`Private`if[
-          CloudObject`Private`oxygen$$, CloudObject`Private`o, {}]], 
+          $CellContext`if[$CellContext`oxygen$$, $CellContext`o, {}]], 
          Dynamic[
-          If[CloudObject`Private`carbon$$, CloudObject`Private`c, {}]], 
+          If[$CellContext`carbon$$, $CellContext`c, {}]], 
          Dynamic[
-          If[CloudObject`Private`sulfur$$, CloudObject`Private`s, {}]]}, 
-        Lighting -> Dynamic[{{"Point", 
-            GrayLevel[0.7], {40 Cos[-Part[CloudObject`Private`pt$$, 1]] Sin[
-               Part[CloudObject`Private`pt$$, 2]], 40 
-             Sin[-Part[CloudObject`Private`pt$$, 1]] Sin[
-               Part[CloudObject`Private`pt$$, 2]], 40 Cos[
-               Part[CloudObject`Private`pt$$, 2]]}, 1.5}}], 
-        ImageSize -> {381, 397}, Boxed -> False, 
-        Method -> {"SpherePoints" -> Dynamic[
-            If[CloudObject`Private`fast$$, 5, 7]]}, ViewPoint -> 
-        Dynamic[{2 Cos[-Part[CloudObject`Private`pt$$, 1]] Sin[
-             Part[CloudObject`Private`pt$$, 2]], 2 
-           Sin[-Part[CloudObject`Private`pt$$, 1]] Sin[
-             Part[CloudObject`Private`pt$$, 2]], 2 Cos[
-             Part[CloudObject`Private`pt$$, 2]]}, None], 
+          If[$CellContext`sulfur$$, $CellContext`s, {}]]}, Lighting -> 
+        Dynamic[{{"Point", 
+            GrayLevel[0.7], {40 Cos[-Part[$CellContext`pt$$, 1]] Sin[
+               Part[$CellContext`pt$$, 2]], 40 
+             Sin[-Part[$CellContext`pt$$, 1]] Sin[
+               Part[$CellContext`pt$$, 2]], 40 Cos[
+               Part[$CellContext`pt$$, 2]]}, 1.5}}], ImageSize -> {381, 397}, 
+        Boxed -> False, Method -> {"SpherePoints" -> Dynamic[
+            If[$CellContext`fast$$, 5, 7]]}, ViewPoint -> 
+        Dynamic[{2 Cos[-Part[$CellContext`pt$$, 1]] Sin[
+             Part[$CellContext`pt$$, 2]], 2 Sin[-Part[$CellContext`pt$$, 1]] 
+           Sin[
+             Part[$CellContext`pt$$, 2]], 2 Cos[
+             Part[$CellContext`pt$$, 2]]}, None], 
         PlotRange -> {{-20, -20}, {-20, -20}, {-20, -20}}, SphericalRegion -> 
-        True, ViewAngle -> Dynamic[Pi/6 - CloudObject`Private`zoom$$], 
-        Background -> Black], 
-      "Specifications" :> {{{CloudObject`Private`pt$$, {0, 0}, "rotation"}, {
-         0, 0}, {2 Pi, Pi}, ImageSize -> Small}, {{
-         CloudObject`Private`fast$$, True, "fast mode"}, {True, False}}, {{
-         CloudObject`Private`nitrogen$$, True, "show nitrogen"}, {
-         True, False}}, {{
-         CloudObject`Private`oxygen$$, True, "show oxygen"}, {
-         True, False}}, {{
-         CloudObject`Private`carbon$$, True, "show carbon"}, {
-         True, False}}, {{
-         CloudObject`Private`sulfur$$, True, "show sulfur"}, {
-         True, False}}, {{CloudObject`Private`zoom$$, 0, "zoom"}, 0, 
-         Rational[1, 8] Pi, ControlType -> VerticalSlider}}, 
+        True, ViewAngle -> Dynamic[Pi/6 - $CellContext`zoom$$], Background -> 
+        Black], "Specifications" :> {{{$CellContext`pt$$, {0, 0}, 
+          "rotation"}, {0, 0}, {2 Pi, Pi}, ImageSize -> 
+         Small}, {{$CellContext`fast$$, True, "fast mode"}, {
+         True, False}}, {{$CellContext`nitrogen$$, True, "show nitrogen"}, {
+         True, False}}, {{$CellContext`oxygen$$, True, "show oxygen"}, {
+         True, False}}, {{$CellContext`carbon$$, True, "show carbon"}, {
+         True, False}}, {{$CellContext`sulfur$$, True, "show sulfur"}, {
+         True, False}}, {{$CellContext`zoom$$, 0, "zoom"}, 0, Rational[1, 8] 
+         Pi, ControlType -> VerticalSlider}}, 
       "Options" :> {
        ControlPlacement -> {Top, Left, Left, Left, Left, Left, Left}, 
         AutorunSequencing -> {1}, 
-        TrackedSymbols :> {
-         CloudObject`Private`pt$$, CloudObject`Private`nitrogen$$, 
-          CloudObject`Private`oxygen$$, CloudObject`Private`carbon$$, 
-          CloudObject`Private`sulfur$$, CloudObject`Private`zoom$$}}, 
-      "DefaultOptions" :> {}],
+        TrackedSymbols :> {$CellContext`pt$$, $CellContext`nitrogen$$, \
+$CellContext`oxygen$$, $CellContext`carbon$$, $CellContext`sulfur$$, \
+$CellContext`zoom$$}}, "DefaultOptions" :> {}],
      ImageSizeCache->{541., {261., 268.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
+    Initialization:>({$CellContext`n = 1}; Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
     UnsavedVariables:>{Typeset`initDone$$},
@@ -409,7 +384,8 @@ Cell[BoxData[
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{3.64346197407582*^9, 3.643462030632475*^9, 
-  3.643464280122401*^9, 3.6434661947478447`*^9, 3.643542078648508*^9}]
+  3.643464280122401*^9, 3.6434661947478447`*^9, 3.643542078648508*^9, 
+  3.644148691453658*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -474,17 +450,17 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 0.6400642395019531, Typeset`show$$ = 
-    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+   DynamicModuleBox[{$CellContext`t$$ = 0., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`t$$], 0, "time"}, 0, 10}}, Typeset`size$$ = {
     450., {127., 130.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`t$2699$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$5695$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$2699$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$5695$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -507,7 +483,8 @@ Cell[BoxData[
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.6434775301265545`*^9, 3.643477551538555*^9}}]
+ CellChangeTimes->{{3.6434775301265545`*^9, 3.643477551538555*^9}, 
+   3.6441486915176644`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -522,11 +499,11 @@ Cell[BoxData[
 Cell[BoxData[
  ButtonBox["\<\"1s\"\>",
   Appearance->Automatic,
-  ButtonFunction:>CloudObject`Private`Orbits,
+  ButtonFunction:>$CellContext`Orbits,
   Evaluator->Automatic,
   Method->"Preemptive"]], "Output",
  CellChangeTimes->{{3.643467083091674*^9, 3.643467093272561*^9}, 
-   3.643471170632555*^9, 3.643471521964755*^9}]
+   3.643471170632555*^9, 3.643471521964755*^9, 3.644148691554668*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -602,10 +579,45 @@ Cell[BoxData[
     ButtonFunction:>($CellContext`t = False),
     Evaluator->Automatic,
     Method->"Preemptive"], ",", 
-   DynamicBox[ToBoxes[
-     Refresh[$CellContext`x, UpdateInterval -> 0], StandardForm],
-    ImageSizeCache->{61., {0., 8.}}]}], "}"}]], "Output",
- CellChangeTimes->{3.6434727970901546`*^9}]
+   TagBox[
+    StyleBox[
+     DynamicModuleBox[{$CellContext`t$$ = 0., Typeset`show$$ = True, 
+      Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+      Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+      "\"untitled\"", Typeset`specs$$ = {{{
+         Hold[$CellContext`t$$], 0, "time"}, 0, 10}}, Typeset`size$$ = {
+      450., {127., 130.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+      Typeset`skipInitDone$$ = True, $CellContext`t$5717$$ = 0}, 
+      DynamicBox[Manipulate`ManipulateBoxes[
+       1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
+        "ControllerVariables" :> {
+          Hold[$CellContext`t$$, $CellContext`t$5717$$, 0]}, 
+        "OtherVariables" :> {
+         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+          Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+          Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> 
+        Graphics[{Thick, 
+           Circle[{0, 0}, 1], Red, 
+           PointSize[0.04], 
+           Point[{
+             Cos[2 $CellContext`t$$], 
+             Sin[2 $CellContext`t$$]}]}, 
+          PlotRange -> {{-1.2, 3}, {-1.2, 1.2}}, ImageSize -> 450], 
+        "Specifications" :> {{{$CellContext`t$$, 0, "time"}, 0, 10, 
+           ControlType -> Trigger}}, "Options" :> {}, "DefaultOptions" :> {}],
+       ImageSizeCache->{501., {172., 179.}},
+       SingleEvaluation->True],
+      Deinitialization:>None,
+      DynamicModuleValues:>{},
+      SynchronousInitialization->True,
+      UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+      UnsavedVariables:>{Typeset`initDone$$},
+      UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+     Deployed->True,
+     StripOnInput->False],
+    Manipulate`InterpretManipulate[1]]}], "}"}]], "Output",
+ CellChangeTimes->{3.6434727970901546`*^9, 3.644148691603673*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -627,7 +639,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.643472824358955*^9, 3.643472824390155*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`a$$ = "end"}, 
+ DynamicModuleBox[{$CellContext`a$$ = "start"}, 
   RowBox[{"{", 
    RowBox[{
     ButtonBox["\<\"does not time out\"\>",
@@ -636,9 +648,9 @@ Cell[BoxData[
      Evaluator->Automatic,
      Method->"Queued"], ",", 
     DynamicBox[ToBoxes[$CellContext`a$$, StandardForm],
-     ImageSizeCache->{24., {0., 8.}}]}], "}"}],
+     ImageSizeCache->{40., {0., 7.}}]}], "}"}],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.643472825076555*^9}]
+ CellChangeTimes->{3.643472825076555*^9, 3.644148691613674*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -670,7 +682,7 @@ Cell[BoxData[
     DynamicBox[ToBoxes[$CellContext`a$$, StandardForm],
      ImageSizeCache->{40., {0., 7.}}]}], "}"}],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.6434728403801546`*^9}]
+ CellChangeTimes->{3.6434728403801546`*^9, 3.644148691622675*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -700,7 +712,7 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"st", "=", "Blue"}], ";"}], "\[IndentingNewLine]", 
-  "\[IndentingNewLine]"}], "\n", 
+  "\n"}], "\[IndentingNewLine]", 
  RowBox[{"Panel", "[", 
   RowBox[{"Column", "@", 
    RowBox[{"{", 
@@ -763,7 +775,7 @@ Cell[BoxData[
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Column"]]], "Output",
  CellChangeTimes->{3.643477755109555*^9, 3.643478332622555*^9, 
-  3.64354882297204*^9}]
+  3.64354882297204*^9, 3.6441486916366763`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -886,8 +898,8 @@ Cell[BoxData[{
  CellChangeTimes->{{3.6434777944475546`*^9, 3.6434777944755545`*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{CloudObject`Private`redness$$ = RGBColor[1, 0, 0], 
-  CloudObject`Private`reds$$ = {{
+ DynamicModuleBox[{$CellContext`redness$$ = RGBColor[
+  1, 0, 0], $CellContext`reds$$ = {{
     RGBColor[1, 0, 0], 
     Text["grumpy", {0.18372941641066354`, 0.7792523485576668}]}, {
     RGBColor[1, 0, 0], 
@@ -907,9 +919,9 @@ Cell[BoxData[
     RGBColor[1, 0, 0], 
     Text["jovial", {0.3987788569609563, 0.998553097614155}]}, {
     RGBColor[1, 0, 0], 
-    Text["queen", {0.2404649903812357, 0.7182914332936523}]}}, 
-  CloudObject`Private`r$$ = 3, CloudObject`Private`blueness$$ = RGBColor[
-  0, 0, 1], CloudObject`Private`blues$$ = {{
+    Text["queen", {0.2404649903812357, 
+     0.7182914332936523}]}}, $CellContext`r$$ = 1, $CellContext`blueness$$ = 
+  RGBColor[0, 0, 1], $CellContext`blues$$ = {{
     RGBColor[0, 0, 1], 
     Text["grumpy", {0.34679086391104574`, 0.7286860941191924}]}, {
     RGBColor[0, 0, 1], 
@@ -929,27 +941,28 @@ Cell[BoxData[
     RGBColor[0, 0, 1], 
     Text["jovial", {0.8294483208914716, 0.12215707521188035`}]}, {
     RGBColor[0, 0, 1], 
-    Text["queen", {0.32664500395625407`, 0.6810123884030175}]}}, 
-  CloudObject`Private`b$$ = 3}, 
+    Text["queen", {0.32664500395625407`, 
+     0.6810123884030175}]}}, $CellContext`b$$ = 1}, 
   DynamicBox[ToBoxes[
     Column[{
-      Graphics[{CloudObject`Private`reds$$, CloudObject`Private`blues$$}, 
-       Frame -> True, ImageSize -> Medium], 
+      Graphics[{$CellContext`reds$$, $CellContext`blues$$}, Frame -> True, 
+       ImageSize -> Medium], 
       Row[{
         Button[
-         Part[{"Show Red", "Hide Red"}, Mod[CloudObject`Private`r$$, 2] + 1], 
-         CloudObject`Private`redness$$ = Part[{Red, Transparent}, Mod[
-             Increment[CloudObject`Private`r$$], 2] + 1]], "  ", 
+         Part[{"Show Red", "Hide Red"}, Mod[$CellContext`r$$, 2] + 
+          1], $CellContext`redness$$ = Part[{Red, Transparent}, Mod[
+             Increment[$CellContext`r$$], 2] + 1]], "  ", 
         Button[
-         Part[{"Show Blue", "Hide Blue"}, Mod[CloudObject`Private`b$$, 2] + 
-          1], CloudObject`Private`blueness$$ = Part[{Blue, Transparent}, Mod[
-             Increment[CloudObject`Private`b$$], 2] + 1]]}]}, Alignment -> 
-     Right], StandardForm],
+         Part[{"Show Blue", "Hide Blue"}, Mod[$CellContext`b$$, 2] + 
+          1], $CellContext`blueness$$ = Part[{Blue, Transparent}, Mod[
+             Increment[$CellContext`b$$], 2] + 1]]}]}, Alignment -> Right], 
+    StandardForm],
    ImageSizeCache->{360., {202., 209.}}],
   DynamicModuleValues:>{},
-  Initialization:>(CloudObject`Private`redness$$ = Red; 
-   CloudObject`Private`blueness$$ = Blue; Null)]], "Output",
- CellChangeTimes->{3.643477798989555*^9, 3.6435492289283667`*^9}]
+  Initialization:>($CellContext`redness$$ = Red; $CellContext`blueness$$ = 
+    Blue; Null)]], "Output",
+ CellChangeTimes->{3.643477798989555*^9, 3.6435492289283667`*^9, 
+  3.644148691665679*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -964,7 +977,7 @@ Cell[BoxData[
 
 Cell[BoxData[
  TagBox[
-  DynamicModuleBox[{Typeset`var$$ = 4}, 
+  DynamicModuleBox[{Typeset`var$$ = 1}, 
    InterpretationBox[
     PopupMenuBox[Dynamic[Typeset`var$$], {1->
      TagBox["a",
@@ -975,11 +988,11 @@ Cell[BoxData[
       {"ResetImageSizeLevel", 2}], 4->
      TagBox["d",
       {"ResetImageSizeLevel", 2}]}],
-    PopupView[{$CellContext`a, CloudObject`Private`b, CloudObject`Private`c, 
-      CloudObject`Private`d}, 1]],
+    PopupView[{$CellContext`a, $CellContext`b, $CellContext`c, \
+$CellContext`d}, 1]],
    DynamicModuleValues:>{}],
   Setting[#, {0}]& ]], "Output",
- CellChangeTimes->{3.6435488622276106`*^9}]
+ CellChangeTimes->{3.6435488622276106`*^9, 3.644148691692682*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1045,8 +1058,11 @@ Cell[BoxData[
          RowBox[{"{", "}"}]}], ",", 
        RowBox[{"RotateLabel", "\[Rule]", "False"}], ",", 
        RowBox[{"Spacings", "\[Rule]", "Automatic"}]}], "]"}]& )]], "Output",
- CellChangeTimes->{{3.6435490200382605`*^9, 3.6435490404838915`*^9}}]
+ CellChangeTimes->{{3.6435490200382605`*^9, 3.6435490404838915`*^9}, 
+   3.644148691703683*^9}]
 }, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"Panel", "[", 
@@ -1064,7 +1080,51 @@ Cell[BoxData[
        RowBox[{"x", ",", 
         RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
       RowBox[{"PlotRange", "\[Rule]", "5"}]}], "]"}]}]}], "]"}]], "Input",
- CellChangeTimes->{{3.6435492537224064`*^9, 3.6435492647402024`*^9}}]
+ CellChangeTimes->{{3.6435492537224064`*^9, 3.6435492647402024`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{PanelBox[
+    InterpretationBox[
+     PopupMenuBox[
+      Dynamic[$CellContext`n], {
+      1 -> TagBox["1", {"ResetImageSizeLevel", 2}], 2 -> 
+       TagBox["2", {"ResetImageSizeLevel", 2}], 3 -> 
+       TagBox["3", {"ResetImageSizeLevel", 2}], 4 -> 
+       TagBox["4", {"ResetImageSizeLevel", 2}], 5 -> 
+       TagBox["5", {"ResetImageSizeLevel", 2}]}], 
+     PopupView[{1, 2, 3, 4, 5}, 
+      Dynamic[$CellContext`n]]]],DynamicBox[
+    ToBoxes[
+     Plot[
+      ChebyshevT[$CellContext`n, $CellContext`x], {$CellContext`x, -2, 2}, 
+      PlotRange -> 5], StandardForm]]},
+  "Labeled",
+  DisplayFunction->(GridBox[{{
+      ItemBox[#2, Alignment -> {Left, Inherited}, DefaultBaseStyle -> 
+       "PanelLabel"]}, {
+      TagBox[
+       ItemBox[
+        PaneBox[
+         TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline}, 
+         BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
+       "SkipImageSizeLevel"]}}, 
+    GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
+    AutoDelete -> False, 
+    GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+    BaselinePosition -> {2, 1}]& ),
+  InterpretationFunction->(RowBox[{"Labeled", "[", 
+     RowBox[{#, ",", 
+       RowBox[{"{", #2, "}"}], ",", 
+       RowBox[{"{", 
+         RowBox[{"{", 
+           RowBox[{"Top", ",", "Left"}], "}"}], "}"}], ",", 
+       RowBox[{"DefaultLabelStyle", "\[Rule]", "\"PanelLabel\""}], ",", 
+       RowBox[{"LabelStyle", "\[Rule]", 
+         RowBox[{"{", "}"}]}], ",", 
+       RowBox[{"RotateLabel", "\[Rule]", "False"}], ",", 
+       RowBox[{"Spacings", "\[Rule]", "Automatic"}]}], "]"}]& )]], "Output",
+ CellChangeTimes->{3.644148691729686*^9}]
+}, Open  ]]
 },
 WindowSize->{1680, 968},
 WindowMargins->{{-8, Automatic}, {Automatic, -8}},
@@ -1084,50 +1144,53 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 1388, 31, 31, "Input"],
-Cell[1971, 55, 2274, 46, 454, "Output"]
+Cell[1971, 55, 2298, 47, 454, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4282, 106, 6958, 183, 152, "Input"],
-Cell[11243, 291, 6048, 120, 546, "Output"]
+Cell[4306, 107, 6958, 183, 152, "Input"],
+Cell[11267, 292, 5354, 95, 546, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17328, 416, 2521, 55, 52, "Input"],
-Cell[19852, 473, 1847, 36, 368, "Output"]
+Cell[16658, 392, 2521, 55, 52, "Input"],
+Cell[19182, 449, 1859, 37, 368, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21736, 514, 281, 5, 31, "Input"],
-Cell[22020, 521, 283, 7, 42, "Output"]
+Cell[21078, 491, 281, 5, 31, "Input"],
+Cell[21362, 498, 298, 7, 42, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[22340, 533, 1998, 54, 112, "Input"],
-Cell[24341, 589, 632, 18, 42, "Output"]
+Cell[21697, 510, 1998, 54, 112, "Input"],
+Cell[23698, 566, 2363, 53, 368, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25010, 612, 579, 14, 52, "Input"],
-Cell[25592, 628, 460, 12, 42, "Output"]
+Cell[26098, 624, 579, 14, 52, "Input"],
+Cell[26680, 640, 484, 12, 42, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26089, 645, 515, 13, 52, "Input"],
-Cell[26607, 660, 464, 12, 42, "Output"]
+Cell[27201, 657, 515, 13, 52, "Input"],
+Cell[27719, 672, 486, 12, 42, "Output"]
 }, Open  ]],
-Cell[27086, 675, 92, 1, 31, "Input"],
+Cell[28220, 687, 92, 1, 31, "Input"],
 Cell[CellGroupData[{
-Cell[27203, 680, 1669, 53, 152, "Input"],
-Cell[28875, 735, 1021, 30, 93, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[29933, 770, 4476, 115, 192, "Input"],
-Cell[34412, 887, 2974, 64, 428, "Output"]
+Cell[28337, 692, 1669, 53, 152, "Input"],
+Cell[30009, 747, 1045, 30, 93, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[37423, 956, 222, 6, 31, "Input"],
-Cell[37648, 964, 572, 17, 43, "Output"]
+Cell[31091, 782, 4476, 115, 192, "Input"],
+Cell[35570, 899, 2894, 65, 428, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[38257, 986, 683, 18, 31, "Input"],
-Cell[38943, 1006, 1757, 41, 181, "Output"]
+Cell[38501, 969, 222, 6, 31, "Input"],
+Cell[38726, 977, 568, 17, 43, "Output"]
 }, Open  ]],
-Cell[40715, 1050, 583, 16, 31, "Input"]
+Cell[CellGroupData[{
+Cell[39331, 999, 683, 18, 31, "Input"],
+Cell[40017, 1019, 1783, 42, 181, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41837, 1066, 583, 16, 31, "Input"],
+Cell[42423, 1084, 1729, 41, 214, "Output"]
+}, Open  ]]
 }
 ]
 *)
