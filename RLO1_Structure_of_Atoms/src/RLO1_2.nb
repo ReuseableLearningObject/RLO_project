@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1440163,      24219]
-NotebookOptionsPosition[   1439665,      24199]
-NotebookOutlinePosition[   1440008,      24214]
-CellTagsIndexPosition[   1439965,      24211]
+NotebookDataLength[   1441341,      24227]
+NotebookOptionsPosition[   1440839,      24207]
+NotebookOutlinePosition[   1441186,      24222]
+CellTagsIndexPosition[   1441143,      24219]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -106,275 +106,278 @@ Cell[BoxData[{
           RowBox[{"Timers", "[", 
            RowBox[{"[", "Orbital", "]"}], "]"}], " ", "=", " ", 
           RowBox[{"timer", "+", "0.2"}]}], ";", "\[IndentingNewLine]", 
-         RowBox[{"Graphics", "[", 
-          RowBox[{
-           RowBox[{"{", "\[IndentingNewLine]", 
-            RowBox[{"Gray", ",", 
-             RowBox[{"Disk", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"0", ",", "0.03"}], "}"}], ",", "0.03"}], "]"}], ",", 
-             "Gray", ",", 
-             RowBox[{"Disk", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"0.03", "*", "1"}], ",", 
-                 RowBox[{"0.03", "*", 
-                  RowBox[{"(", 
-                   RowBox[{
-                    RowBox[{"-", 
-                    RowBox[{"Sqrt", "[", "3", "]"}]}], "+", "1"}], ")"}]}]}], 
-                "}"}], ",", 
-               RowBox[{"0.03", "*", "1"}]}], "]"}], ",", "Gray", ",", 
-             RowBox[{"Disk", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
+         RowBox[{"Grid", "[", 
+          RowBox[{"{", 
+           RowBox[{"{", 
+            RowBox[{"Graphics", "[", 
+             RowBox[{
+              RowBox[{"{", "\[IndentingNewLine]", 
+               RowBox[{"Gray", ",", 
+                RowBox[{"Disk", "[", 
                  RowBox[{
-                  RowBox[{"-", "0.03"}], "*", "1"}], ",", 
-                 RowBox[{"0.03", "*", 
-                  RowBox[{"(", 
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0.03"}], "}"}], ",", "0.03"}], "]"}], 
+                ",", "Gray", ",", 
+                RowBox[{"Disk", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
                    RowBox[{
+                    RowBox[{"0.03", "*", "1"}], ",", 
+                    RowBox[{"0.03", "*", 
+                    RowBox[{"(", 
+                    RowBox[{
                     RowBox[{"-", 
                     RowBox[{"Sqrt", "[", "3", "]"}]}], "+", "1"}], ")"}]}]}], 
-                "}"}], ",", 
-               RowBox[{"0.03", "*", "1"}]}], "]"}], ",", "Black", ",", 
-             RowBox[{"Circle", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"0", ",", 
-                 RowBox[{"0.03", "*", 
-                  RowBox[{"(", 
-                   RowBox[{"1", "-", 
+                   "}"}], ",", 
+                  RowBox[{"0.03", "*", "1"}]}], "]"}], ",", "Gray", ",", 
+                RowBox[{"Disk", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "0.03"}], "*", "1"}], ",", 
+                    RowBox[{"0.03", "*", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", 
+                    RowBox[{"Sqrt", "[", "3", "]"}]}], "+", "1"}], ")"}]}]}], 
+                   "}"}], ",", 
+                  RowBox[{"0.03", "*", "1"}]}], "]"}], ",", "Black", ",", 
+                RowBox[{"Circle", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", 
+                    RowBox[{"0.03", "*", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "-", 
                     RowBox[{"2", "*", 
                     RowBox[{
                     RowBox[{"Sqrt", "[", "3", "]"}], "/", "3"}]}]}], 
-                   ")"}]}]}], "}"}], ",", 
-               RowBox[{"0.03", "*", 
-                RowBox[{"(", 
-                 RowBox[{"1", "+", 
-                  RowBox[{"2", "*", 
-                   RowBox[{
+                    ")"}]}]}], "}"}], ",", 
+                  RowBox[{"0.03", "*", 
+                   RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{"2", "*", 
+                    RowBox[{
                     RowBox[{"Sqrt", "[", "3", "]"}], "/", "3"}]}]}], 
-                 ")"}]}]}], "]"}], ",", "\[IndentingNewLine]", "Thick", ",", 
-             "Red", ",", 
-             RowBox[{"Circle", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"0", ",", "0"}], "}"}], ",", "0.2"}], "]"}], ",", 
-             "Red", ",", 
-             RowBox[{"PointSize", "[", ".01", "]"}], ",", 
-             RowBox[{"Point", "[", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"0.2", "*", 
-                 RowBox[{"Cos", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                    ")"}]}]}], "]"}], ",", "\[IndentingNewLine]", "Thick", 
+                ",", "Red", ",", 
+                RowBox[{"Circle", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0"}], "}"}], ",", "0.2"}], "]"}], ",", 
+                "Red", ",", 
+                RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+                RowBox[{"Point", "[", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"0.2", "*", 
+                    RowBox[{"Cos", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], ",", 
-                RowBox[{"0.2", "*", 
-                 RowBox[{"Sin", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                   RowBox[{"0.2", "*", 
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}]}], "}"}], "]"}],
-              ",", "\[IndentingNewLine]", "Thick", ",", "Blue", ",", 
-             RowBox[{"Circle", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"0", ",", "0"}], "}"}], ",", "0.3"}], "]"}], ",", 
-             "Blue", ",", 
-             RowBox[{"PointSize", "[", ".01", "]"}], ",", 
-             RowBox[{"Point", "[", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"0.3", "*", 
-                 RowBox[{"Cos", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                 ",", "\[IndentingNewLine]", "Thick", ",", "Blue", ",", 
+                RowBox[{"Circle", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0"}], "}"}], ",", "0.3"}], "]"}], ",", 
+                "Blue", ",", 
+                RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+                RowBox[{"Point", "[", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"0.3", "*", 
+                    RowBox[{"Cos", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "2", "]"}], "]"}]}], "]"}]}], ",", 
-                RowBox[{"0.3", "*", 
-                 RowBox[{"Sin", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                   RowBox[{"0.3", "*", 
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "2", "]"}], "]"}]}], "]"}]}]}], "}"}], "]"}],
-              ",", "\[IndentingNewLine]", "Thick", ",", "Green", ",", 
-             RowBox[{"Circle", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"0", ",", "0"}], "}"}], ",", "0.4"}], "]"}], ",", 
-             "Green", ",", 
-             RowBox[{"PointSize", "[", ".01", "]"}], ",", 
-             RowBox[{"Point", "[", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"0.4", "*", 
-                 RowBox[{"Cos", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                 ",", "\[IndentingNewLine]", "Thick", ",", "Green", ",", 
+                RowBox[{"Circle", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0"}], "}"}], ",", "0.4"}], "]"}], ",", 
+                "Green", ",", 
+                RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+                RowBox[{"Point", "[", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"0.4", "*", 
+                    RowBox[{"Cos", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "3", "]"}], "]"}]}], "]"}]}], ",", 
-                RowBox[{"0.4", "*", 
-                 RowBox[{"Sin", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                   RowBox[{"0.4", "*", 
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "3", "]"}], "]"}]}], "]"}]}]}], "}"}], "]"}],
-              ",", "\[IndentingNewLine]", "Thick", ",", 
-             RowBox[{"RGBColor", "[", 
-              RowBox[{"0.26", ",", "0.28", ",", "0.5"}], "]"}], ",", 
-             RowBox[{"Circle", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"0", ",", "0"}], "}"}], ",", "0.5"}], "]"}], ",", 
-             RowBox[{"RGBColor", "[", 
-              RowBox[{"0.26", ",", "0.28", ",", "0.5"}], "]"}], ",", 
-             RowBox[{"PointSize", "[", ".01", "]"}], ",", 
-             RowBox[{"Point", "[", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"0.5", "*", 
-                 RowBox[{"Cos", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                 ",", "\[IndentingNewLine]", "Thick", ",", 
+                RowBox[{"RGBColor", "[", 
+                 RowBox[{"0.26", ",", "0.28", ",", "0.5"}], "]"}], ",", 
+                RowBox[{"Circle", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0"}], "}"}], ",", "0.5"}], "]"}], ",", 
+                RowBox[{"RGBColor", "[", 
+                 RowBox[{"0.26", ",", "0.28", ",", "0.5"}], "]"}], ",", 
+                RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+                RowBox[{"Point", "[", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"0.5", "*", 
+                    RowBox[{"Cos", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "4", "]"}], "]"}]}], "]"}]}], ",", 
-                RowBox[{"0.5", "*", 
-                 RowBox[{"Sin", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                   RowBox[{"0.5", "*", 
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "4", "]"}], "]"}]}], "]"}]}]}], "}"}], "]"}],
-              ",", "\[IndentingNewLine]", "Thick", ",", "Orange", ",", 
-             RowBox[{"Circle", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"0", ",", "0"}], "}"}], ",", "0.6"}], "]"}], ",", 
-             "Orange", ",", 
-             RowBox[{"PointSize", "[", ".01", "]"}], ",", 
-             RowBox[{"Point", "[", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"0.6", "*", 
-                 RowBox[{"Cos", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                 ",", "\[IndentingNewLine]", "Thick", ",", "Orange", ",", 
+                RowBox[{"Circle", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0"}], "}"}], ",", "0.6"}], "]"}], ",", 
+                "Orange", ",", 
+                RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+                RowBox[{"Point", "[", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"0.6", "*", 
+                    RowBox[{"Cos", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "5", "]"}], "]"}]}], "]"}]}], ",", 
-                RowBox[{"0.6", "*", 
-                 RowBox[{"Sin", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                   RowBox[{"0.6", "*", 
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "5", "]"}], "]"}]}], "]"}]}]}], "}"}], "]"}],
-              ",", "\[IndentingNewLine]", "Thick", ",", "Purple", ",", 
-             RowBox[{"Circle", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"0", ",", "0"}], "}"}], ",", "0.7"}], "]"}], ",", 
-             "Purple", ",", 
-             RowBox[{"PointSize", "[", ".01", "]"}], ",", 
-             RowBox[{"Point", "[", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"0.7", "*", 
-                 RowBox[{"Cos", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                 ",", "\[IndentingNewLine]", "Thick", ",", "Purple", ",", 
+                RowBox[{"Circle", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0"}], "}"}], ",", "0.7"}], "]"}], ",", 
+                "Purple", ",", 
+                RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+                RowBox[{"Point", "[", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"0.7", "*", 
+                    RowBox[{"Cos", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "6", "]"}], "]"}]}], "]"}]}], ",", 
-                RowBox[{"0.7", "*", 
-                 RowBox[{"Sin", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                   RowBox[{"0.7", "*", 
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "6", "]"}], "]"}]}], "]"}]}]}], "}"}], "]"}],
-              ",", "\[IndentingNewLine]", "Thick", ",", "Pink", ",", 
-             RowBox[{"Circle", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"0", ",", "0"}], "}"}], ",", "0.8"}], "]"}], ",", 
-             "Pink", ",", 
-             RowBox[{"PointSize", "[", ".01", "]"}], ",", 
-             RowBox[{"Point", "[", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"0.8", "*", 
-                 RowBox[{"Cos", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                 ",", "\[IndentingNewLine]", "Thick", ",", "Pink", ",", 
+                RowBox[{"Circle", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0"}], "}"}], ",", "0.8"}], "]"}], ",", 
+                "Pink", ",", 
+                RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+                RowBox[{"Point", "[", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"0.8", "*", 
+                    RowBox[{"Cos", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "7", "]"}], "]"}]}], "]"}]}], ",", 
-                RowBox[{"0.8", "*", 
-                 RowBox[{"Sin", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                   RowBox[{"0.8", "*", 
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "7", "]"}], "]"}]}], "]"}]}]}], "}"}], "]"}],
-              ",", "\[IndentingNewLine]", "Thick", ",", "Black", ",", 
-             RowBox[{"Circle", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"0", ",", "0"}], "}"}], ",", "0.9"}], "]"}], ",", 
-             "Black", ",", 
-             RowBox[{"PointSize", "[", ".01", "]"}], ",", 
-             RowBox[{"Point", "[", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"0.9", "*", 
-                 RowBox[{"Cos", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                 ",", "\[IndentingNewLine]", "Thick", ",", "Black", ",", 
+                RowBox[{"Circle", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0"}], "}"}], ",", "0.9"}], "]"}], ",", 
+                "Black", ",", 
+                RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+                RowBox[{"Point", "[", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"0.9", "*", 
+                    RowBox[{"Cos", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "8", "]"}], "]"}]}], "]"}]}], ",", 
-                RowBox[{"0.9", "*", 
-                 RowBox[{"Sin", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                   RowBox[{"0.9", "*", 
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "8", "]"}], "]"}]}], "]"}]}]}], "}"}], "]"}],
-              ",", "\[IndentingNewLine]", "Thick", ",", "Black", ",", 
-             RowBox[{"Circle", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"0", ",", "0"}], "}"}], ",", "1.1"}], "]"}], ",", 
-             "Black", ",", 
-             RowBox[{"PointSize", "[", ".01", "]"}], ",", 
-             RowBox[{"Point", "[", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"1.1", "*", 
-                 RowBox[{"Cos", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                 ",", "\[IndentingNewLine]", "Thick", ",", "Black", ",", 
+                RowBox[{"Circle", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0"}], "}"}], ",", "1.1"}], "]"}], ",", 
+                "Black", ",", 
+                RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+                RowBox[{"Point", "[", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"1.1", "*", 
+                    RowBox[{"Cos", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "9", "]"}], "]"}]}], "]"}]}], ",", 
-                RowBox[{"1.1", "*", 
-                 RowBox[{"Sin", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                   RowBox[{"1.1", "*", 
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "9", "]"}], "]"}]}], "]"}]}]}], "}"}], "]"}],
-              ",", "\[IndentingNewLine]", "Thick", ",", "Black", ",", 
-             RowBox[{"Circle", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"0", ",", "0"}], "}"}], ",", "1.4"}], "]"}], ",", 
-             "Black", ",", 
-             RowBox[{"PointSize", "[", ".01", "]"}], ",", 
-             RowBox[{"Point", "[", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"1.4", "*", 
-                 RowBox[{"Cos", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                 ",", "\[IndentingNewLine]", "Thick", ",", "Black", ",", 
+                RowBox[{"Circle", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0"}], "}"}], ",", "1.4"}], "]"}], ",", 
+                "Black", ",", 
+                RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+                RowBox[{"Point", "[", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"1.4", "*", 
+                    RowBox[{"Cos", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "10", "]"}], "]"}]}], "]"}]}], ",", 
-                RowBox[{"1.4", "*", 
-                 RowBox[{"Sin", "[", 
-                  RowBox[{"2", "*", 
-                   RowBox[{"Timers", "[", 
+                   RowBox[{"1.4", "*", 
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Timers", "[", 
                     RowBox[{"[", "10", "]"}], "]"}]}], "]"}]}]}], "}"}], 
-              "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
-           RowBox[{"PlotRange", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"-", "1.5"}], ",", "3"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}]}], "}"}]}], ",", 
-           RowBox[{"ImageSize", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"600", ",", "500"}], "}"}]}]}], "]"}]}]}], "]"}], ",", 
-      "\[IndentingNewLine]", 
+                 "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"PlotRange", "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"-", "1.5"}], ",", "3"}], "}"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}]}], "}"}]}], ",", 
+              RowBox[{"ImageSize", "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{"600", ",", "500"}], "}"}]}]}], "]"}], "}"}], "}"}], 
+          "]"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
       RowBox[{"Column", "[", 
        RowBox[{"{", 
         RowBox[{"Control", "[", 
@@ -787,7 +790,8 @@ Cell[BoxData[{
    3.6441780372160697`*^9, 3.644178077481096*^9}, {3.6441781182141685`*^9, 
    3.64417818123647*^9}, {3.644178212610607*^9, 3.6441782156729136`*^9}, {
    3.6441782460559516`*^9, 3.64417824813616*^9}, {3.6442353747510557`*^9, 
-   3.644235396579233*^9}}],
+   3.644235396579233*^9}, {3.6442392480368085`*^9, 3.6442392793428087`*^9}, {
+   3.6442442604701815`*^9, 3.644244289390289*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -20703,7 +20707,7 @@ bCzgq/8fmp3kag==
    "Grid"]->
   TagBox[
    StyleBox[
-    DynamicModuleBox[{$CellContext`Orbital$$ = 2, $CellContext`timer$$ = 6.5, 
+    DynamicModuleBox[{$CellContext`Orbital$$ = 1, $CellContext`timer$$ = 0., 
      Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
      Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
      1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
@@ -20717,12 +20721,12 @@ bCzgq/8fmp3kag==
           Manipulate`Place[1]}]], Manipulate`Dump`ThisIsNotAControl}, {{
         Hold[$CellContext`timer$$], 0, "time"}, 0, 10, 0.1}}, Typeset`size$$ =
       Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
-     Typeset`skipInitDone$$ = True, $CellContext`timer$3137$$ = 0}, 
+     Typeset`skipInitDone$$ = True, $CellContext`timer$9546$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       2, StandardForm, 
        "Variables" :> {$CellContext`Orbital$$ = 1, $CellContext`timer$$ = 0}, 
        "ControllerVariables" :> {
-         Hold[$CellContext`timer$$, $CellContext`timer$3137$$, 0]}, 
+         Hold[$CellContext`timer$$, $CellContext`timer$9546$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -20731,67 +20735,69 @@ bCzgq/8fmp3kag==
        Module[{$CellContext`Timers$}, $CellContext`Timers$ = {0, 0, 0, 0, 0, 
            0, 0, 0, 0, 0}; 
          Part[$CellContext`Timers$, $CellContext`Orbital$$] = \
-$CellContext`timer$$ + 0.2; Graphics[{Gray, 
-            Disk[{0, 0.03}, 0.03], Gray, 
-            Disk[{0.03 1, 0.03 (-Sqrt[3] + 1)}, 0.03 1], Gray, 
-            Disk[{(-0.03) 1, 0.03 (-Sqrt[3] + 1)}, 0.03 1], Black, 
-            Circle[{0, 0.03 (1 - 2 (Sqrt[3]/3))}, 0.03 (1 + 2 (Sqrt[3]/3))], 
-            Thick, Red, 
-            Circle[{0, 0}, 0.2], Red, 
-            PointSize[0.01], 
-            
-            Point[{0.2 Cos[2 Part[$CellContext`Timers$, 1]], 0.2 
-              Sin[2 Part[$CellContext`Timers$, 1]]}], Thick, Blue, 
-            Circle[{0, 0}, 0.3], Blue, 
-            PointSize[0.01], 
-            
-            Point[{0.3 Cos[2 Part[$CellContext`Timers$, 2]], 0.3 
-              Sin[2 Part[$CellContext`Timers$, 2]]}], Thick, Green, 
-            Circle[{0, 0}, 0.4], Green, 
-            PointSize[0.01], 
-            
-            Point[{0.4 Cos[2 Part[$CellContext`Timers$, 3]], 0.4 
-              Sin[2 Part[$CellContext`Timers$, 3]]}], Thick, 
-            RGBColor[0.26, 0.28, 0.5], 
-            Circle[{0, 0}, 0.5], 
-            RGBColor[0.26, 0.28, 0.5], 
-            PointSize[0.01], 
-            
-            Point[{0.5 Cos[2 Part[$CellContext`Timers$, 4]], 0.5 
-              Sin[2 Part[$CellContext`Timers$, 4]]}], Thick, Orange, 
-            Circle[{0, 0}, 0.6], Orange, 
-            PointSize[0.01], 
-            
-            Point[{0.6 Cos[2 Part[$CellContext`Timers$, 5]], 0.6 
-              Sin[2 Part[$CellContext`Timers$, 5]]}], Thick, Purple, 
-            Circle[{0, 0}, 0.7], Purple, 
-            PointSize[0.01], 
-            
-            Point[{0.7 Cos[2 Part[$CellContext`Timers$, 6]], 0.7 
-              Sin[2 Part[$CellContext`Timers$, 6]]}], Thick, Pink, 
-            Circle[{0, 0}, 0.8], Pink, 
-            PointSize[0.01], 
-            
-            Point[{0.8 Cos[2 Part[$CellContext`Timers$, 7]], 0.8 
-              Sin[2 Part[$CellContext`Timers$, 7]]}], Thick, Black, 
-            Circle[{0, 0}, 0.9], Black, 
-            PointSize[0.01], 
-            
-            Point[{0.9 Cos[2 Part[$CellContext`Timers$, 8]], 0.9 
-              Sin[2 Part[$CellContext`Timers$, 8]]}], Thick, Black, 
-            Circle[{0, 0}, 1.1], Black, 
-            PointSize[0.01], 
-            
-            Point[{1.1 Cos[2 Part[$CellContext`Timers$, 9]], 1.1 
-              Sin[2 Part[$CellContext`Timers$, 9]]}], Thick, Black, 
-            Circle[{0, 0}, 1.4], Black, 
-            PointSize[0.01], 
-            
-            Point[{1.4 Cos[2 Part[$CellContext`Timers$, 10]], 1.4 
-              Sin[2 Part[$CellContext`Timers$, 10]]}]}, 
-           PlotRange -> {{-1.5, 3}, {-1.5, 1.5}}, ImageSize -> {600, 500}]], 
+$CellContext`timer$$ + 0.2; Grid[{{
+             Graphics[{Gray, 
+               Disk[{0, 0.03}, 0.03], Gray, 
+               Disk[{0.03 1, 0.03 (-Sqrt[3] + 1)}, 0.03 1], Gray, 
+               Disk[{(-0.03) 1, 0.03 (-Sqrt[3] + 1)}, 0.03 1], Black, 
+               
+               Circle[{0, 0.03 (1 - 2 (Sqrt[3]/3))}, 
+                0.03 (1 + 2 (Sqrt[3]/3))], Thick, Red, 
+               Circle[{0, 0}, 0.2], Red, 
+               PointSize[0.01], 
+               
+               Point[{0.2 Cos[2 Part[$CellContext`Timers$, 1]], 0.2 
+                 Sin[2 Part[$CellContext`Timers$, 1]]}], Thick, Blue, 
+               Circle[{0, 0}, 0.3], Blue, 
+               PointSize[0.01], 
+               
+               Point[{0.3 Cos[2 Part[$CellContext`Timers$, 2]], 0.3 
+                 Sin[2 Part[$CellContext`Timers$, 2]]}], Thick, Green, 
+               Circle[{0, 0}, 0.4], Green, 
+               PointSize[0.01], 
+               
+               Point[{0.4 Cos[2 Part[$CellContext`Timers$, 3]], 0.4 
+                 Sin[2 Part[$CellContext`Timers$, 3]]}], Thick, 
+               RGBColor[0.26, 0.28, 0.5], 
+               Circle[{0, 0}, 0.5], 
+               RGBColor[0.26, 0.28, 0.5], 
+               PointSize[0.01], 
+               
+               Point[{0.5 Cos[2 Part[$CellContext`Timers$, 4]], 0.5 
+                 Sin[2 Part[$CellContext`Timers$, 4]]}], Thick, Orange, 
+               Circle[{0, 0}, 0.6], Orange, 
+               PointSize[0.01], 
+               
+               Point[{0.6 Cos[2 Part[$CellContext`Timers$, 5]], 0.6 
+                 Sin[2 Part[$CellContext`Timers$, 5]]}], Thick, Purple, 
+               Circle[{0, 0}, 0.7], Purple, 
+               PointSize[0.01], 
+               
+               Point[{0.7 Cos[2 Part[$CellContext`Timers$, 6]], 0.7 
+                 Sin[2 Part[$CellContext`Timers$, 6]]}], Thick, Pink, 
+               Circle[{0, 0}, 0.8], Pink, 
+               PointSize[0.01], 
+               
+               Point[{0.8 Cos[2 Part[$CellContext`Timers$, 7]], 0.8 
+                 Sin[2 Part[$CellContext`Timers$, 7]]}], Thick, Black, 
+               Circle[{0, 0}, 0.9], Black, 
+               PointSize[0.01], 
+               
+               Point[{0.9 Cos[2 Part[$CellContext`Timers$, 8]], 0.9 
+                 Sin[2 Part[$CellContext`Timers$, 8]]}], Thick, Black, 
+               Circle[{0, 0}, 1.1], Black, 
+               PointSize[0.01], 
+               
+               Point[{1.1 Cos[2 Part[$CellContext`Timers$, 9]], 1.1 
+                 Sin[2 Part[$CellContext`Timers$, 9]]}], Thick, Black, 
+               Circle[{0, 0}, 1.4], Black, 
+               PointSize[0.01], 
+               
+               Point[{1.4 Cos[2 Part[$CellContext`Timers$, 10]], 1.4 
+                 Sin[2 Part[$CellContext`Timers$, 10]]}]}, 
+              PlotRange -> {{-1.5, 3}, {-1.5, 1.5}}, 
+              ImageSize -> {600, 500}]}}]], 
        "Specifications" :> {{{$CellContext`Orbital$$, 1, "Which"}, 
-          
           Dynamic[{
            1 -> "1s", 2 -> "2s", 3 -> "2p", 4 -> "3s", 5 -> "3p", 6 -> "4s", 
             7 -> "3d", 8 -> "4p", 9 -> "4d", 10 -> "4f"}, SynchronousUpdating -> 
@@ -20803,7 +20809,7 @@ $CellContext`timer$$ + 0.2; Graphics[{Gray,
         TrackedSymbols :> {$CellContext`Orbital$$, $CellContext`timer$$}, 
          SynchronousInitialization -> False, Alignment -> Center}, 
        "DefaultOptions" :> {}],
-      ImageSizeCache->{651., {305., 312.}},
+      ImageSizeCache->{651., {306., 313.}},
       SingleEvaluation->True],
      Deinitialization:>None,
      DynamicModuleValues:>{},
@@ -22169,7 +22175,7 @@ IYQQQgghhBBCiKPC/w+u8nl/
        "Options" :> {
         TrackedSymbols :> {$CellContext`j$$}, SynchronousInitialization -> 
          False}, "DefaultOptions" :> {}],
-      ImageSizeCache->{451., {301., 308.}},
+      ImageSizeCache->{292., {92., 99.}},
       SingleEvaluation->True],
      Deinitialization:>None,
      DynamicModuleValues:>{},
@@ -22188,9 +22194,9 @@ $CellContext`y2$, $CellContext`y3$, $CellContext`\[Theta]$, $CellContext`\
           Do[$CellContext`l$ = 
              Part[$CellContext`pairs$, $CellContext`i, 1]; $CellContext`m$ = 
              Part[$CellContext`pairs$, $CellContext`i, 2]; $CellContext`a$ = 
+             
              SphericalHarmonicY[$CellContext`l$, -$CellContext`m$, \
 $CellContext`\[Theta]$, $CellContext`\[Phi]$]; $CellContext`b$ = 
-             
              SphericalHarmonicY[$CellContext`l$, $CellContext`m$, \
 $CellContext`\[Theta]$, $CellContext`\[Phi]$]; $CellContext`y1$ = \
 $CellContext`b$; $CellContext`y2$ = 
@@ -24064,13 +24070,13 @@ GrnrFp6cOPb/AylngaM=
         "\!\(\*SubscriptBox[\(J\), \(i\)]\)", Italic, FontFamily -> "Times"]},
         0, 9, 1}}, Typeset`size$$ = {600., {198., 202.}}, Typeset`update$$ = 
      0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-     False, $CellContext`ratio$3175$$ = 0, $CellContext`J$3176$$ = 0}, 
+     False, $CellContext`ratio$9580$$ = 0, $CellContext`J$9581$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       1, StandardForm, 
        "Variables" :> {$CellContext`J$$ = 0, $CellContext`ratio$$ = 3}, 
        "ControllerVariables" :> {
-         Hold[$CellContext`ratio$$, $CellContext`ratio$3175$$, 0], 
-         Hold[$CellContext`J$$, $CellContext`J$3176$$, 0]}, 
+         Hold[$CellContext`ratio$$, $CellContext`ratio$9580$$, 0], 
+         Hold[$CellContext`J$$, $CellContext`J$9581$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -24179,7 +24185,7 @@ $CellContext`tvecA, $CellContext`tlabel, $CellContext`tJ, Axes -> False,
      UntrackedVariables:>{Typeset`size$$}], "Manipulate",
     Deployed->True,
     StripOnInput->False],
-   Manipulate`InterpretManipulate[1]]}}, 2,
+   Manipulate`InterpretManipulate[1]]}}, 1,
   ControlPlacement->Top]], "Output",
  CellChangeTimes->{
   3.6441676378481946`*^9, {3.644167902837691*^9, 3.6441679226066675`*^9}, {
@@ -24194,11 +24200,13 @@ $CellContext`tvecA, $CellContext`tlabel, $CellContext`tJ, Axes -> False,
    3.644177883131663*^9, 3.6441779475821075`*^9, 3.644177994001749*^9, 
    3.6441780435667048`*^9, 3.6441780825205994`*^9, {3.6441781248428316`*^9, 
    3.644178220675414*^9}, {3.644178251789525*^9, 3.644178273464692*^9}, 
-   3.644235535151353*^9, {3.644238396288834*^9, 3.644238402928498*^9}}]
+   3.644235535151353*^9, {3.644238396288834*^9, 3.644238402928498*^9}, 
+   3.6442390555978084`*^9, {3.6442442692902994`*^9, 3.6442442767655516`*^9}, 
+   3.6442600930054164`*^9}]
 }, Open  ]]
 },
-WindowSize->{1664, 968},
-WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+WindowSize->{1680, 1008},
+WindowMargins->{{1672, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -24214,12 +24222,12 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 2371, 66, 192, "Input"],
-Cell[2932, 88, 31378, 701, 1112, "Input"],
-Cell[34313, 791, 17556, 398, 882, "Input"],
-Cell[51872, 1191, 14065, 351, 788, "Input"],
+Cell[2932, 88, 32230, 705, 1112, "Input"],
+Cell[35165, 795, 17556, 398, 882, "Input"],
+Cell[52724, 1195, 14065, 351, 788, "Input"],
 Cell[CellGroupData[{
-Cell[65962, 1546, 1506, 39, 52, "Input"],
-Cell[67471, 1587, 1372178, 22609, 752, "Output"]
+Cell[66814, 1550, 1506, 39, 52, "Input"],
+Cell[68323, 1591, 1372500, 22613, 787, "Output"]
 }, Open  ]]
 }
 ]
