@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1064,         20]
-NotebookDataLength[   1372918,      22652]
-NotebookOptionsPosition[   1373415,      22645]
-NotebookOutlinePosition[   1373918,      22667]
-CellTagsIndexPosition[   1373875,      22664]
+NotebookDataLength[   1370424,      22590]
+NotebookOptionsPosition[   1370921,      22583]
+NotebookOutlinePosition[   1371424,      22605]
+CellTagsIndexPosition[   1371381,      22602]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -19163,12 +19163,12 @@ bCzgq/8fmp3kag==
           Manipulate`Place[1]}]], Manipulate`Dump`ThisIsNotAControl}, {{
         Hold[$CellContext`t$$], 0, "time"}, 0, 10}}, Typeset`size$$ = 
      Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
-     Typeset`skipInitDone$$ = True, $CellContext`t$110179$$ = 0}, 
+     Typeset`skipInitDone$$ = True, $CellContext`t$28316$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       2, StandardForm, 
        "Variables" :> {$CellContext`Orbitals$$ = 1, $CellContext`t$$ = 0}, 
        "ControllerVariables" :> {
-         Hold[$CellContext`t$$, $CellContext`t$110179$$, 0]}, 
+         Hold[$CellContext`t$$, $CellContext`t$28316$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -22508,132 +22508,70 @@ GrnrFp6cOPb/AylngaM=
    "Grid"]->
   TagBox[
    StyleBox[
-    DynamicModuleBox[{$CellContext`J$$ = 0, $CellContext`ratio$$ = 3, 
+    DynamicModuleBox[{$CellContext`series$$ = "Lyman", $CellContext`t$$ = 1, 
      Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
      Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
      1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
-        Hold[$CellContext`ratio$$], 3, 
-        Text[
-         Style[
-          Row[{
-            Style["\!\(\*SubscriptBox[\(k\), \(B\)]\)T", Italic], "/", 
-            Style["hc", Italic], 
-            OverBar[
-             Style["B", Italic]]}]]]}, 1., 25.}, {{
-        Hold[$CellContext`J$$], 0, 
-        Style[
-        "\!\(\*SubscriptBox[\(J\), \(i\)]\)", Italic, FontFamily -> "Times"]},
-        0, 9, 1}}, Typeset`size$$ = {600., {198., 202.}}, Typeset`update$$ = 
-     0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-     False, $CellContext`ratio$110213$$ = 0, $CellContext`J$110214$$ = 0}, 
+        Hold[$CellContext`t$$], 1, "levels"}, 1, 7, 1}, {{
+        Hold[$CellContext`series$$], "Lyman"}, {
+       "Lyman", "Balmer", "Paschen"}}}, Typeset`size$$ = {512., {254., 258.}},
+      Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+     True, $CellContext`t$28350$$ = 0, $CellContext`series$28351$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       1, StandardForm, 
-       "Variables" :> {$CellContext`J$$ = 0, $CellContext`ratio$$ = 3}, 
-       "ControllerVariables" :> {
-         Hold[$CellContext`ratio$$, $CellContext`ratio$110213$$, 0], 
-         Hold[$CellContext`J$$, $CellContext`J$110214$$, 0]}, 
+       "Variables" :> {$CellContext`series$$ = "Lyman", $CellContext`t$$ = 1},
+        "ControllerVariables" :> {
+         Hold[$CellContext`t$$, $CellContext`t$28350$$, 0], 
+         Hold[$CellContext`series$$, $CellContext`series$28351$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
          Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
-         Typeset`initDone$$, Typeset`skipInitDone$$}, 
-       "Body" :> ($CellContext`dat = Thread[{$CellContext`freq, 
-            $CellContext`int[$CellContext`ratio$$]}]; $CellContext`spec = 
-         ListPlot[$CellContext`dat, PlotMarkers -> None, 
-           Axes -> {True, False}, PlotRange -> {{0, 28}, {0, 4.4}}, Filling -> 
-           Axis, FillingStyle -> Thickness[0.008], Ticks -> {
-             Thread[{$CellContext`freq, $CellContext`labels}], {None}}, 
-           TicksStyle -> Darker[Gray], AxesLabel -> {
-             Style[
-             "\!\(\*SuperscriptBox[\(\[Nu]\), \(\[Prime]\)]\)", 24, Red], 
-             None}, AspectRatio -> 1]; $CellContext`specline = Graphics[{Red, 
-            Thickness[0.01], 
-            Line[{{
-               Part[$CellContext`freq, $CellContext`J$$ + 1], 0}, {
-               Part[$CellContext`freq, $CellContext`J$$ + 1], 
-               Part[
-                $CellContext`int[$CellContext`ratio$$], $CellContext`J$$ + 
-                1]}}]}]; $CellContext`arrow1 = If[$CellContext`J$$ == 0, 
-           Graphics[{Red, 
-             Thickness[0.02], 
-             Arrowheads[Small], 
-             Arrow[{{0.5, $CellContext`En[$CellContext`J$$] + 0.7}, {0.5, 
-                $CellContext`En[$CellContext`J$$ + 1]}}]}], 
-           Graphics[{Red, 
-             Thickness[0.01], 
-             Arrowheads[Medium], 
-             Arrow[{{0.5, 
-                $CellContext`En[$CellContext`J$$]}, {0.5, 
-                $CellContext`En[$CellContext`J$$ + 
-                 1]}}]}]]; $CellContext`tlabel = Graphics[
-           Style[
-            Text[
-             Row[{"\[CapitalDelta]E = ", 
-               ToString[
-                
-                NumberForm[$CellContext`En[$CellContext`J$$ + 
-                   1] - $CellContext`En[$CellContext`J$$], 2]], 
-               "\!\(\*OverscriptBox[\(B\), \(_\)]\)"}], {1.25, 118}], Italic, 
-            Red, 16]]; GraphicsRow[{
-           Show[$CellContext`spec, $CellContext`specline], 
-           
-           Show[$CellContext`levels, $CellContext`arrow1, $CellContext`tvec, \
-$CellContext`tvecA, $CellContext`tlabel, $CellContext`tJ, Axes -> False, 
-            AspectRatio -> 1.5, PlotRange -> {{0, 7}, {-5, 122}}]}, 
-          ImageSize -> {600, 400}]), 
-       "Specifications" :> {{{$CellContext`ratio$$, 3, $CellContext`label2}, 
-          1., 25., Appearance -> "Labeled"}, {{$CellContext`J$$, 0, 
-           Style[
-           "\!\(\*SubscriptBox[\(J\), \(i\)]\)", Italic, FontFamily -> 
-            "Times"]}, 0, 9, 1}}, 
-       "Options" :> {
-        ControlType -> {Slider, SetterBar}, 
-         TrackedSymbols :> {$CellContext`ratio$$, $CellContext`J$$}}, 
-       "DefaultOptions" :> {}],
-      ImageSizeCache->{651., {255., 262.}},
+         Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> 
+       With[{$CellContext`s$ = 
+          Which[$CellContext`series$$ == "Lyman", 1, $CellContext`series$$ == 
+            "Balmer", 2, $CellContext`series$$ == "Paschen", 
+            3], $CellContext`SpectrumColor$ = 
+          Which[$CellContext`t$$ == 1, Red, $CellContext`t$$ == 2, 
+            Orange, $CellContext`t$$ == 3, Yellow, $CellContext`t$$ == 4, 
+            Green, $CellContext`t$$ == 5, 
+            RGBColor[0.19, 0.42, 0.5], $CellContext`t$$ == 6, 
+            Blue, $CellContext`t$$ == 7, Purple], $CellContext`display$ = 
+          Which[$CellContext`series$$ == "Lyman", 0, $CellContext`series$$ == 
+            "Balmer", 2, $CellContext`series$$ == "Paschen", 3]}, 
+         Row[{
+           Graphics[{
+             Table[{
+               
+               Line[{{0, -(13.6/$CellContext`n^2)}, {
+                 5, -(13.6/$CellContext`n^2)}}]}, {$CellContext`n, 
+               7 + $CellContext`s$}], 
+             Table[{
+               Text[
+                StringJoin[
+                 ToString[(-13.6)/$CellContext`n^2], "eV"], {
+                6., (-13.6)/$CellContext`n^2}]}, {$CellContext`n, 
+               4 + $CellContext`s$ + $CellContext`display$}], 
+             Thick, $CellContext`SpectrumColor$, 
+             
+             Arrow[{{0.1 + 
+                0.5 ($CellContext`s$ + $CellContext`t$$ - $CellContext`s$), \
+(-13.6)/($CellContext`s$ + $CellContext`t$$)^2}, {
+               0.1 + 0.5 ($CellContext`s$ + $CellContext`t$$ - \
+$CellContext`s$), (-13.6)/$CellContext`s$^2}}]}, Axes -> True, 
+            Ticks -> {None, Automatic}, AxesOrigin -> {0, 0}, 
+            PlotRange -> {{0, 
+              10}, {-(13.6/$CellContext`s$^2) - (1/100) (
+                13.6/($CellContext`s$ + 1)^2 + 13.6/$CellContext`s$^2), 0}}, 
+            AspectRatio -> 1, ImageSize -> {512, 512}]}]], 
+       "Specifications" :> {{{$CellContext`t$$, 1, "levels"}, 1, 7, 1, 
+          Appearance -> "Labeled"}, {{$CellContext`series$$, "Lyman"}, {
+          "Lyman", "Balmer", "Paschen"}, ControlType -> RadioButton}}, 
+       "Options" :> {}, "DefaultOptions" :> {}],
+      ImageSizeCache->{563., {308., 315.}},
       SingleEvaluation->True],
      Deinitialization:>None,
      DynamicModuleValues:>{},
-     Initialization:>(($CellContext`En[
-          Pattern[$CellContext`Jp, 
-           Blank[]]] := $CellContext`Jp ($CellContext`Jp + 
-          1); $CellContext`freq = 
-        Table[$CellContext`j, {$CellContext`j, 2, 28, 
-           2}]; $CellContext`labels = Table[
-          Row[{$CellContext`j, 
-            OverBar[
-             Style["B", Italic]]}], {$CellContext`j, 2, 28, 
-           2}]; $CellContext`label2 = Text[
-          Style[
-           Row[{
-             Style["\!\(\*SubscriptBox[\(k\), \(B\)]\)T", Italic], "/", 
-             Style["hc", Italic], 
-             OverBar[
-              Style["B", Italic]]}]]]; $CellContext`int[
-          Pattern[$CellContext`xp, 
-           Blank[]]] := 
-        Table[(2. $CellContext`Jp + 1.) 
-          Exp[(-($CellContext`Jp^2 + $CellContext`Jp))/$CellContext`xp], \
-{$CellContext`Jp, 0, 13}]; $CellContext`tvec = Table[
-          Graphics[
-           Text[
-            Style[
-             ToString[
-              NumberForm[$CellContext`j, 1]], Italic, 16], {
-            1.28, $CellContext`j ($CellContext`j + 1)}]], {$CellContext`j, 1, 
-           10}]; $CellContext`tvecA = Graphics[
-          Text[
-           Style["0", Italic, 12], {1.24, -2}]]; $CellContext`tJ = Graphics[
-          Rotate[
-           Text[
-            Style[
-             Row[{"\!\(\*SubscriptBox[\(J\), \(i\)]\)", " values"}], 14], {
-            1.95, 60}], Pi/2.]]; $CellContext`levels = Plot[
-          
-          Table[$CellContext`j ($CellContext`j + 1), {$CellContext`j, 0, 
-            11}], {$CellContext`x, 0, 1}, PlotStyle -> {Thick, Black}, 
-          PlotRange -> {{0, 2}, {-3, 140}}, AspectRatio -> 1]; Null); 
-      Typeset`initDone$$ = True),
      SynchronousInitialization->True,
      UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
      UnsavedVariables:>{Typeset`initDone$$},
@@ -22666,11 +22604,11 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[1464, 33, 1371947, 22610, 783, "Output"]
+Cell[1464, 33, 1369453, 22548, 783, "Output"]
 }
 ]
 *)
 
 (* End of internal cache information *)
 
-(* NotebookSignature jvD9H0P2HHm#KDw6ymxBjagl *)
+(* NotebookSignature OvTKFjo@iTmJCCgWtHsvMm81 *)

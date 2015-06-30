@@ -1,0 +1,294 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12029,        285]
+NotebookOptionsPosition[     11622,        267]
+NotebookOutlinePosition[     11966,        282]
+CellTagsIndexPosition[     11923,        279]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"http", ":"}], "//", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"demonstrations", ".", "wolfram", ".", "com"}], "/", 
+      "SpectralSeriesOfTheHydrogenAtom"}], "/"}]}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"With", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"s", "=", 
+         RowBox[{"Which", "[", 
+          RowBox[{
+           RowBox[{"series", "==", "\"\<Lyman\>\""}], ",", "1", ",", 
+           RowBox[{"series", "==", "\"\<Balmer\>\""}], ",", "2", ",", 
+           RowBox[{"series", "==", "\"\<Paschen\>\""}], ",", "3"}], "]"}]}], 
+        ",", 
+        RowBox[{"SpectrumColor", "=", 
+         RowBox[{"Which", "[", 
+          RowBox[{
+           RowBox[{"t", "\[Equal]", "1"}], ",", "Red", ",", 
+           RowBox[{"t", "\[Equal]", "2"}], ",", "Orange", ",", 
+           RowBox[{"t", "\[Equal]", "3"}], ",", "Yellow", ",", 
+           RowBox[{"t", "\[Equal]", "4"}], ",", "Green", ",", 
+           RowBox[{"t", "\[Equal]", "5"}], ",", 
+           RowBox[{"RGBColor", "[", 
+            RowBox[{"0.19", ",", "0.42", ",", "0.5"}], "]"}], ",", 
+           RowBox[{"t", "\[Equal]", "6"}], ",", "Blue", ",", 
+           RowBox[{"t", "\[Equal]", "7"}], ",", "Purple"}], "]"}]}]}], "}"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{"Row", "[", 
+       RowBox[{"{", 
+        RowBox[{"Graphics", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Table", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"Line", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"2.5", ",", 
+                    RowBox[{"-", 
+                    FractionBox["13.6", 
+                    SuperscriptBox["n", "2"]]}]}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"7.5", ",", 
+                    RowBox[{"-", 
+                    FractionBox["13.6", 
+                    SuperscriptBox["n", "2"]]}]}], "}"}]}], "}"}], "]"}], 
+               "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"n", ",", 
+                RowBox[{"7", "+", "s"}]}], "}"}]}], "]"}], ",", 
+            "SpectrumColor", ",", 
+            RowBox[{"Arrow", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"2.6", "+", 
+                  RowBox[{"0.5", 
+                   RowBox[{"(", 
+                    RowBox[{"s", "+", "t", "-", "s"}], ")"}]}]}], ",", 
+                 RowBox[{
+                  RowBox[{"-", "13.6"}], "/", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"s", "+", "t"}], ")"}], "^", "2"}]}]}], "}"}], 
+               ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"2.6", "+", 
+                  RowBox[{"0.5", 
+                   RowBox[{"(", 
+                    RowBox[{"s", "+", "t", "-", "s"}], ")"}]}]}], ",", 
+                 RowBox[{
+                  RowBox[{"-", "13.6"}], "/", 
+                  RowBox[{"s", "^", "2"}]}]}], "}"}]}], "}"}], "]"}]}], "}"}],
+           ",", 
+          RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+          RowBox[{"Ticks", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"None", ",", "Automatic"}], "}"}]}], ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"0", ",", "10"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", 
+                 FractionBox["13.6", 
+                  SuperscriptBox["s", "2"]]}], "-", 
+                RowBox[{
+                 FractionBox["1", "12"], 
+                 RowBox[{"(", 
+                  RowBox[{
+                   FractionBox["13.6", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"s", "+", "1"}], ")"}], "2"]], "+", 
+                   FractionBox["13.6", 
+                    SuperscriptBox["s", "2"]]}], ")"}]}]}], ",", "0"}], 
+              "}"}]}], "}"}]}], ",", 
+          RowBox[{"AspectRatio", "\[Rule]", "1"}], ",", 
+          RowBox[{"ImageSize", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"400", ",", "400"}], "}"}]}]}], "]"}], "}"}], "]"}]}], 
+     "]"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"t", ",", "5", ",", "\"\<levels\>\""}], "}"}], ",", "1", ",", 
+      "7", ",", "1", ",", 
+      RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"series", ",", "\"\<Balmer\>\""}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Lyman\>\"", ",", "\"\<Balmer\>\"", ",", "\"\<Paschen\>\""}], 
+       "}"}], ",", 
+      RowBox[{"ControlType", "\[Rule]", "RadioButton"}]}], "}"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.644684856254879*^9, 3.6446848658168793`*^9}, {
+  3.644685058794879*^9, 3.6446850641978793`*^9}, {3.6446851837278795`*^9, 
+  3.6446851839848795`*^9}, {3.6446865746920776`*^9, 3.6446866373100777`*^9}, {
+  3.6446871035448036`*^9, 3.6446871050459538`*^9}, {3.644687143753824*^9, 
+  3.644687147444193*^9}, {3.6446871777292213`*^9, 3.644687195453994*^9}, {
+  3.6446872424466925`*^9, 3.6446872567321205`*^9}, {3.64468923762619*^9, 
+  3.644689243736801*^9}, {3.644689286418069*^9, 3.644689317201147*^9}, {
+  3.644689431424568*^9, 3.6446894455279784`*^9}, {3.644689819722394*^9, 
+  3.6446898361900406`*^9}, {3.6446898675001717`*^9, 3.644689972272648*^9}, {
+  3.6446900100034204`*^9, 3.6446900109115114`*^9}, {3.6446901321176305`*^9, 
+  3.6446903282062373`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`series$$ = "Paschen", $CellContext`t$$ = 1, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`t$$], 5, "levels"}, 1, 7, 1}, {{
+       Hold[$CellContext`series$$], "Balmer"}, {
+      "Lyman", "Balmer", "Paschen"}}}, Typeset`size$$ = {400., {198., 202.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`t$22980$$ = 0, $CellContext`series$22981$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`series$$ = "Balmer", $CellContext`t$$ = 5},
+       "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$22980$$, 0], 
+        Hold[$CellContext`series$$, $CellContext`series$22981$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      With[{$CellContext`s$ = 
+         Which[$CellContext`series$$ == "Lyman", 1, $CellContext`series$$ == 
+           "Balmer", 2, $CellContext`series$$ == "Paschen", 
+           3], $CellContext`SpectrumColor$ = 
+         Which[$CellContext`t$$ == 1, Red, $CellContext`t$$ == 2, 
+           Orange, $CellContext`t$$ == 3, Yellow, $CellContext`t$$ == 4, 
+           Green, $CellContext`t$$ == 5, 
+           RGBColor[0.19, 0.42, 0.5], $CellContext`t$$ == 6, 
+           Blue, $CellContext`t$$ == 7, Purple]}, 
+        Row[{
+          Graphics[{
+            Table[{
+              
+              Line[{{2.5, -(13.6/$CellContext`n^2)}, {
+                7.5, -(13.6/$CellContext`n^2)}}]}, {$CellContext`n, 
+              7 + $CellContext`s$}], $CellContext`SpectrumColor$, 
+            
+            Arrow[{{2.6 + 
+               0.5 ($CellContext`s$ + $CellContext`t$$ - $CellContext`s$), \
+(-13.6)/($CellContext`s$ + $CellContext`t$$)^2}, {
+              2.6 + 0.5 ($CellContext`s$ + $CellContext`t$$ - \
+$CellContext`s$), (-13.6)/$CellContext`s$^2}}]}, Axes -> True, 
+           Ticks -> {None, Automatic}, AxesOrigin -> {0, 0}, 
+           PlotRange -> {{0, 
+             10}, {-(13.6/$CellContext`s$^2) - (1/12) (
+               13.6/($CellContext`s$ + 1)^2 + 13.6/$CellContext`s$^2), 0}}, 
+           AspectRatio -> 1, ImageSize -> {400, 400}]}]], 
+      "Specifications" :> {{{$CellContext`t$$, 5, "levels"}, 1, 7, 1, 
+         Appearance -> "Labeled"}, {{$CellContext`series$$, "Balmer"}, {
+         "Lyman", "Balmer", "Paschen"}, ControlType -> RadioButton}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{451., {252., 259.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.6446848947248793`*^9, 3.644685067858879*^9, 3.6446851874348793`*^9, {
+   3.6446865878470774`*^9, 3.6446866401800776`*^9}, {3.644687099119361*^9, 
+   3.6446871071471634`*^9}, 3.644687149843433*^9, {3.6446871849039383`*^9, 
+   3.644687199628411*^9}, {3.6446872452289705`*^9, 3.644687259466394*^9}, 
+   3.6446885437458096`*^9, 3.6446891226546946`*^9, 3.6446892117696047`*^9, {
+   3.6446892474101686`*^9, 3.644689309362363*^9}, 3.6446893396593924`*^9, {
+   3.6446893936227884`*^9, 3.6446894367150974`*^9}, 3.6446897569791203`*^9, 
+   3.6446899941348333`*^9, {3.6446903207274895`*^9, 3.6446903313665533`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.644685206488879*^9, 3.644685229813879*^9}, {
+   3.6446854944538794`*^9, 3.6446855002628794`*^9}, {3.6446855346448793`*^9, 
+   3.6446855372228794`*^9}, {3.6446855733788795`*^9, 3.644685592641879*^9}, {
+   3.644685643040763*^9, 3.644685661265585*^9}, {3.644685692003659*^9, 
+   3.644685864362893*^9}, {3.6446859270381603`*^9, 3.6446859289933558`*^9}, 
+   3.6446867179800777`*^9, {3.644686781765629*^9, 3.644686958463297*^9}, {
+   3.6446870882612753`*^9, 3.6446870960040493`*^9}, {3.644687305886036*^9, 
+   3.644687406018048*^9}, {3.6446875508215265`*^9, 3.6446875517686214`*^9}, {
+   3.644687711951638*^9, 3.6446879683802786`*^9}, {3.6446880163180714`*^9, 
+   3.6446881382292614`*^9}, {3.6446883771521516`*^9, 3.644688559866421*^9}, {
+   3.644688925931024*^9, 3.6446889274361744`*^9}, {3.64468910181061*^9, 
+   3.644689117891218*^9}, {3.6446891778932176`*^9, 3.6446892038598137`*^9}, {
+   3.644689269417369*^9, 3.6446892722626534`*^9}, {3.6446893479372206`*^9, 
+   3.6446894169871244`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6446894184652724`*^9, 3.6446894184842744`*^9}}]
+},
+WindowSize->{1680, 968},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 5971, 148, 212, "Input"],
+Cell[6554, 172, 3913, 73, 561, "Output"]
+}, Open  ]],
+Cell[10482, 248, 1037, 14, 31, "Input"],
+Cell[11522, 264, 96, 1, 31, InheritFromParent]
+}
+]
+*)
+
+(* End of internal cache information *)
