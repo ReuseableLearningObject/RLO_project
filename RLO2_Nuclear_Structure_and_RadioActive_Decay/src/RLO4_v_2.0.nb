@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     98877,       2075]
-NotebookOptionsPosition[     97686,       2030]
-NotebookOutlinePosition[     98033,       2045]
-CellTagsIndexPosition[     97990,       2042]
+NotebookDataLength[    108408,       2223]
+NotebookOptionsPosition[    107215,       2178]
+NotebookOutlinePosition[    107560,       2193]
+CellTagsIndexPosition[    107517,       2190]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24,92 +24,103 @@ Cell[BoxData[
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", "\n", 
-  RowBox[{"Manipulate", "[", 
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"txtF", "[", "txt_", "]"}], ":=", 
+  RowBox[{"Item", "[", 
    RowBox[{
-    RowBox[{"Column", "[", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"Plot", "[", 
-         RowBox[{
-          RowBox[{"wave", "[", 
-           RowBox[{"x", ",", "f"}], "]"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"x", ",", 
-            RowBox[{"-", "50"}], ",", "50"}], "}"}], ",", 
-          RowBox[{"ColorFunction", "\[Rule]", "\"\<Rainbow\>\""}], ",", 
-          RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}], ",", 
-        RowBox[{"Switch", "[", 
-         RowBox[{"text", ",", "1", ",", 
-          RowBox[{
-          "txtF", "[", 
-           "\"\< Long Radio Wave\\nThis is the Long Radio Wave\\n It's wave \
-length is between 10^2 to 10^8 meters\>\"", "]"}], ",", "2", ",", 
-          RowBox[{
-          "txtF", "[", 
-           "\"\< Short Radio Wave\\n This is the Short Radio Wave\\n It's \
-wave length is between 1 to 10^2 meters\>\"", "]"}], ",", "3", ",", 
-          RowBox[{
-          "txtF", "[", 
-           "\"\< Microwave\\n This is the Microwave\\n It's wave length is \
-between 10^-3 to 1 meters\>\"", "]"}], ",", "4", ",", 
-          RowBox[{
-          "txtF", "[", 
-           "\"\< IR\\n This the IR wave\\n It's wave length is between 10^-6 \
-to 10^-3 meters.\>\"", "]"}], ",", "5", ",", 
-          RowBox[{
-          "txtF", "[", 
-           "\"\< Visible Spectrum\\n These are waves that is visible to human \
-eyes.\\n It's wave length is between 10^-7 to 10^-6 meters\>\"", "]"}], ",", 
-          "6", ",", 
-          RowBox[{
-          "txtF", "[", 
-           "\"\< UV\\n This is the UV wave\\n It's wave length is around \
-10^-7 meters\>\"", "]"}], ",", "7", ",", 
-          RowBox[{
-          "txtF", "[", 
-           "\"\< EUV\\n This is EUV wave.\\n It's wave length is around 10^-8 \
-meters\>\"", "]"}], ",", "8", ",", 
-          RowBox[{
-          "txtF", "[", 
-           "\"\< SX\\n This is Soft X-ray\\n It's wave length is around 10^-9 \
-meters\>\"", "]"}], ",", "9", ",", 
-          RowBox[{
-          "txtF", "[", 
-           "\"\< HX\\n This is Hard X-ray\\n It's wave length is around \
-10^-10 meters\>\"", "]"}], ",", "10", ",", 
-          RowBox[{
-          "txtF", "[", 
-           "\"\< \[Gamma]\\n This is \[Gamma] wave\\n It's wave length is \
-around 10^-12 meters\>\"", "]"}]}], "]"}]}], "}"}], ",", "Center"}], "]"}], 
-    ",", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{"f", ",", "1", ",", "\"\<frequency\>\""}], "}"}], ",", "1", 
-      ",", "10", ",", "1", ",", 
-      RowBox[{"ControlType", "\[Rule]", "Slider"}]}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{"text", ",", "1", ",", "\"\<content\>\""}], "}"}], ",", "1", 
-      ",", "10", ",", "1", ",", 
-      RowBox[{"ControlType", "\[Rule]", "Slider"}]}], "}"}], ",", 
-    RowBox[{"Initialization", "\[RuleDelayed]", 
-     RowBox[{"(", 
+    RowBox[{"Style", "[", 
+     RowBox[{"txt", ",", "\"\<Panel\>\"", ",", "20", ",", 
+      RowBox[{"Background", "\[Rule]", "Pink"}], ",", 
+      RowBox[{"RGBColor", "[", 
+       RowBox[{"0.32", ",", "0.42", ",", "0.65"}], "]"}]}], "]"}], ",", 
+    RowBox[{"Background", "\[Rule]", "Pink"}], ",", 
+    RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}]}], "\n", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Column", "[", 
+    RowBox[{
+     RowBox[{"{", 
       RowBox[{
-       RowBox[{"wave", "[", 
-        RowBox[{"x_", ",", "f_"}], "]"}], ":=", 
-       RowBox[{
-        RowBox[{"Cos", "[", 
-         RowBox[{"f", "*", "x"}], "]"}], "+", 
-        RowBox[{"Sin", "[", 
-         RowBox[{"f", "*", "x"}], "]"}]}]}], ")"}]}]}], "]"}]}]], "Input",
+       RowBox[{"Plot", "[", 
+        RowBox[{
+         RowBox[{"wave", "[", 
+          RowBox[{"x", ",", "f"}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", 
+           RowBox[{"-", "50"}], ",", "50"}], "}"}], ",", 
+         RowBox[{"ColorFunction", "\[Rule]", "\"\<Rainbow\>\""}], ",", 
+         RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}], ",", 
+       RowBox[{"Switch", "[", 
+        RowBox[{"text", ",", "1", ",", 
+         RowBox[{
+         "txtF", "[", 
+          "\"\< Long Radio Wave\\nThis is the Long Radio Wave\\n It's wave \
+length is between 10^2 to 10^8 meters\>\"", "]"}], ",", "2", ",", 
+         RowBox[{
+         "txtF", "[", 
+          "\"\< Short Radio Wave\\n This is the Short Radio Wave\\n It's wave \
+length is between 1 to 10^2 meters\>\"", "]"}], ",", "3", ",", 
+         RowBox[{
+         "txtF", "[", 
+          "\"\< Microwave\\n This is the Microwave\\n It's wave length is \
+between 10^-3 to 1 meters\>\"", "]"}], ",", "4", ",", 
+         RowBox[{
+         "txtF", "[", 
+          "\"\< IR\\n This the IR wave\\n It's wave length is between 10^-6 \
+to 10^-3 meters.\>\"", "]"}], ",", "5", ",", 
+         RowBox[{
+         "txtF", "[", 
+          "\"\< Visible Spectrum\\n These are waves that is visible to human \
+eyes.\\n It's wave length is between 10^-7 to 10^-6 meters\>\"", "]"}], ",", 
+         "6", ",", 
+         RowBox[{
+         "txtF", "[", 
+          "\"\< UV\\n This is the UV wave\\n It's wave length is around 10^-7 \
+meters\>\"", "]"}], ",", "7", ",", 
+         RowBox[{
+         "txtF", "[", 
+          "\"\< EUV\\n This is EUV wave.\\n It's wave length is around 10^-8 \
+meters\>\"", "]"}], ",", "8", ",", 
+         RowBox[{
+         "txtF", "[", 
+          "\"\< SX\\n This is Soft X-ray\\n It's wave length is around 10^-9 \
+meters\>\"", "]"}], ",", "9", ",", 
+         RowBox[{
+         "txtF", "[", 
+          "\"\< HX\\n This is Hard X-ray\\n It's wave length is around 10^-10 \
+meters\>\"", "]"}], ",", "10", ",", 
+         RowBox[{
+         "txtF", "[", 
+          "\"\< \[Gamma]\\n This is \[Gamma] wave\\n It's wave length is \
+around 10^-12 meters\>\"", "]"}]}], "]"}]}], "}"}], ",", "Center"}], "]"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"f", ",", "1", ",", "\"\<frequency\>\""}], "}"}], ",", "1", ",",
+      "10", ",", "1", ",", 
+     RowBox[{"ControlType", "\[Rule]", "Slider"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"text", ",", "1", ",", "\"\<content\>\""}], "}"}], ",", "1", 
+     ",", "10", ",", "1", ",", 
+     RowBox[{"ControlType", "\[Rule]", "Slider"}]}], "}"}], ",", 
+   RowBox[{"Initialization", "\[RuleDelayed]", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"wave", "[", 
+       RowBox[{"x_", ",", "f_"}], "]"}], ":=", 
+      RowBox[{
+       RowBox[{"Cos", "[", 
+        RowBox[{"f", "*", "x"}], "]"}], "+", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"f", "*", "x"}], "]"}]}]}], ")"}]}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.644152051875125*^9, 3.644152062500292*^9}, {
    3.644152097150378*^9, 3.6441521157483196`*^9}, {3.6441524660861554`*^9, 
-   3.6441524711726637`*^9}, 3.6441538377034297`*^9}],
+   3.6441524711726637`*^9}, 3.6441538377034297`*^9, {3.6446050962189503`*^9, 
+   3.64460510541887*^9}}],
 
 Cell[BoxData[
  TagBox[
@@ -120,15 +131,15 @@ Cell[BoxData[
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`f$$], 1, "frequency"}, 1, 10, 1}, {{
        Hold[$CellContext`text$$], 1, "content"}, 1, 10, 1}}, 
-    Typeset`size$$ = {392., {139.5, 146.5}}, Typeset`update$$ = 0, 
+    Typeset`size$$ = {442., {163.25, 170.25}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`f$9591$$ = 0, $CellContext`text$9592$$ = 0}, 
+    False, $CellContext`f$162083$$ = 0, $CellContext`text$162084$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`f$$ = 1, $CellContext`text$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`f$$, $CellContext`f$9591$$, 0], 
-        Hold[$CellContext`text$$, $CellContext`text$9592$$, 0]}, 
+        Hold[$CellContext`f$$, $CellContext`f$162083$$, 0], 
+        Hold[$CellContext`text$$, $CellContext`text$162084$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -171,7 +182,7 @@ meters"], 10,
       "Specifications" :> {{{$CellContext`f$$, 1, "frequency"}, 1, 10, 1, 
          ControlType -> Slider}, {{$CellContext`text$$, 1, "content"}, 1, 10, 
          1, ControlType -> Slider}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{443., {201., 208.}},
+     ImageSizeCache->{493., {225., 232.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -189,26 +200,30 @@ meters"], 10,
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.644152066650503*^9, 3.64415212450121*^9, 
-  3.64415384804243*^9, 3.6441541545694294`*^9, 3.6441786266598873`*^9, 
-  3.644178717164836*^9, 3.644178762292322*^9, 3.6442432983070145`*^9, 
-  3.6442433570878925`*^9}]
+ CellChangeTimes->{
+  3.644152066650503*^9, 3.64415212450121*^9, 3.64415384804243*^9, 
+   3.6441541545694294`*^9, 3.6441786266598873`*^9, 3.644178717164836*^9, 
+   3.644178762292322*^9, 3.6442432983070145`*^9, 3.6442433570878925`*^9, 
+   3.644603895527893*^9, 3.644604467448079*^9, 3.644604559893323*^9, 
+   3.6446046819985323`*^9, {3.6446047946017914`*^9, 3.64460481278961*^9}, 
+   3.64460511301563*^9, 3.6446052308464117`*^9, {3.6446058805733776`*^9, 
+   3.644605902147535*^9}, {3.6446060023215513`*^9, 3.644606017630082*^9}, {
+   3.644606142592577*^9, 3.6446061690122185`*^9}, {3.6446062075740747`*^9, 
+   3.644606243642681*^9}, 3.6446063018705034`*^9, 3.644606922010148*^9, 
+   3.6446070016331854`*^9, 3.6446070403953085`*^9, 3.6446070904373035`*^9, {
+   3.6446071239133325`*^9, 3.6446071514613323`*^9}, 3.6446076657823324`*^9, 
+   3.6446077531183324`*^9, 3.6446078051323323`*^9, 3.6446078718533325`*^9, 
+   3.6446079065683327`*^9, {3.6446079651063323`*^9, 3.6446080110423326`*^9}, 
+   3.6446080914473324`*^9, 3.644608337368061*^9, 3.6446084113584595`*^9, 
+   3.6446084540667295`*^9, 3.644608586224944*^9, {3.6446089936316805`*^9, 
+   3.644609012160533*^9}, {3.644609135968913*^9, 3.644609158199136*^9}, {
+   3.644609233382653*^9, 3.644609251373452*^9}, 3.6446092860089154`*^9, {
+   3.644609458505163*^9, 3.6446094793722496`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"txtF", "[", "txt_", "]"}], ":=", 
-  RowBox[{"Item", "[", 
-   RowBox[{
-    RowBox[{"Style", "[", 
-     RowBox[{"txt", ",", "\"\<Panel\>\"", ",", "20", ",", 
-      RowBox[{"Background", "\[Rule]", "Pink"}], ",", 
-      RowBox[{"RGBColor", "[", 
-       RowBox[{"0.32", ",", "0.42", ",", "0.65"}], "]"}]}], "]"}], ",", 
-    RowBox[{"Background", "\[Rule]", "Pink"}], ",", 
-    RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}]}], "\[IndentingNewLine]", 
+Cell[BoxData[
  RowBox[{"Manipulate", "[", 
   RowBox[{
    RowBox[{"Module", "[", 
@@ -218,8 +233,8 @@ Cell[BoxData[{
       "}"}], ",", 
      RowBox[{
       RowBox[{"text", " ", "=", 
-       RowBox[{"Switch", "[", 
-        RowBox[{"f", ",", "1", ",", 
+       RowBox[{"{", 
+        RowBox[{
          RowBox[{"Style", "[", 
           RowBox[{
           "\"\< Long Radio Wave\\n This is the Long Radio Wave\\n It's wave \
@@ -227,7 +242,7 @@ length is between 10^2 to 10^8 meters\>\"", ",",
            RowBox[{"FontFamily", "\[Rule]", " ", "\"\<Arial\>\""}], ",", 
            RowBox[{"RGBColor", "[", 
             RowBox[{"0.32", ",", "0.42", ",", "0.65"}], "]"}], ",", 
-           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", "2", ",", 
+           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", 
          RowBox[{"Style", "[", 
           RowBox[{
           "\"\< Short Radio Wave\\n This is the Short Radio Wave\\n It's wave \
@@ -235,7 +250,7 @@ length is between 1 to 10^2 meters\>\"", ",",
            RowBox[{"FontFamily", "\[Rule]", " ", "\"\<Arial\>\""}], ",", 
            RowBox[{"RGBColor", "[", 
             RowBox[{"0.32", ",", "0.42", ",", "0.65"}], "]"}], ",", 
-           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", "3", ",", 
+           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", 
          RowBox[{"Style", "[", 
           RowBox[{
           "\"\< Microwave\\n This is the Microwave\\n It's wave length is \
@@ -243,7 +258,7 @@ between 10^-3 to 1 meters\>\"", ",",
            RowBox[{"FontFamily", "\[Rule]", " ", "\"\<Arial\>\""}], ",", 
            RowBox[{"RGBColor", "[", 
             RowBox[{"0.32", ",", "0.42", ",", "0.65"}], "]"}], ",", 
-           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", "4", ",", 
+           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", 
          RowBox[{"Style", "[", 
           RowBox[{
           "\"\< IR\\n This the IR wave\\n It's wave length is between 10^-6 \
@@ -251,7 +266,7 @@ to 10^-3 meters.\>\"", ",",
            RowBox[{"FontFamily", "\[Rule]", " ", "\"\<Arial\>\""}], ",", 
            RowBox[{"RGBColor", "[", 
             RowBox[{"0.32", ",", "0.42", ",", "0.65"}], "]"}], ",", 
-           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", "5", ",", 
+           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", 
          RowBox[{"Style", "[", 
           RowBox[{
           "\"\< Visible Spectrum\\n These are waves that is visible to human \
@@ -259,7 +274,7 @@ eyes.\\n It's wave length is between 10^-7 to 10^-6 meters\>\"", ",",
            RowBox[{"FontFamily", "\[Rule]", " ", "\"\<Arial\>\""}], ",", 
            RowBox[{"RGBColor", "[", 
             RowBox[{"0.32", ",", "0.42", ",", "0.65"}], "]"}], ",", 
-           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", "6", ",", 
+           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", 
          RowBox[{"Style", "[", 
           RowBox[{
           "\"\< UV\\n This is the UV wave\\n It's wave length is around 10^-7 \
@@ -267,7 +282,7 @@ mters\>\"", ",",
            RowBox[{"FontFamily", "\[Rule]", " ", "\"\<Arial\>\""}], ",", 
            RowBox[{"RGBColor", "[", 
             RowBox[{"0.32", ",", "0.42", ",", "0.65"}], "]"}], ",", 
-           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", "7", ",", 
+           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", 
          RowBox[{"Style", "[", 
           RowBox[{
           "\"\< EUV\\n This is EUV wave.\\ It's wave length is around 10^-8 \
@@ -275,7 +290,7 @@ meters\>\"", ",",
            RowBox[{"FontFamily", "\[Rule]", " ", "\"\<Arial\>\""}], ",", 
            RowBox[{"RGBColor", "[", 
             RowBox[{"0.32", ",", "0.42", ",", "0.65"}], "]"}], ",", 
-           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", "8", ",", 
+           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", 
          RowBox[{"Style", "[", 
           RowBox[{
           "\"\< SX\\n This is Soft X-ray\\n It's wave length is around 10^-9 \
@@ -283,7 +298,7 @@ meters\>\"", ",",
            RowBox[{"FontFamily", "\[Rule]", " ", "\"\<Arial\>\""}], ",", 
            RowBox[{"RGBColor", "[", 
             RowBox[{"0.32", ",", "0.42", ",", "0.65"}], "]"}], ",", 
-           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", "9", ",", 
+           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", 
          RowBox[{"Style", "[", 
           RowBox[{
           "\"\< HX\\n This is Hard X-ray\\n It's wave length is around 10^-10 \
@@ -291,7 +306,7 @@ meters\>\"", ",",
            RowBox[{"FontFamily", "\[Rule]", " ", "\"\<Arial\>\""}], ",", 
            RowBox[{"RGBColor", "[", 
             RowBox[{"0.32", ",", "0.42", ",", "0.65"}], "]"}], ",", 
-           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", "10", ",", 
+           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}], ",", 
          RowBox[{"Style", "[", 
           RowBox[{
           "\"\< \[Gamma]\\n This is \[Gamma] wave\\n It's wave length is \
@@ -299,7 +314,8 @@ around 10^-12 meters\>\"", ",",
            RowBox[{"FontFamily", "\[Rule]", " ", "\"\<Arial\>\""}], ",", 
            RowBox[{"RGBColor", "[", 
             RowBox[{"0.32", ",", "0.42", ",", "0.65"}], "]"}], ",", 
-           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}]}], "]"}]}], ";", 
+           RowBox[{"FontSize", "\[Rule]", "20"}]}], "]"}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"waveFunc", "[", 
         RowBox[{"x_", ",", "f_"}], "]"}], ":=", " ", 
@@ -318,42 +334,66 @@ around 10^-12 meters\>\"", ",",
       RowBox[{"lightspeed", " ", "=", " ", 
        RowBox[{"3", "*", 
         RowBox[{"10", "^", "8"}]}]}], ";", "\[IndentingNewLine]", 
-      RowBox[{"Column", "[", 
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"Plot", "[", 
-           RowBox[{
-            RowBox[{"waveFunc", "[", 
-             RowBox[{"x", ",", "f"}], "]"}], ",", 
-            RowBox[{"{", 
-             RowBox[{"x", ",", 
-              RowBox[{"-", "50"}], ",", "50"}], "}"}], ",", 
-            RowBox[{"ColorFunction", "\[Rule]", "\"\<Rainbow\>\""}], ",", 
-            RowBox[{"ImageSize", "\[Rule]", "Large"}]}], "]"}], ",", 
-          RowBox[{"Grid", "[", 
+      RowBox[{"Row", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Grid", "[", 
+          RowBox[{"{", 
            RowBox[{
             RowBox[{"{", 
-             RowBox[{"{", "text", "}"}], "}"}], ",", 
-            RowBox[{"Frame", "\[Rule]", " ", "True"}], ",", 
-            RowBox[{"Background", "\[Rule]", "LightPink"}]}], "]"}], ",", 
-          RowBox[{"Style", "[", 
-           RowBox[{"\"\<WaveLength\>\"", ",", 
-            RowBox[{"FontSize", "\[Rule]", " ", "14"}], ",", 
-            RowBox[{"FontFamily", "\[Rule]", "\"\<Arial\>\""}]}], "]"}], ",", 
-          RowBox[{"Grid", "[", 
-           RowBox[{
+             RowBox[{"Show", "[", 
+              RowBox[{"Plot", "[", 
+               RowBox[{
+                RowBox[{"waveFunc", "[", 
+                 RowBox[{"x", ",", "f"}], "]"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{"x", ",", 
+                  RowBox[{"-", "6"}], ",", "6"}], "}"}], ",", 
+                RowBox[{"ColorFunction", "\[Rule]", "\"\<Rainbow\>\""}], ",", 
+                RowBox[{"Axes", "\[Rule]", " ", "False"}], ",", 
+                RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}], "]"}], 
+             "}"}], ",", 
             RowBox[{"{", 
-             RowBox[{"{", 
-              RowBox[{"text2", "[", "f", "]"}], "}"}], "}"}], ",", 
-            RowBox[{"Frame", "\[Rule]", " ", "True"}], ",", 
-            RowBox[{"Background", "\[Rule]", "White"}]}], "]"}]}], "}"}], ",", 
-        RowBox[{"Alignment", "\[Rule]", "Center"}]}], "]"}]}]}], "]"}], ",", 
+             RowBox[{"Text", "[", 
+              RowBox[{"Style", "[", 
+               RowBox[{"Column", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"\"\<Frequency: \>\"", ",", 
+                   RowBox[{
+                    RowBox[{"ToString", "[", 
+                    RowBox[{"NumberForm", "[", 
+                    RowBox[{"f", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"5", ",", "3"}], "}"}]}], "]"}], "]"}], "<>", 
+                    "\"\< Hz\>\""}], ",", "\"\<\>\"", ",", 
+                   "\"\<Wavelength: \>\"", ",", 
+                   RowBox[{
+                    RowBox[{"ToString", "[", 
+                    RowBox[{"NumberForm", "[", 
+                    RowBox[{
+                    RowBox[{"lightspeed", "/", "f"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"5", ",", "3"}], "}"}]}], "]"}], "]"}], "<>", 
+                    "\"\< m\>\""}]}], "}"}], ",", 
+                 RowBox[{"Alignment", "\[Rule]", "Right"}]}], "]"}], "]"}], 
+              "]"}], "}"}]}], "}"}], "]"}], ",", 
+         RowBox[{"Grid", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"{", 
+             RowBox[{"text", "[", 
+              RowBox[{"[", 
+               RowBox[{"Floor", "[", "f", "]"}], "]"}], "]"}], "}"}], "}"}], 
+           ",", 
+           RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+           RowBox[{"Background", "\[Rule]", "LightPink"}]}], "]"}]}], "}"}], 
+       "]"}]}]}], "]"}], ",", " ", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"f", ",", "1", ",", "\"\<frequency\>\""}], "}"}], ",", "1", ",",
-      "10", ",", "1", ",", 
+      "10", ",", "0.1", ",", 
      RowBox[{"ControlType", "\[Rule]", " ", "Slider"}]}], "}"}], ",", 
    "\[IndentingNewLine]", 
    RowBox[{"TrackedSymbols", "\[RuleDelayed]", "True"}], ",", 
@@ -365,83 +405,103 @@ around 10^-12 meters\>\"", ",",
      RowBox[{"2", ",", "3"}], "}"}]}], ",", "\[IndentingNewLine]", 
    RowBox[{"ContentSize", "\[Rule]", 
     RowBox[{"{", 
-     RowBox[{"700", ",", " ", "560"}], "}"}]}]}], "]"}]}], "Input",
+     RowBox[{"700", ",", " ", "560"}], "}"}]}]}], "]"}]], "Input",
  CellChangeTimes->{{3.644152044432828*^9, 3.6441520598479004`*^9}, {
-  3.644152142759757*^9, 3.6441521639164753`*^9}, {3.644152195199087*^9, 
-  3.6441522462832203`*^9}, {3.644152311092285*^9, 3.6441523565689087`*^9}, {
-  3.644152456194166*^9, 3.644152553270873*^9}, {3.6441525839119368`*^9, 
-  3.6441527158221264`*^9}, {3.644152891113654*^9, 3.644152896312174*^9}, {
-  3.6441534161621532`*^9, 3.6441535173802743`*^9}, {3.6441538414464293`*^9, 
-  3.6441538420864296`*^9}, {3.6441541303424296`*^9, 3.6441541415004296`*^9}, {
-  3.6441542024824295`*^9, 3.64415422751143*^9}, {3.6441783440255613`*^9, 
-  3.6441784101637144`*^9}, {3.6441784735167027`*^9, 3.6441786140121517`*^9}, {
-  3.644178658838669*^9, 3.6441787108944626`*^9}, {3.6441787545480967`*^9, 
-  3.644178759458606*^9}}],
+   3.644152142759757*^9, 3.6441521639164753`*^9}, {3.644152195199087*^9, 
+   3.6441522462832203`*^9}, {3.644152311092285*^9, 3.6441523565689087`*^9}, {
+   3.644152456194166*^9, 3.644152553270873*^9}, {3.6441525839119368`*^9, 
+   3.6441527158221264`*^9}, {3.644152891113654*^9, 3.644152896312174*^9}, {
+   3.6441534161621532`*^9, 3.6441535173802743`*^9}, {3.6441538414464293`*^9, 
+   3.6441538420864296`*^9}, {3.6441541303424296`*^9, 
+   3.6441541415004296`*^9}, {3.6441542024824295`*^9, 3.64415422751143*^9}, {
+   3.6441783440255613`*^9, 3.6441784101637144`*^9}, {3.6441784735167027`*^9, 
+   3.6441786140121517`*^9}, {3.644178658838669*^9, 3.6441787108944626`*^9}, {
+   3.6441787545480967`*^9, 3.644178759458606*^9}, {3.644603824559797*^9, 
+   3.6446038873830786`*^9}, {3.6446039908694263`*^9, 3.644604040323371*^9}, {
+   3.6446044457219067`*^9, 3.6446044631576505`*^9}, {3.6446045482621603`*^9, 
+   3.64460457616595*^9}, {3.644604668085141*^9, 3.6446046770080333`*^9}, {
+   3.6446047159849305`*^9, 3.6446048098013115`*^9}, {3.6446050932466526`*^9, 
+   3.6446051246917973`*^9}, {3.6446051812694545`*^9, 
+   3.6446052154138684`*^9}, {3.6446053983671618`*^9, 3.644605402538579*^9}, {
+   3.644605846433964*^9, 3.644605898868207*^9}, {3.6446059909184113`*^9, 
+   3.644606013970716*^9}, {3.6446060666179805`*^9, 3.6446061667979975`*^9}, {
+   3.6446061991572328`*^9, 3.644606240479365*^9}, {3.6446062922345395`*^9, 
+   3.644606298505167*^9}, {3.6446069125660925`*^9, 3.6446069159207573`*^9}, {
+   3.6446069631350355`*^9, 3.644606996551693*^9}, {3.6446070359447536`*^9, 
+   3.6446070877095766`*^9}, {3.6446071379463325`*^9, 3.644607193338332*^9}, {
+   3.644607263859332*^9, 3.644607660510332*^9}, {3.644607748279332*^9, 
+   3.644607801187332*^9}, {3.6446078655703325`*^9, 3.6446079039343324`*^9}, {
+   3.6446079443183327`*^9, 3.644608118371332*^9}, {3.6446082039793324`*^9, 
+   3.644608322218546*^9}, {3.6446083614534693`*^9, 3.6446084082871523`*^9}, {
+   3.644608448352158*^9, 3.6446084503753605`*^9}, {3.6446084976700897`*^9, 
+   3.644608497919114*^9}, {3.6446085495852804`*^9, 3.644608605107832*^9}, {
+   3.6446087767809973`*^9, 3.6446090090642233`*^9}, {3.6446090788081975`*^9, 
+   3.6446091543157473`*^9}, {3.644609184814797*^9, 3.6446092833906536`*^9}, 
+   3.644609373431657*^9, 3.6446094765089636`*^9}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`f$$ = 1, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`f$$ = 1., Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`f$$], 1, "frequency"}, 1, 10, 1}}, Typeset`size$$ = 
-    Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`f$9637$$ = 0}, 
+       Hold[$CellContext`f$$], 1, "frequency"}, 1, 10, 0.1}}, Typeset`size$$ =
+     Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`f$162129$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`f$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`f$$, $CellContext`f$9637$$, 0]}, 
+        Hold[$CellContext`f$$, $CellContext`f$162129$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> 
       Module[{$CellContext`text$, $CellContext`waveFunc$, \
-$CellContext`text2$, $CellContext`lightspeed$}, $CellContext`text$ = 
-         Switch[$CellContext`f$$, 1, 
+$CellContext`text2$, $CellContext`lightspeed$}, $CellContext`text$ = {
            Style[
            " Long Radio Wave\n This is the Long Radio Wave\n It's wave length \
 is between 10^2 to 10^8 meters", FontFamily -> "Arial", 
-            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 2, 
+            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 
            Style[
            " Short Radio Wave\n This is the Short Radio Wave\n It's wave \
 length is between 1 to 10^2 meters", FontFamily -> "Arial", 
-            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 3, 
+            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 
            Style[
            " Microwave\n This is the Microwave\n It's wave length is between \
 10^-3 to 1 meters", FontFamily -> "Arial", 
-            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 4, 
+            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 
            Style[
            " IR\n This the IR wave\n It's wave length is between 10^-6 to \
 10^-3 meters.", FontFamily -> "Arial", 
-            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 5, 
+            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 
            Style[
            " Visible Spectrum\n These are waves that is visible to human \
 eyes.\n It's wave length is between 10^-7 to 10^-6 meters", FontFamily -> 
             "Arial", 
-            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 6, 
+            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 
            Style[
            " UV\n This is the UV wave\n It's wave length is around 10^-7 \
 mters", FontFamily -> "Arial", 
-            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 7, 
+            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 
            Style[
            " EUV\n This is EUV wave. It's wave length is around 10^-8 meters",
              FontFamily -> "Arial", 
-            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 8, 
+            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 
            Style[
            " SX\n This is Soft X-ray\n It's wave length is around 10^-9 \
 meters", FontFamily -> "Arial", 
-            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 9, 
+            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 
            Style[
            " HX\n This is Hard X-ray\n It's wave length is around 10^-10 \
 meters", FontFamily -> "Arial", 
-            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 10, 
+            RGBColor[0.32, 0.42, 0.65], FontSize -> 20], 
            Style[
            " \[Gamma]\n This is \[Gamma] wave\n It's wave length is around \
 10^-12 meters", FontFamily -> "Arial", 
             RGBColor[0.32, 0.42, 0.65], FontSize -> 
-            20]]; $CellContext`waveFunc$[
+            20]}; $CellContext`waveFunc$[
            Pattern[$CellContext`x, 
             Blank[]], 
            Pattern[$CellContext`f, 
@@ -453,18 +513,30 @@ meters", FontFamily -> "Arial",
            ToString[
             
             Round[$CellContext`lightspeed$/$CellContext`f$]]]; \
-$CellContext`lightspeed$ = 3 10^8; Column[{
-           Plot[
-            $CellContext`waveFunc$[$CellContext`x, $CellContext`f$$], \
-{$CellContext`x, -50, 50}, ColorFunction -> "Rainbow", ImageSize -> Large], 
-           
-           Grid[{{$CellContext`text$}}, Frame -> True, Background -> 
-            LightPink], 
-           Style["WaveLength", FontSize -> 14, FontFamily -> "Arial"], 
+$CellContext`lightspeed$ = 3 10^8; Row[{
            Grid[{{
-              $CellContext`text2$[$CellContext`f$$]}}, Frame -> True, 
-            Background -> White]}, Alignment -> Center]], 
-      "Specifications" :> {{{$CellContext`f$$, 1, "frequency"}, 1, 10, 1, 
+              Show[
+               Plot[
+                $CellContext`waveFunc$[$CellContext`x, $CellContext`f$$], \
+{$CellContext`x, -6, 6}, ColorFunction -> "Rainbow", Axes -> False, ImageSize -> 
+                Medium]]}, {
+              Text[
+               Style[
+                Column[{"Frequency: ", 
+                  StringJoin[
+                   ToString[
+                    NumberForm[$CellContext`f$$, {5, 3}]], " Hz"], "", 
+                  "Wavelength: ", 
+                  StringJoin[
+                   ToString[
+                    
+                    NumberForm[$CellContext`lightspeed$/$CellContext`f$$, {5, 
+                    3}]], " m"]}, Alignment -> Right]]]}}], 
+           Grid[{{
+              Part[$CellContext`text$, 
+               Floor[$CellContext`f$$]]}}, Frame -> True, Background -> 
+            LightPink]}]], 
+      "Specifications" :> {{{$CellContext`f$$, 1, "frequency"}, 1, 10, 0.1, 
          ControlType -> Slider}}, 
       "Options" :> {
        TrackedSymbols :> True, SynchronousInitialization -> False, 
@@ -481,12 +553,7 @@ $CellContext`lightspeed$ = 3 10^8; Column[{
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.6441526758731318`*^9, 3.6441527186374083`*^9}, 
-   3.644152900461589*^9, {3.644153424505988*^9, 3.6441534551160483`*^9}, {
-   3.644153489754512*^9, 3.644153519166453*^9}, {3.6441538438244295`*^9, 
-   3.6441538480664296`*^9}, 3.6441541546504297`*^9, {3.6441542062124295`*^9, 
-   3.6441542281374297`*^9}, 3.64417862673588*^9, 3.644178717239828*^9, 
-   3.6441787623683147`*^9, 3.6442432983840227`*^9, 3.6442433571629*^9}]
+ CellChangeTimes->{3.644609479512264*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -586,8 +653,23 @@ Cell[BoxData[
          MouseAnnotation[]] + 1), PassEventsDown -> Automatic, PassEventsUp -> 
      True}]],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.644238934680808*^9, 3.6442432984570303`*^9, 
-  3.6442433572309065`*^9}]
+ CellChangeTimes->{
+  3.644238934680808*^9, 3.6442432984570303`*^9, 3.6442433572309065`*^9, 
+   3.6446038956749077`*^9, 3.644604467636098*^9, 3.644604560074341*^9, 
+   3.6446046821855507`*^9, {3.644604794820813*^9, 3.644604812961627*^9}, 
+   3.6446051131846466`*^9, 3.644605231018429*^9, {3.6446058807563963`*^9, 
+   3.644605902325553*^9}, {3.6446060024835677`*^9, 3.644606017789098*^9}, {
+   3.644606142769595*^9, 3.6446061691672344`*^9}, {3.644606207718089*^9, 
+   3.6446062437986965`*^9}, 3.644606302103526*^9, 3.644606922243125*^9, 
+   3.6446070018871593`*^9, 3.644607040545294*^9, 3.6446070906802797`*^9, {
+   3.6446071241923323`*^9, 3.6446071515923324`*^9}, 3.6446076660373325`*^9, 
+   3.6446077532703323`*^9, 3.6446078053803325`*^9, 3.6446078720323324`*^9, 
+   3.6446079067053328`*^9, {3.6446079652473326`*^9, 3.6446080112093325`*^9}, 
+   3.6446080916053324`*^9, 3.6446083375260763`*^9, 3.6446084115114746`*^9, 
+   3.644608454225745*^9, 3.644608586417963*^9, {3.6446089937916965`*^9, 
+   3.644609012308548*^9}, {3.6446091361179276`*^9, 3.644609158364152*^9}, {
+   3.644609233529668*^9, 3.644609251520467*^9}, 3.644609286174932*^9, {
+   3.644609458653178*^9, 3.644609479535266*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -927,7 +1009,23 @@ SKspKUH6s7UTmbTLF6gf2DNXCbKPx85roG2gPpMWpqwEc3IPXaLf79Hr1Q1T
      Scaled[0.05], 
      Scaled[0.05]}},
   Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{3.644243298490033*^9, 3.6442433572619095`*^9}]
+ CellChangeTimes->{
+  3.644243298490033*^9, 3.6442433572619095`*^9, 3.6446038957009106`*^9, 
+   3.6446044676691017`*^9, 3.644604560108344*^9, 3.6446046822205544`*^9, {
+   3.644604794858817*^9, 3.6446048129966307`*^9}, 3.64460511321865*^9, 
+   3.6446052310564327`*^9, {3.644605880786399*^9, 3.644605902361556*^9}, {
+   3.6446060025235715`*^9, 3.644606017828102*^9}, {3.644606142803598*^9, 
+   3.6446061692012377`*^9}, {3.644606207756093*^9, 3.644606243849702*^9}, 
+   3.644606302155532*^9, 3.644606922283121*^9, 3.644607001926156*^9, 
+   3.64460704058029*^9, 3.6446070907182755`*^9, {3.6446071242733326`*^9, 
+   3.6446071516173325`*^9}, 3.644607666069332*^9, 3.6446077532963324`*^9, 
+   3.6446078054153323`*^9, 3.6446078721013327`*^9, 3.6446079067363324`*^9, {
+   3.6446079652943325`*^9, 3.6446080112583323`*^9}, 3.6446080916413326`*^9, 
+   3.644608337579082*^9, 3.644608411545478*^9, 3.6446084542737503`*^9, 
+   3.6446085864489665`*^9, {3.6446089938206997`*^9, 3.644609012365554*^9}, {
+   3.6446091361749334`*^9, 3.644609158401156*^9}, {3.644609233601675*^9, 
+   3.644609251569472*^9}, 3.6446092862219367`*^9, {3.644609458693182*^9, 
+   3.6446094795752697`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1554,7 +1652,22 @@ XAuKWNJFMCTiJMkvUGNyiviSx+fGF6c48P//L/wfwf5BnQ==
   PlotRangeClipping->True,
   PlotRangePadding->Automatic,
   Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{3.6442432985100355`*^9, 3.644243357277911*^9}]
+ CellChangeTimes->{
+  3.6442432985100355`*^9, 3.644243357277911*^9, 3.644603895737914*^9, 
+   3.644604467682103*^9, 3.6446045601183453`*^9, 3.644604682231556*^9, {
+   3.6446047948738184`*^9, 3.6446048130086317`*^9}, 3.644605113228651*^9, 
+   3.6446052310674334`*^9, {3.6446058807984*^9, 3.6446059023725576`*^9}, {
+   3.644606002535573*^9, 3.6446060178501043`*^9}, {3.6446061428155994`*^9, 
+   3.6446061692132387`*^9}, {3.6446062077670937`*^9, 3.644606243859703*^9}, 
+   3.6446063021685333`*^9, 3.64460692229412*^9, 3.644607001936155*^9, 
+   3.644607040592289*^9, 3.644607090728275*^9, {3.6446071242993326`*^9, 
+   3.6446071516293325`*^9}, 3.644607666081332*^9, 3.644607753312332*^9, 
+   3.6446078054273324`*^9, 3.6446078721223326`*^9, 3.6446079067483325`*^9, {
+   3.644607965305332*^9, 3.644608011274332*^9}, 3.6446080916593323`*^9, 
+   3.644608337592083*^9, 3.6446084115584793`*^9, 3.6446084542867517`*^9, {
+   3.644608993837701*^9, 3.6446090123785553`*^9}, {3.6446091361869345`*^9, 
+   3.644609158414157*^9}, {3.644609233615677*^9, 3.6446092515794725`*^9}, 
+   3.644609286233938*^9, {3.644609458710184*^9, 3.644609479588271*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1798,8 +1911,22 @@ Cell[BoxData[
           Part[$CellContext`lectureText$$, $CellContext`i]]}}], 
      PassEventsDown -> Automatic, PassEventsUp -> True}]],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.644241678511042*^9, 3.644243298544039*^9, 
-  3.644243357314915*^9}]
+ CellChangeTimes->{
+  3.644241678511042*^9, 3.644243298544039*^9, 3.644243357314915*^9, 
+   3.6446038957599163`*^9, 3.644604467706105*^9, 3.6446045601363473`*^9, 
+   3.6446046822515574`*^9, {3.6446047949048214`*^9, 3.6446048130276337`*^9}, 
+   3.6446051132466526`*^9, 3.6446052310874357`*^9, {3.644605880816402*^9, 
+   3.64460590239456*^9}, 3.6446060025545745`*^9, {3.644606142833601*^9, 
+   3.6446061692312403`*^9}, {3.6446062077850957`*^9, 3.6446062438797045`*^9}, 
+   3.6446063021885347`*^9, 3.644606922314118*^9, 3.644607001956153*^9, 
+   3.6446070406102867`*^9, 3.644607090748273*^9, {3.6446071243253326`*^9, 
+   3.644607151654332*^9}, 3.6446076661013327`*^9, 3.6446077533363323`*^9, 
+   3.6446078054463325`*^9, 3.644607872147332*^9, 3.644607906767332*^9, {
+   3.644607965326332*^9, 3.6446080112943325`*^9}, 3.6446080916833324`*^9, 
+   3.6446083376160855`*^9, 3.644608411578481*^9, 3.6446084543057537`*^9, {
+   3.644608993876705*^9, 3.644609012398557*^9}, {3.6446091362089367`*^9, 
+   3.644609158436159*^9}, {3.644609233642679*^9, 3.644609251604475*^9}, 
+   3.6446092862609406`*^9, {3.6446094587351866`*^9, 3.644609479607273*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1868,35 +1995,28 @@ Cell[BoxData[
   3.6442592017372985`*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`x$$ = {6, 4, 3}}, 
+ DynamicModuleBox[{$CellContext`x$$ = {0, 0, 0}}, 
   TagBox[
-   RowBox[{"{", 
-    RowBox[{
-     TagBox[
-      Graphics3DBox[
-       {RGBColor[1, 0, 0], SphereBox[{0, 0, 0}]},
-       PlotLabel->FormBox[
-         DynamicBox[
-          ToBoxes[
-           Part[$CellContext`x$$, 1], TraditionalForm]], TraditionalForm]],
-      Annotation[#, 1, "Mouse"]& ], ",", 
-     TagBox[
-      Graphics3DBox[
-       {RGBColor[0, 1, 0], SphereBox[{0, 0, 0}]},
-       PlotLabel->FormBox[
-         DynamicBox[
-          ToBoxes[
-           Part[$CellContext`x$$, 2], TraditionalForm]], TraditionalForm]],
-      Annotation[#, 2, "Mouse"]& ], ",", 
-     TagBox[
-      Graphics3DBox[
-       {RGBColor[0, 0, 1], SphereBox[{0, 0, 0}]},
-       PlotLabel->FormBox[
-         DynamicBox[
-          ToBoxes[
-           Part[$CellContext`x$$, 3], TraditionalForm]], TraditionalForm]],
-      Annotation[#, 3, "Mouse"]& ]}], "}"}],
-   EventHandlerTag[{"MouseClicked" :> (Part[$CellContext`x$$, 
+   TagBox[
+    Graphics3DBox[
+     {RGBColor[1, 0, 0], SphereBox[{0, 0, 0}]},
+     PlotLabel->FormBox[
+       DynamicBox[
+        ToBoxes[
+         Part[$CellContext`x$$, 1], TraditionalForm]], TraditionalForm]],
+    Annotation[#, 1, "Mouse"]& ],
+   EventHandlerTag[{
+     Annotation[
+      Graphics3D[{
+        RGBColor[0, 1, 0], 
+        Sphere[{0, 0, 0}]}, PlotLabel -> Dynamic[
+         Part[$CellContext`x$$, 2]]], 2, "Mouse"], 
+     Annotation[
+      Graphics3D[{
+        RGBColor[0, 0, 1], 
+        Sphere[{0, 0, 0}]}, PlotLabel -> Dynamic[
+         Part[$CellContext`x$$, 3]]], 3, "Mouse"], 
+     "MouseClicked" :> (Part[$CellContext`x$$, 
         MouseAnnotation[]] = Part[$CellContext`x$$, 
          MouseAnnotation[]] + 1), PassEventsDown -> Automatic, PassEventsUp -> 
      True}]],
@@ -1905,7 +2025,21 @@ Cell[BoxData[
    3.6442425538034143`*^9, {3.6442425955307446`*^9, 3.644242611349326*^9}, {
    3.64424276620681*^9, 3.6442427807392635`*^9}, 3.644242929979186*^9, {
    3.6442429725204396`*^9, 3.6442429899321804`*^9}, 3.6442432985640407`*^9, 
-   3.6442433573389177`*^9}]
+   3.6442433573389177`*^9, 3.644603895789919*^9, 3.6446044677311077`*^9, 
+   3.64460456016335*^9, 3.64460468227856*^9, {3.6446047949448256`*^9, 
+   3.6446048130546365`*^9}, 3.6446051132766557`*^9, 3.6446052311164384`*^9, {
+   3.644605880846405*^9, 3.644605902423562*^9}, 3.6446060025835776`*^9, {
+   3.6446061428616037`*^9, 3.6446061692632437`*^9}, {3.6446062078130984`*^9, 
+   3.6446062439067073`*^9}, 3.6446063022165375`*^9, 3.644606922342115*^9, 
+   3.6446070019851503`*^9, 3.644607040639284*^9, 3.64460709077727*^9, {
+   3.6446071243563323`*^9, 3.6446071516913323`*^9}, 3.6446076661313324`*^9, 
+   3.6446077533653326`*^9, 3.6446078054763327`*^9, 3.6446078721853323`*^9, 
+   3.6446079067963324`*^9, {3.6446079653563323`*^9, 3.644608011324332*^9}, 
+   3.644608091713332*^9, 3.6446083376440887`*^9, 3.644608411605484*^9, 
+   3.6446084543347564`*^9, {3.6446089938967075`*^9, 3.6446090124285603`*^9}, {
+   3.64460913623794*^9, 3.6446091584661627`*^9}, {3.644609233673682*^9, 
+   3.6446092516394787`*^9}, 3.644609286295944*^9, {3.64460945876919*^9, 
+   3.644609479638276*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2025,11 +2159,25 @@ Cell[BoxData[
      True}]],
   DynamicModuleValues:>{}]], "Output",
  CellChangeTimes->{{3.6442432694091253`*^9, 3.6442432985940437`*^9}, 
-   3.64424335736592*^9}]
+   3.64424335736592*^9, 3.6446038958339233`*^9, 3.644604467745109*^9, 
+   3.6446045601743507`*^9, 3.6446046822915616`*^9, {3.6446047949618273`*^9, 
+   3.6446048130676374`*^9}, 3.6446051132886567`*^9, 3.64460523113344*^9, {
+   3.644605880858406*^9, 3.644605902437564*^9}, 3.644606002597579*^9, {
+   3.644606142875605*^9, 3.6446061692752447`*^9}, {3.6446062078260994`*^9, 
+   3.644606243918709*^9}, 3.6446063022335396`*^9, 3.644606922359113*^9, 
+   3.6446070019991484`*^9, 3.6446070406542826`*^9, 3.6446070907942677`*^9, {
+   3.6446071243963327`*^9, 3.6446071517243323`*^9}, 3.6446076661463327`*^9, 
+   3.644607753378332*^9, 3.6446078054903326`*^9, 3.6446078722303324`*^9, 
+   3.6446079068103323`*^9, {3.6446079653693323`*^9, 3.6446080113403325`*^9}, 
+   3.6446080917293324`*^9, 3.6446083376620903`*^9, 3.644608411626486*^9, 
+   3.6446084543487577`*^9, {3.644608993966714*^9, 3.6446090124415617`*^9}, {
+   3.6446091362559414`*^9, 3.644609158483164*^9}, {3.6446092336866837`*^9, 
+   3.644609251676482*^9}, 3.644609286333948*^9, {3.644609458814194*^9, 
+   3.6446094796512775`*^9}}]
 }, Open  ]]
 },
-WindowSize->{1680, 1008},
-WindowMargins->{{1672, Automatic}, {Automatic, -8}},
+WindowSize->{1680, 992},
+WindowMargins->{{1672, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -2046,36 +2194,36 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 94, 2, 31, "Input"],
 Cell[CellGroupData[{
-Cell[677, 26, 3425, 85, 252, "Input"],
-Cell[4105, 113, 3875, 81, 426, "Output"]
+Cell[677, 26, 3816, 96, 232, "Input"],
+Cell[4496, 124, 4987, 96, 474, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8017, 199, 8521, 179, 452, "Input"],
-Cell[16541, 380, 5301, 108, 646, "Output"]
+Cell[9520, 225, 10473, 214, 472, "Input"],
+Cell[19996, 441, 5224, 114, 679, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21879, 493, 2140, 59, 72, "Input"],
-Cell[24022, 554, 1235, 35, 212, "Output"]
+Cell[25257, 560, 2140, 59, 72, "Input"],
+Cell[27400, 621, 2331, 50, 212, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25294, 594, 628, 17, 31, "Input"],
-Cell[25925, 613, 18306, 316, 227, "Output"]
+Cell[29768, 676, 628, 17, 31, "Input"],
+Cell[30399, 695, 19403, 332, 227, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[44268, 934, 18140, 310, 227, "Input"],
-Cell[62411, 1246, 18165, 310, 227, "Output"]
+Cell[49839, 1032, 18140, 310, 227, "Input"],
+Cell[67982, 1344, 19231, 325, 227, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[80613, 1561, 6435, 160, 172, "Input"],
-Cell[87051, 1723, 2509, 78, 225, "Output"]
+Cell[87250, 1674, 6435, 160, 172, "Input"],
+Cell[93688, 1836, 3556, 92, 225, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[89597, 1806, 2293, 61, 72, "Input"],
-Cell[91893, 1869, 1486, 38, 227, "Output"]
+Cell[97281, 1933, 2293, 61, 72, "Input"],
+Cell[99577, 1996, 2278, 45, 421, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[93416, 1912, 2743, 70, 92, "Input"],
-Cell[96162, 1984, 1508, 43, 227, "Output"]
+Cell[101892, 2046, 2743, 70, 92, "Input"],
+Cell[104638, 2118, 2561, 57, 227, "Output"]
 }, Open  ]]
 }
 ]
