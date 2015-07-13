@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     68265,       1228]
-NotebookOptionsPosition[     67719,       1204]
-NotebookOutlinePosition[     68063,       1219]
-CellTagsIndexPosition[     68020,       1216]
+NotebookDataLength[     79845,       1501]
+NotebookOptionsPosition[     79061,       1469]
+NotebookOutlinePosition[     79405,       1484]
+CellTagsIndexPosition[     79362,       1481]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,17 +26,16 @@ Cell[BoxData[
    RowBox[{"ParametricPlot", "[", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"{", 
+      RowBox[{
        RowBox[{
         RowBox[{
+         RowBox[{"-", "10"}], "*", 
          RowBox[{
-          RowBox[{"-", "10"}], "*", 
-          RowBox[{
-           RowBox[{"ArcTan", "[", "\[Alpha]", "]"}], "/", 
-           RowBox[{"(", 
-            RowBox[{"1.15", "^", "t"}], ")"}]}]}], "-", "0.75"}], ",", 
-        RowBox[{
-         RowBox[{"-", "t"}], "+", "16"}]}], "}"}], "}"}], ",", 
+          RowBox[{"ArcTan", "[", "\[Alpha]", "]"}], "/", 
+          RowBox[{"(", 
+           RowBox[{"1.15", "^", "t"}], ")"}]}]}], "-", "0.75"}], ",", 
+       RowBox[{
+        RowBox[{"-", "t"}], "+", "16"}]}], "}"}], ",", 
      RowBox[{"{", 
       RowBox[{"t", ",", "1", ",", "30"}], "}"}], ",", 
      RowBox[{"{", 
@@ -46,13 +45,8 @@ Cell[BoxData[
        RowBox[{"2", "*", "\[Pi]"}]}], "}"}], ",", 
      RowBox[{"PlotStyle", "\[Rule]", 
       RowBox[{"{", 
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{"Yellow", ",", 
-          RowBox[{"Opacity", "[", "0.5", "]"}]}], "}"}], ",", 
-        RowBox[{"{", 
-         RowBox[{"Black", ",", 
-          RowBox[{"Thickness", "[", "3", "]"}]}], "}"}]}], "}"}]}], ",", 
+       RowBox[{"Yellow", ",", 
+        RowBox[{"Opacity", "[", "0.5", "]"}]}], "}"}]}], ",", 
      RowBox[{"PlotRange", "\[Rule]", 
       RowBox[{"{", 
        RowBox[{
@@ -66,12 +60,16 @@ Cell[BoxData[
      RowBox[{"ColorFunctionScaling", "\[Rule]", "True"}], ",", 
      RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.6455527092965965`*^9, 3.645552744078596*^9}, {
-  3.6455560670783725`*^9, 3.6455560768023725`*^9}}],
+  3.6455560670783725`*^9, 3.6455560768023725`*^9}, {3.645787820666603*^9, 
+  3.645787835864479*^9}}],
 
 Cell[BoxData["\<\"funnel.jpg\"\>"], "Output",
  CellChangeTimes->{{3.6455527308345966`*^9, 3.645552744682596*^9}, 
    3.6455536205749216`*^9, 3.6455543469375553`*^9, {3.6455560895013723`*^9, 
-   3.6455561108553724`*^9}}]
+   3.6455561108553724`*^9}, 3.6457875113848314`*^9, {3.6457875763073072`*^9, 
+   3.645787602682472*^9}, {3.6457877333440285`*^9, 3.645787741994835*^9}, 
+   3.6457878407245617`*^9, {3.645788116974301*^9, 3.6457881580685663`*^9}, 
+   3.645789542786215*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1056,7 +1054,10 @@ pOgo65HsBw9nPgWiwXugkx+cypo+BhIm6X14Xc7Tf14Z3AftGNFzuHRp/z+j
   PlotRange->{{0, 360}, {0, 410}}]], "Output",
  CellChangeTimes->{
   3.645552778972596*^9, 3.6455536207539396`*^9, 3.6455543470525665`*^9, {
-   3.6455560896373725`*^9, 3.6455561109693727`*^9}}]
+   3.6455560896373725`*^9, 3.6455561109693727`*^9}, 3.645787512621601*^9, {
+   3.645787576432232*^9, 3.645787602776416*^9}, {3.6457877335588994`*^9, 
+   3.645787742095774*^9}, 3.645787840846488*^9, {3.645788117088278*^9, 
+   3.6457881581695666`*^9}, 3.645789542924242*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1112,53 +1113,54 @@ Cell[BoxData[
               RowBox[{"0", ",", "0"}], "}"}], "]"}], ",", 
             RowBox[{"Scaled", "[", 
              RowBox[{"{", 
-              RowBox[{"1", ",", "0"}], "}"}], "]"}], ",", 
+              RowBox[{"1.5", ",", "0"}], "}"}], "]"}], ",", 
             RowBox[{"Scaled", "[", 
              RowBox[{"{", 
-              RowBox[{"1", ",", "1"}], "}"}], "]"}], ",", 
+              RowBox[{"1.5", ",", "1.5"}], "}"}], "]"}], ",", 
             RowBox[{"Scaled", "[", 
              RowBox[{"{", 
-              RowBox[{"0", ",", "1"}], "}"}], "]"}]}], "}"}], ",", 
+              RowBox[{"0", ",", "1.5"}], "}"}], "]"}]}], "}"}], ",", 
           RowBox[{"VertexTextureCoordinates", "\[Rule]", 
            RowBox[{"{", 
             RowBox[{
              RowBox[{"{", 
               RowBox[{"0", ",", "0"}], "}"}], ",", 
              RowBox[{"{", 
-              RowBox[{"1", ",", "0"}], "}"}], ",", 
+              RowBox[{"1.5", ",", "0"}], "}"}], ",", 
              RowBox[{"{", 
-              RowBox[{"1", ",", "1"}], "}"}], ",", 
+              RowBox[{"1.5", ",", "1.5"}], "}"}], ",", 
              RowBox[{"{", 
-              RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}]}], "]"}]}], "}"}]}]}],
-     "]"}], ",", 
+              RowBox[{"0", ",", "1.5"}], "}"}]}], "}"}]}]}], "]"}]}], 
+       "}"}]}]}], "]"}], ",", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"pos", ",", "5.01"}], "}"}], ",", "1", ",", "30", ",", 
      "Slider"}], "}"}]}], "]"}]], "Input",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQBmIQrXjdWjJc87XjovCvMiB6/XIlRRBda99kBqJdzq8K
+1:eJxTTMoPSmViYGAQBWIQrXjdWjJc87XjovCvMiB6/XIlRRBda99kBqJdzq8K
 BtE/7P+C6VQB6WgQHSSakwOi7f6/rQPR4smrGkF0CsPrNhDNICTdDqI/PPyw
 HETbSH5bDaIbrtw4BqL/RbceB9GrF7rfAtF5z20egOgJX3ifguiIax/fgGjB
 XYosEUB610M7MP3EeiEHiL5X4S8Goh0SnymBaC8LIT0QbbRuURCInpWXFwqi
 LVijIkH0s63ycSD6A0tBFYjOcLZoBdFdTp7TQfTB07/mgOg3QVcXgOiQJ0bL
-QHRJZtc6EO2XXLsTRAMAQNKK3g==
+QHRJZtc6EO2XXLsTRP+ze7z5JJCumv59J4ie4Xz9JIgOcgs9DaIB3iadHg==
+
   "]],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`pos$$ = 1., Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`pos$$ = 5.01, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`pos$$], 5.01}, 1, 30}}, Typeset`size$$ = {
     360., {205., 210.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`pos$143683$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`pos$28628$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`pos$$ = 5.01}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`pos$$, $CellContext`pos$143683$$, 0]}, 
+        Hold[$CellContext`pos$$, $CellContext`pos$28628$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1173,10 +1175,11 @@ Cell[BoxData[
           Texture[$CellContext`funnel], 
           Polygon[{
             Scaled[{0, 0}], 
-            Scaled[{1, 0}], 
-            Scaled[{1, 1}], 
-            Scaled[{0, 1}]}, 
-           VertexTextureCoordinates -> {{0, 0}, {1, 0}, {1, 1}, {0, 1}}]}], 
+            Scaled[{1.5, 0}], 
+            Scaled[{1.5, 1.5}], 
+            Scaled[{0, 1.5}]}, 
+           VertexTextureCoordinates -> {{0, 0}, {1.5, 0}, {1.5, 1.5}, {
+             0, 1.5}}]}], 
       "Specifications" :> {{{$CellContext`pos$$, 5.01}, 1, 30, ControlType -> 
          Slider}}, "Options" :> {}, "DefaultOptions" :> {}],
      ImageSizeCache->{411., {251., 258.}},
@@ -1199,11 +1202,273 @@ Cell[BoxData[
    3.645555057028371*^9}, 3.645555372097066*^9, {3.6455554373615913`*^9, 
    3.645555441438999*^9}, 3.645555669149768*^9, 3.645555754311283*^9, 
    3.6455558988153725`*^9, 3.6455559443493724`*^9, {3.6455559815423727`*^9, 
-   3.6455560180743723`*^9}, {3.6455560860383725`*^9, 3.6455561722423725`*^9}}]
+   3.6455560180743723`*^9}, {3.6455560860383725`*^9, 3.6455561722423725`*^9}, 
+   3.6457875127433815`*^9, {3.6457875725525613`*^9, 3.645787602798403*^9}, {
+   3.6457877335838842`*^9, 3.6457877421197596`*^9}, 3.645787840873472*^9, {
+   3.6457881171762605`*^9, 3.645788158270567*^9}, 3.6457895429572487`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Overlay", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"ParametricPlot", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "10"}], "*", 
+            RowBox[{
+             RowBox[{"ArcTan", "[", "\[Alpha]", "]"}], "/", 
+             RowBox[{"(", 
+              RowBox[{"1.15", "^", "t"}], ")"}]}]}], ",", 
+           RowBox[{
+            RowBox[{"-", "t"}], "+", "16"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"t", ",", "1", ",", "30"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\[Alpha]", ",", 
+           RowBox[{
+            RowBox[{"-", "2"}], "*", "Pi"}], ",", 
+           RowBox[{"2", "*", "\[Pi]"}]}], "}"}], ",", 
+         RowBox[{"PlotStyle", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"Yellow", ",", 
+            RowBox[{"Opacity", "[", "0.5", "]"}]}], "}"}]}], ",", 
+         RowBox[{"PlotRange", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "15"}], ",", "15"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "15"}], ",", "20"}], "}"}]}], "}"}]}], ",", 
+         RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+         RowBox[{"ColorFunctionScaling", "\[Rule]", "True"}], ",", 
+         RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}], ",", 
+       RowBox[{"ParametricPlot", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "10"}], "*", 
+            RowBox[{
+             RowBox[{"ArcTan", "[", "\[Alpha]", "]"}], "/", 
+             RowBox[{"(", 
+              RowBox[{"1.15", "^", "pos"}], ")"}]}]}], ",", 
+           RowBox[{
+            RowBox[{"-", "pos"}], "+", "16"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\[Alpha]", ",", 
+           RowBox[{
+            RowBox[{"-", "2"}], "*", "Pi"}], ",", 
+           RowBox[{"2", "*", "Pi"}]}], "}"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"PlotStyle", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"Black", ",", 
+            RowBox[{"Thickness", "[", "0.005", "]"}]}], "}"}]}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"PlotRange", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "15"}], ",", "15"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "15"}], ",", "20"}], "}"}]}], "}"}]}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}]}], "}"}], ",", 
+     "All", ",", 
+     RowBox[{"-", "1"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"pos", ",", "5.01"}], "}"}], ",", "1", ",", "30", ",", 
+     "Slider"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.645787745737588*^9, 3.6457877601229515`*^9}, {
+  3.6457878679481163`*^9, 3.6457879324312167`*^9}, {3.6457879650786858`*^9, 
+  3.6457880231760645`*^9}, {3.6457881112184525`*^9, 3.645788154791567*^9}, {
+  3.6457881983255663`*^9, 3.6457882094255667`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`pos$$ = 5.01, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`pos$$], 5.01}, 1, 30}}, Typeset`size$$ = {
+    360., {204., 211.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`pos$28677$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`pos$$ = 5.01}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`pos$$, $CellContext`pos$28677$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Overlay[{
+         ParametricPlot[{(-10) (ArcTan[$CellContext`\[Alpha]]/
+            1.15^$CellContext`t), -$CellContext`t + 16}, {$CellContext`t, 1, 
+           30}, {$CellContext`\[Alpha], (-2) Pi, 2 Pi}, PlotStyle -> {Yellow, 
+            Opacity[0.5]}, PlotRange -> {{-15, 15}, {-15, 20}}, Axes -> False,
+           ColorFunctionScaling -> True, ImageSize -> Medium], 
+         ParametricPlot[{(-10) (ArcTan[$CellContext`\[Alpha]]/
+            1.15^$CellContext`pos$$), -$CellContext`pos$$ + 
+           16}, {$CellContext`\[Alpha], (-2) Pi, 2 Pi}, PlotStyle -> {Black, 
+            Thickness[0.005]}, PlotRange -> {{-15, 15}, {-15, 20}}, ImageSize -> 
+          Medium]}, All, -1], 
+      "Specifications" :> {{{$CellContext`pos$$, 5.01}, 1, 30, ControlType -> 
+         Slider}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {251., 258.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.645788004096881*^9, 3.645788023801939*^9}, {
+   3.6457881172022552`*^9, 3.6457881582925663`*^9}, {3.645788200890567*^9, 
+   3.6457882098595667`*^9}, 3.645789543072272*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Overlay", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"ParametricPlot3D", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "10"}], "*", 
+           RowBox[{
+            RowBox[{"Cos", "[", "\[Alpha]", "]"}], "/", 
+            RowBox[{"Log", "[", "t", "]"}]}]}], ",", 
+          RowBox[{
+           RowBox[{"-", "10"}], "*", 
+           RowBox[{
+            RowBox[{"Sin", "[", "\[Alpha]", "]"}], "/", 
+            RowBox[{"Log", "[", "t", "]"}]}]}], ",", 
+          RowBox[{"-", "t"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"t", ",", "1", ",", "30"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\[Alpha]", ",", "0", ",", 
+          RowBox[{"2", "*", "\[Pi]"}]}], "}"}], ",", 
+        RowBox[{"PlotStyle", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"Orange", ",", 
+           RowBox[{"Opacity", "[", "0.5", "]"}]}], "}"}]}], ",", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "15"}], ",", "15"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "15"}], ",", "15"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "32"}], ",", "1"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+        RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+        RowBox[{"Mesh", "\[Rule]", "True"}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", "Large"}], ",", 
+        RowBox[{"SphericalRegion", "\[Rule]", "True"}]}], "]"}], ",", 
+      RowBox[{"ParametricPlot3D", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "10"}], "*", 
+           RowBox[{
+            RowBox[{"Cos", "[", "\[Alpha]", "]"}], "/", 
+            RowBox[{"Log", "[", "pos", "]"}]}]}], ",", 
+          RowBox[{
+           RowBox[{"-", "10"}], "*", 
+           RowBox[{
+            RowBox[{"Sin", "[", "\[Alpha]", "]"}], "/", 
+            RowBox[{"Log", "[", "pos", "]"}]}]}], ",", 
+          RowBox[{"-", "pos"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\[Alpha]", ",", "0", ",", 
+          RowBox[{"2", "\[Pi]"}]}], "}"}]}], "]"}]}], "}"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"pos", ",", "5", ",", "\"\<selected\>\""}], "}"}], ",", 
+     "1.0001", ",", "30", ",", 
+     RowBox[{"Appearance", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.645789460285718*^9, 3.6457895614989567`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`pos$$ = 5, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`pos$$], 5, "selected"}, 1.0001, 30}}, 
+    Typeset`size$$ = {576., {284., 292.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`pos$29250$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`pos$$ = 5}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`pos$$, $CellContext`pos$29250$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Overlay[{
+         ParametricPlot3D[{(-10) (Cos[$CellContext`\[Alpha]]/
+            Log[$CellContext`t]), (-10) (Sin[$CellContext`\[Alpha]]/
+            Log[$CellContext`t]), -$CellContext`t}, {$CellContext`t, 1, 
+           30}, {$CellContext`\[Alpha], 0, 2 Pi}, PlotStyle -> {Orange, 
+            Opacity[0.5]}, PlotRange -> {{-15, 15}, {-15, 15}, {-32, 1}}, 
+          Axes -> False, Boxed -> False, Mesh -> True, ImageSize -> Large, 
+          SphericalRegion -> True], 
+         ParametricPlot3D[{(-10) (Cos[$CellContext`\[Alpha]]/
+            Log[$CellContext`pos$$]), (-10) (Sin[$CellContext`\[Alpha]]/
+            Log[$CellContext`pos$$]), -$CellContext`pos$$}, {$CellContext`\
+\[Alpha], 0, 2 Pi}]}], 
+      "Specifications" :> {{{$CellContext`pos$$, 5, "selected"}, 1.0001, 30, 
+         Appearance -> "Labeled"}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{627., {331., 338.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.645789543276313*^9, 3.6457895620340633`*^9}}]
 }, Open  ]]
 },
-WindowSize->{759, 815},
-WindowMargins->{{288, Automatic}, {19, Automatic}},
+WindowSize->{1680, 968},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1219,20 +1484,27 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 1656, 46, 112, "Input"],
-Cell[2239, 70, 219, 3, 31, "Output"]
+Cell[580, 22, 1500, 41, 52, "Input"],
+Cell[2083, 65, 445, 6, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2495, 78, 374, 8, 52, "Input"],
-Cell[2872, 88, 58968, 970, 425, "Output"]
+Cell[2565, 76, 374, 8, 52, "Input"],
+Cell[2942, 86, 59188, 973, 425, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[61877, 1063, 2955, 82, 192, "Input"],
-Cell[64835, 1147, 2868, 54, 559, "Output"]
+Cell[62167, 1064, 3007, 83, 132, "Input"],
+Cell[65177, 1149, 3126, 58, 526, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[68340, 1212, 3210, 85, 132, "Input"],
+Cell[71553, 1299, 2429, 44, 526, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[74019, 1348, 2669, 72, 92, "Input"],
+Cell[76691, 1422, 2354, 44, 719, "Output"]
 }, Open  ]]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
