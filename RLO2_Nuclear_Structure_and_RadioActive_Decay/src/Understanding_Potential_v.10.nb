@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    110752,       1940]
-NotebookOptionsPosition[    110271,       1919]
-NotebookOutlinePosition[    110618,       1934]
-CellTagsIndexPosition[    110575,       1931]
+NotebookDataLength[    110376,       1930]
+NotebookOptionsPosition[    109895,       1909]
+NotebookOutlinePosition[    110242,       1924]
+CellTagsIndexPosition[    110199,       1921]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -186,15 +186,6 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"-", "2"}], "\[Pi]"}], ",", 
            RowBox[{"2", "*", "\[Pi]"}]}], "}"}], ",", 
-         RowBox[{"PlotStyle", "\[Rule]", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{"Black", ",", 
-              RowBox[{"Opacity", "[", "1", "]"}]}], "}"}], ",", 
-            RowBox[{"{", 
-             RowBox[{"Black", ",", 
-              RowBox[{"Thickness", "[", "4", "]"}]}], "}"}]}], "}"}]}], ",", 
          RowBox[{"PlotRange", "\[Rule]", 
           RowBox[{"{", 
            RowBox[{
@@ -225,13 +216,13 @@ Cell[BoxData[
      RowBox[{"Appearance", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}]}], 
   "]"}]], "Input",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQBWIQvaDW9I+/5mvHdxtO/gXRKi9KxAOA9LLaFGkQzWKh
+1:eJxTTMoPSmViYGAQA2IQvaDW9I+/5mvHdxtO/gXRKi9KxAOA9LLaFGkQzWKh
 ZgCiP27pdQLRFx/vSQTRFroKqSD6QuvXGhA962xmA4g+wnhgIog+Lv0DTCfu
 4ZwBohcZvpsPNu9W/goQ7X33PZg2UT69FWzf0SU7QXTBlKYDIFpiqe15EP3m
 /LUrINpDoes+iK7PW/kYRJv9NH4Cog3YzV6A3fEn4AOILq/JfxMMpOtu/38L
 ou/pH+MLAbnXfa8uiN4QZOsIouM4E1xAtPLMp9vA/Fn3joHoW4fvbDgNpJ/8
-3bMPRGds/XsIRL/k3HwJRG+J5bkDovU33nwOoqMen7iorgU0/9CtKyAaAOZG
-qOU=
+3bMPRGds/XsIRL/k3HwJRG+J5bkDovU33nwOoqMen7iorgU0/9CtKyD63rdv
+ahpA2ugWhzqIBgC9IrAN
   "]],
 
 Cell[BoxData[
@@ -244,11 +235,11 @@ Cell[BoxData[
        Hold[$CellContext`pos$$], 5, "Position"}, 1.0001, 30}}, 
     Typeset`size$$ = {1093., {206.5, 213.5}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`pos$50681$$ = 0}, 
+    True, $CellContext`pos$69747$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`pos$$ = 5}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`pos$$, $CellContext`pos$50681$$, 0]}, 
+        Hold[$CellContext`pos$$, $CellContext`pos$69747$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -285,10 +276,8 @@ $CellContext`grid1$ = Show[{
              16}, {(-10) (ArcTan[$CellContext`\[Alpha]]/
               1.15^$CellContext`pos$$), -$CellContext`pos$$ + 
              16}}, {$CellContext`t, 1, 30}, {$CellContext`\[Alpha], (-2) Pi, 
-            2 Pi}, PlotStyle -> {{Black, 
-              Opacity[1]}, {Black, 
-              Thickness[4]}}, PlotRange -> {{-15, 15}, {-15, 20}}, Axes -> 
-           False, ImageSize -> Medium]; Grid[{{
+            2 Pi}, PlotRange -> {{-15, 15}, {-15, 20}}, Axes -> False, 
+           ImageSize -> Medium]; Grid[{{
             
             Row[{$CellContext`grid1$, $CellContext`grid2$, \
 $CellContext`grid3$}]}}, Frame -> All]], 
@@ -315,7 +304,8 @@ $CellContext`grid3$}]}}, Frame -> All]],
    3.6455479972555437`*^9, 3.6455480069119434`*^9}, 3.6457908151039515`*^9, 
    3.645791637391342*^9, {3.6457916989624987`*^9, 3.645791734428045*^9}, {
    3.645791775699171*^9, 3.6457918941690173`*^9}, {3.6457919729888983`*^9, 
-   3.64579206351295*^9}, {3.6459803176062856`*^9, 3.6459803287864037`*^9}}]
+   3.64579206351295*^9}, {3.6459803176062856`*^9, 3.6459803287864037`*^9}, 
+   3.645980986427635*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1911,7 +1901,7 @@ CaZKe0Gxt03FbkeIvS0i9ry62OFoaW8u53JeOd/7y7mMfFSy5KOOST5Kv5cE
    3.6455477000129433`*^9, {3.6455477873567433`*^9, 3.645547797496743*^9}, 
    3.6455478280279436`*^9, {3.6455478860573435`*^9, 3.645547899348543*^9}, 
    3.645790815366952*^9, 3.645791637624365*^9, 3.6457917023938417`*^9, {
-   3.6459803178153067`*^9, 3.6459803289864235`*^9}}]
+   3.6459803178153067`*^9, 3.6459803289864235`*^9}, 3.6459809866316347`*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -1934,14 +1924,14 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 8385, 212, 412, "Input"],
-Cell[8968, 236, 4346, 81, 565, "Output"]
+Cell[580, 22, 8048, 203, 392, "Input"],
+Cell[8631, 227, 4283, 80, 532, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13351, 322, 1093, 29, 31, "Input"],
-Cell[14447, 353, 95709, 1560, 614, "Output"]
+Cell[12951, 312, 1093, 29, 31, "Input"],
+Cell[14047, 343, 95733, 1560, 614, "Output"]
 }, Open  ]],
-Cell[110171, 1916, 96, 1, 64, "Input"]
+Cell[109795, 1906, 96, 1, 31, "Input"]
 }
 ]
 *)

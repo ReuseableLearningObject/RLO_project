@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     21284,        513]
-NotebookOptionsPosition[     20886,        495]
-NotebookOutlinePosition[     21230,        510]
-CellTagsIndexPosition[     21187,        507]
+NotebookDataLength[     23713,        551]
+NotebookOptionsPosition[     23315,        533]
+NotebookOutlinePosition[     23659,        548]
+CellTagsIndexPosition[     23616,        545]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -111,6 +111,9 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"grid1", ",", "grid2", ",", "grid3"}], "}"}], ",", 
        "\[IndentingNewLine]", 
+       RowBox[{"(*", " ", 
+        RowBox[{"Proton", ",", " ", 
+         RowBox[{"dot", " ", "field"}]}], " ", "*)"}], "\[IndentingNewLine]", 
        RowBox[{
         RowBox[{"grid1", "=", 
          RowBox[{"Show", "[", 
@@ -167,6 +170,10 @@ Cell[BoxData[
             "\[IndentingNewLine]", "}"}], ",", 
            RowBox[{"ImageSize", "\[Rule]", " ", "Medium"}]}], "]"}]}], ";", 
         "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"(*", " ", 
+         RowBox[{
+         "Plot", " ", "the", " ", "potential", " ", "function", " ", "in", 
+          " ", "3", "D"}], " ", "*)"}], "\[IndentingNewLine]", 
         RowBox[{"grid2", "=", "\[IndentingNewLine]", 
          RowBox[{"Show", "[", 
           RowBox[{"{", "\[IndentingNewLine]", 
@@ -211,7 +218,8 @@ Cell[BoxData[
             RowBox[{"ParametricPlot3D", "[", 
              RowBox[{
               RowBox[{"{", "\[IndentingNewLine]", 
-               RowBox[{"(*", " ", "Circle", " ", "*)"}], 
+               RowBox[{"(*", " ", 
+                RowBox[{"Marker", " ", "3", "D"}], " ", "*)"}], 
                "\[IndentingNewLine]", 
                RowBox[{"{", 
                 RowBox[{
@@ -245,59 +253,66 @@ Cell[BoxData[
               RowBox[{"ImageSize", "\[Rule]", "Medium"}], ",", 
               RowBox[{"SphericalRegion", "\[Rule]", "True"}]}], "]"}]}], 
            "}"}], "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"(*", " ", 
+         RowBox[{
+         "Plot", " ", "the", " ", "potential", " ", "function", " ", "in", 
+          " ", "2", "D"}], " ", "*)"}], "\[IndentingNewLine]", 
         RowBox[{"grid3", "=", 
-         RowBox[{"ParametricPlot", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{
+         RowBox[{"Show", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Plot", "[", 
+             RowBox[{
+              RowBox[{"{", 
                RowBox[{
-                RowBox[{"-", "10"}], "*", 
+                RowBox[{"-", "Z"}], "/", 
+                RowBox[{"Sqrt", "[", 
+                 RowBox[{"x", "^", "2"}], "]"}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"x", ",", 
+                RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+              RowBox[{"PlotRange", "\[Rule]", " ", 
+               RowBox[{"{", 
                 RowBox[{
-                 RowBox[{"ArcTan", "[", "\[Alpha]", "]"}], "/", 
-                 RowBox[{"(", 
-                  RowBox[{"1.15", "^", "t"}], ")"}]}]}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{"0", ",", 
+                   RowBox[{"-", "20"}]}], "}"}]}], "}"}]}], ",", 
+              RowBox[{"PlotStyle", "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{"Black", ",", "Thin"}], "}"}]}], ",", 
+              RowBox[{"Axes", "\[Rule]", " ", "True"}], ",", 
+              RowBox[{"Filling", "\[Rule]", "Axis"}], ",", 
+              RowBox[{"FillingStyle", "\[Rule]", 
+               RowBox[{"Directive", "[", 
+                RowBox[{"Orange", ",", 
+                 RowBox[{"Opacity", "[", "0.4", "]"}]}], "]"}]}], ",", 
+              RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"(*", " ", 
+             RowBox[{"Marker", " ", "2", "D"}], " ", "*)"}], 
+            "\[IndentingNewLine]", 
+            RowBox[{"ParametricPlot", "[", 
+             RowBox[{
+              RowBox[{"{", 
                RowBox[{
-                RowBox[{"-", "t"}], "+", "16"}]}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{
-                RowBox[{"-", "10"}], "*", 
+                RowBox[{"r", "*", 
+                 RowBox[{"Cos", "[", "\[Alpha]", "]"}]}], ",", 
                 RowBox[{
-                 RowBox[{"ArcTan", "[", "\[Alpha]", "]"}], "/", 
-                 RowBox[{"(", 
-                  RowBox[{"1.15", "^", "pos"}], ")"}]}]}], ",", 
-               RowBox[{
-                RowBox[{"-", "pos"}], "+", "16"}]}], "}"}]}], "}"}], ",", 
-           RowBox[{"{", 
-            RowBox[{"t", ",", "1", ",", "30"}], "}"}], ",", 
-           RowBox[{"{", 
-            RowBox[{"\[Alpha]", ",", 
-             RowBox[{
-              RowBox[{"-", "2"}], "\[Pi]"}], ",", 
-             RowBox[{"2", "*", "\[Pi]"}]}], "}"}], ",", 
-           RowBox[{"PlotStyle", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{
+                 RowBox[{"-", "Z"}], "/", "r"}]}], "}"}], ",", 
               RowBox[{"{", 
-               RowBox[{"Black", ",", 
-                RowBox[{"Opacity", "[", "1", "]"}]}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"Black", ",", 
-                RowBox[{"Thickness", "[", "4", "]"}]}], "}"}]}], "}"}]}], ",", 
-           RowBox[{"PlotRange", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"-", "15"}], ",", "15"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"-", "15"}], ",", "20"}], "}"}]}], "}"}]}], ",", 
-           RowBox[{"Axes", "\[Rule]", "False"}], ",", 
-           RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}]}], ";", 
-        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+               RowBox[{"\[Alpha]", ",", 
+                RowBox[{
+                 RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+                RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+              RowBox[{"PlotStyle", "\[Rule]", 
+               RowBox[{"Directive", "[", 
+                RowBox[{"Red", ",", "Thick"}], "]"}]}], ",", 
+              RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}]}], 
+           "\[IndentingNewLine]", "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
         RowBox[{"Framed", "[", 
          RowBox[{
           RowBox[{"Column", "[", 
@@ -311,6 +326,9 @@ Cell[BoxData[
                   RowBox[{"{", 
                    RowBox[{"grid1", ",", "grid2", ",", "grid3"}], "}"}], 
                   "]"}], "}"}], "}"}], "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"(*", " ", 
+               RowBox[{"Control", " ", "Panel"}], " ", "*)"}], 
+              "\[IndentingNewLine]", 
               RowBox[{"Panel", "[", 
                RowBox[{"Grid", "[", 
                 RowBox[{"{", 
@@ -374,8 +392,8 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"pos", ",", "5", ",", "\"\<Position\>\""}], "}"}], ",", 
        "1.0001", ",", "30", ",", 
-       RowBox[{"Appearance", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}], 
-     ",", 
+       RowBox[{"Appearance", "\[Rule]", " ", "\"\<Labeled\>\""}], ",", 
+       RowBox[{"Alignment", "\[Rule]", " ", "Center"}]}], "}"}], ",", 
      RowBox[{"Paneled", "\[Rule]", "False"}]}], "]"}], ",", 
    RowBox[{"RoundingRadius", "\[Rule]", "20"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.6459794465601897`*^9, 3.645979579291462*^9}, {
@@ -384,7 +402,17 @@ Cell[BoxData[
    3.645980134851012*^9, 3.645980137107238*^9}, {3.6459803750380287`*^9, 
    3.6459804292634506`*^9}, {3.6459804658121047`*^9, 3.645980495219045*^9}, {
    3.6459805439406347`*^9, 3.6459805891836348`*^9}, 3.645980646779635*^9, {
-   3.645980717014635*^9, 3.645980749625635*^9}}],
+   3.645980717014635*^9, 3.645980749625635*^9}, {3.645980839777635*^9, 
+   3.6459809108556347`*^9}, {3.645980969516635*^9, 3.645980971416635*^9}, {
+   3.645981033094635*^9, 3.645981337957635*^9}, {3.645981368885635*^9, 
+   3.6459813689846354`*^9}, {3.6459814047376347`*^9, 
+   3.6459814322057486`*^9}, {3.6459814883073583`*^9, 3.64598149782831*^9}, {
+   3.6459827675782723`*^9, 3.6459827710426188`*^9}, {3.645982811596674*^9, 
+   3.645982849642478*^9}, {3.6459829188103943`*^9, 3.6459830457690887`*^9}, {
+   3.6459836028657928`*^9, 3.6459836031198187`*^9}, {3.64598497603522*^9, 
+   3.64598498639622*^9}, {3.6459850237132196`*^9, 3.6459850491512203`*^9}, {
+   3.6459858155262203`*^9, 3.64598589111622*^9}, {3.64598595816122*^9, 
+   3.64598603797322*^9}}],
 
 Cell[BoxData[
  FrameBox[
@@ -397,11 +425,11 @@ Cell[BoxData[
         Hold[$CellContext`pos$$], 5, "Position"}, 1.0001, 30}}, 
      Typeset`size$$ = {1090., {235., 242.}}, Typeset`update$$ = 0, 
      Typeset`initDone$$, Typeset`skipInitDone$$ = 
-     True, $CellContext`pos$62660$$ = 0}, 
+     True, $CellContext`pos$99377$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       1, StandardForm, "Variables" :> {$CellContext`pos$$ = 5}, 
        "ControllerVariables" :> {
-         Hold[$CellContext`pos$$, $CellContext`pos$62660$$, 0]}, 
+         Hold[$CellContext`pos$$, $CellContext`pos$99377$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -433,16 +461,18 @@ $CellContext`grid3$}, $CellContext`grid1$ = Show[{
               PlotStyle -> {Red, Thick}, 
               PlotRange -> {{-1, 1}, {-1, 1}, {0, -20}}, Axes -> True, Boxed -> 
               True, Mesh -> False, ImageSize -> Medium, SphericalRegion -> 
-              True]}]; $CellContext`grid3$ = 
-          ParametricPlot[{{(-10) (ArcTan[$CellContext`\[Alpha]]/
-               1.15^$CellContext`t), -$CellContext`t + 
-              16}, {(-10) (ArcTan[$CellContext`\[Alpha]]/
-               1.15^$CellContext`pos$$), -$CellContext`pos$$ + 
-              16}}, {$CellContext`t, 1, 30}, {$CellContext`\[Alpha], (-2) Pi, 
-             2 Pi}, PlotStyle -> {{Black, 
-               Opacity[1]}, {Black, 
-               Thickness[4]}}, PlotRange -> {{-15, 15}, {-15, 20}}, Axes -> 
-            False, ImageSize -> Medium]; Framed[
+              True]}]; $CellContext`grid3$ = Show[{
+             
+             Plot[{(-$CellContext`Z)/
+               Sqrt[$CellContext`x^2]}, {$CellContext`x, -1, 1}, 
+              PlotRange -> {{-1, 1}, {0, -20}}, PlotStyle -> {Black, Thin}, 
+              Axes -> True, Filling -> Axis, FillingStyle -> Directive[Orange, 
+                Opacity[0.4]], ImageSize -> Medium], 
+             
+             ParametricPlot[{$CellContext`r 
+               Cos[$CellContext`\[Alpha]], (-$CellContext`Z)/$CellContext`r}, \
+{$CellContext`\[Alpha], (-2) Pi, 2 Pi}, PlotStyle -> Directive[Red, Thick], 
+              ImageSize -> Medium]}]; Framed[
            Column[{
              Grid[{{
                 
@@ -468,8 +498,8 @@ $CellContext`grid3$}]}}],
                     Range[0.05, 1.01, 0.01]]}]}}]]}, Alignment -> Center], 
            RoundingRadius -> 20]], 
        "Specifications" :> {{{$CellContext`pos$$, 5, "Position"}, 1.0001, 30, 
-          Appearance -> "Labeled"}}, "Options" :> {Paneled -> False}, 
-       "DefaultOptions" :> {}],
+          Appearance -> "Labeled", Alignment -> Center}}, 
+       "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
       ImageSizeCache->{1110., {270., 277.}},
       SingleEvaluation->True],
      Deinitialization:>None,
@@ -490,7 +520,15 @@ $CellContext`grid3$}]}}],
    3.6459798884143705`*^9}, 3.6459799827428026`*^9, 3.645980025191047*^9, 
    3.645980139460473*^9, {3.645980409208445*^9, 3.6459804318497086`*^9}, {
    3.6459804704555693`*^9, 3.645980497899313*^9}, {3.645980571712635*^9, 
-   3.6459805918886347`*^9}, {3.645980708509635*^9, 3.645980752007635*^9}}]
+   3.6459805918886347`*^9}, {3.645980708509635*^9, 3.645980752007635*^9}, 
+   3.645980853353635*^9, {3.645980890997635*^9, 3.645980913948635*^9}, 
+   3.645980973646635*^9, {3.6459811979846354`*^9, 3.6459812150206347`*^9}, 
+   3.645981249720635*^9, {3.645981341180635*^9, 3.645981369339635*^9}, {
+   3.645981424625991*^9, 3.6459814349150195`*^9}, 3.6459815002935567`*^9, 
+   3.645982774567971*^9, {3.6459828213016443`*^9, 3.64598285326484*^9}, {
+   3.6459829300635195`*^9, 3.6459829654970627`*^9}, {3.645983002609773*^9, 
+   3.645983008563369*^9}, 3.645983048599372*^9, 3.6459836075002565`*^9, 
+   3.6459849908902197`*^9, 3.64598502731122*^9, 3.64598582137722*^9}]
 }, Open  ]]
 },
 WindowSize->{1680, 968},
@@ -512,8 +550,8 @@ Notebook[{
 Cell[558, 20, 192, 5, 52, "Input"],
 Cell[753, 27, 2725, 72, 180, "Input"],
 Cell[CellGroupData[{
-Cell[3503, 103, 12148, 283, 529, "Input"],
-Cell[15654, 388, 5216, 104, 574, "Output"]
+Cell[3503, 103, 13898, 311, 669, "Input"],
+Cell[17404, 416, 5895, 114, 574, "Output"]
 }, Open  ]]
 }
 ]
