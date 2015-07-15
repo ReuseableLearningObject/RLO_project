@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    110701,       1940]
-NotebookOptionsPosition[    110220,       1919]
-NotebookOutlinePosition[    110567,       1934]
-CellTagsIndexPosition[    110524,       1931]
+NotebookDataLength[    110752,       1940]
+NotebookOptionsPosition[    110271,       1919]
+NotebookOutlinePosition[    110618,       1934]
+CellTagsIndexPosition[    110575,       1931]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -93,10 +93,11 @@ Cell[BoxData[
             RowBox[{"{", 
              RowBox[{
               RowBox[{"-", "1"}], "/", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"x", "^", "2"}], "+", 
-                RowBox[{"y", "^", "2"}]}], ")"}]}], "}"}], ",", 
+              RowBox[{"Sqrt", "[", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"x", "^", "2"}], "+", 
+                 RowBox[{"y", "^", "2"}]}], ")"}], "]"}]}], "}"}], ",", 
             RowBox[{"{", 
              RowBox[{"x", ",", 
               RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
@@ -106,7 +107,7 @@ Cell[BoxData[
             RowBox[{"PlotRange", "\[Rule]", 
              RowBox[{"{", 
               RowBox[{"0", ",", 
-               RowBox[{"-", "120"}]}], "}"}]}], ",", 
+               RowBox[{"-", "20"}]}], "}"}]}], ",", 
             RowBox[{"BoxRatios", "\[Rule]", 
              RowBox[{"{", 
               RowBox[{"1", ",", " ", "1", ",", " ", "1"}], "}"}]}], ",", 
@@ -119,13 +120,9 @@ Cell[BoxData[
              RowBox[{"{", 
               RowBox[{
                RowBox[{
-                RowBox[{"-", "1"}], "*", 
-                RowBox[{
-                 RowBox[{"Cos", "[", "\[Alpha]", "]"}], "/", "pos"}]}], ",", 
+                RowBox[{"Cos", "[", "\[Alpha]", "]"}], "/", "pos"}], ",", 
                RowBox[{
-                RowBox[{"-", "1"}], "*", 
-                RowBox[{
-                 RowBox[{"Sin", "[", "\[Alpha]", "]"}], "/", "pos"}]}], ",", 
+                RowBox[{"Sin", "[", "\[Alpha]", "]"}], "/", "pos"}], ",", 
                RowBox[{"-", "pos"}]}], "}"}], "}"}], ",", 
             RowBox[{"{", 
              RowBox[{"\[Alpha]", ",", "0", ",", 
@@ -150,7 +147,7 @@ Cell[BoxData[
                  RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
                RowBox[{"{", 
                 RowBox[{"0", ",", 
-                 RowBox[{"-", "120"}]}], "}"}]}], "}"}]}], ",", 
+                 RowBox[{"-", "20"}]}], "}"}]}], "}"}]}], ",", 
             RowBox[{"Axes", "\[Rule]", "True"}], ",", 
             RowBox[{"Boxed", "\[Rule]", "True"}], ",", 
             RowBox[{"Mesh", "\[Rule]", "False"}], ",", 
@@ -228,12 +225,13 @@ Cell[BoxData[
      RowBox[{"Appearance", "\[Rule]", " ", "\"\<Labeled\>\""}]}], "}"}]}], 
   "]"}]], "Input",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQAWIQvaDW9I+/5mvHdxtO/gXRKi9KxAOA9LLaFGkQzWKh
+1:eJxTTMoPSmViYGAQBWIQvaDW9I+/5mvHdxtO/gXRKi9KxAOA9LLaFGkQzWKh
 ZgCiP27pdQLRFx/vSQTRFroKqSD6QuvXGhA962xmA4g+wnhgIog+Lv0DTCfu
 4ZwBohcZvpsPNu9W/goQ7X33PZg2UT69FWzf0SU7QXTBlKYDIFpiqe15EP3m
 /LUrINpDoes+iK7PW/kYRJv9NH4Cog3YzV6A3fEn4AOILq/JfxMMpOtu/38L
 ou/pH+MLAbnXfa8uiN4QZOsIouM4E1xAtPLMp9vA/Fn3joHoW4fvbDgNpJ/8
-3bMPRGds/XsIRL/k3HwJRG+J5bkDovU33nwOogGShqBs
+3bMPRGds/XsIRL/k3HwJRG+J5bkDovU33nwOoqMen7iorgU0/9CtKyAaAOZG
+qOU=
   "]],
 
 Cell[BoxData[
@@ -246,11 +244,11 @@ Cell[BoxData[
        Hold[$CellContext`pos$$], 5, "Position"}, 1.0001, 30}}, 
     Typeset`size$$ = {1093., {206.5, 213.5}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`pos$49622$$ = 0}, 
+    True, $CellContext`pos$50681$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`pos$$ = 5}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`pos$$, $CellContext`pos$49622$$, 0]}, 
+        Hold[$CellContext`pos$$, $CellContext`pos$50681$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -268,17 +266,18 @@ $CellContext`grid1$ = Show[{
              PlotRange -> {{-10, 10}, {-10, 10}, {-10, 10}}, Background -> 
              Black]}, ImageSize -> Medium]; $CellContext`grid2$ = Show[{
             
-            Plot3D[{(-1)/($CellContext`x^2 + $CellContext`y^2)}, \
-{$CellContext`x, -1, 1}, {$CellContext`y, -1, 1}, PlotRange -> {0, -120}, 
+            Plot3D[{(-1)/
+              Sqrt[$CellContext`x^2 + $CellContext`y^2]}, {$CellContext`x, -1,
+               1}, {$CellContext`y, -1, 1}, PlotRange -> {0, -20}, 
              BoxRatios -> {1, 1, 1}, ImageSize -> Medium], 
             
-            ParametricPlot3D[{{-(
-                Cos[$CellContext`\[Alpha]]/$CellContext`pos$$), -(
-                Sin[$CellContext`\[Alpha]]/$CellContext`pos$$), \
+            ParametricPlot3D[{{
+              Cos[$CellContext`\[Alpha]]/$CellContext`pos$$, 
+               Sin[$CellContext`\[Alpha]]/$CellContext`pos$$, \
 -$CellContext`pos$$}}, {$CellContext`\[Alpha], 0, 2 Pi}, PlotStyle -> {{
                 Opacity[0.5]}, {
                 Thickness[0.1], Red}}, 
-             PlotRange -> {{-1, 1}, {-1, 1}, {0, -120}}, Axes -> True, Boxed -> 
+             PlotRange -> {{-1, 1}, {-1, 1}, {0, -20}}, Axes -> True, Boxed -> 
              True, Mesh -> False, ImageSize -> Medium, SphericalRegion -> 
              True]}]; $CellContext`grid3$ = 
          ParametricPlot[{{(-10) (ArcTan[$CellContext`\[Alpha]]/
@@ -316,7 +315,7 @@ $CellContext`grid3$}]}}, Frame -> All]],
    3.6455479972555437`*^9, 3.6455480069119434`*^9}, 3.6457908151039515`*^9, 
    3.645791637391342*^9, {3.6457916989624987`*^9, 3.645791734428045*^9}, {
    3.645791775699171*^9, 3.6457918941690173`*^9}, {3.6457919729888983`*^9, 
-   3.64579206351295*^9}}]
+   3.64579206351295*^9}, {3.6459803176062856`*^9, 3.6459803287864037`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1911,7 +1910,8 @@ CaZKe0Gxt03FbkeIvS0i9ry62OFoaW8u53JeOd/7y7mMfFSy5KOOST5Kv5cE
  CellChangeTimes->{{3.6455475335721436`*^9, 3.645547622087943*^9}, 
    3.6455477000129433`*^9, {3.6455477873567433`*^9, 3.645547797496743*^9}, 
    3.6455478280279436`*^9, {3.6455478860573435`*^9, 3.645547899348543*^9}, 
-   3.645790815366952*^9, 3.645791637624365*^9, 3.6457917023938417`*^9}]
+   3.645790815366952*^9, 3.645791637624365*^9, 3.6457917023938417`*^9, {
+   3.6459803178153067`*^9, 3.6459803289864235`*^9}}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -1934,14 +1934,14 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 8459, 214, 412, "Input"],
-Cell[9042, 238, 4275, 80, 532, "Output"]
+Cell[580, 22, 8385, 212, 412, "Input"],
+Cell[8968, 236, 4346, 81, 565, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13354, 323, 1093, 29, 31, "Input"],
-Cell[14450, 354, 95655, 1559, 614, "Output"]
+Cell[13351, 322, 1093, 29, 31, "Input"],
+Cell[14447, 353, 95709, 1560, 614, "Output"]
 }, Open  ]],
-Cell[110120, 1916, 96, 1, 31, "Input"]
+Cell[110171, 1916, 96, 1, 64, "Input"]
 }
 ]
 *)

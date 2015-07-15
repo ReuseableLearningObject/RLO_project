@@ -1,559 +1,36 @@
-(* Content-type: application/vnd.wolfram.mathematica *)
+(* Content-type: application/vnd.wolfram.cdf.text *)
 
-(*** Wolfram Notebook File ***)
-(* http://www.wolfram.com/nb *)
+(*** Wolfram CDF File ***)
+(* http://www.wolfram.com/cdf *)
 
 (* CreatedBy='Mathematica 10.1' *)
+
+(*************************************************************************)
+(*                                                                       *)
+(*  The Mathematica License under which this file was created prohibits  *)
+(*  restricting third parties in receipt of this file from republishing  *)
+(*  or redistributing it by any means, including but not limited to      *)
+(*  rights management or terms of use, without the express consent of    *)
+(*  Wolfram Research, Inc. For additional information concerning CDF     *)
+(*  licensing and redistribution see:                                    *)
+(*                                                                       *)
+(*        www.wolfram.com/cdf/adopting-cdf/licensing-options.html        *)
+(*                                                                       *)
+(*************************************************************************)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
-NotebookDataPosition[       158,          7]
-NotebookDataLength[   3051553,      50266]
-NotebookOptionsPosition[   3050888,      50242]
-NotebookOutlinePosition[   3051232,      50257]
-CellTagsIndexPosition[   3051189,      50254]
+NotebookDataPosition[      1064,         20]
+NotebookDataLength[   3027890,      49697]
+NotebookOptionsPosition[   3028334,      49689]
+NotebookOutlinePosition[   3028890,      49712]
+CellTagsIndexPosition[   3028847,      49709]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"Remove", "[", "\"\<Global`*\>\"", "]"}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{
-   "sourcePath", " ", "=", " ", 
-    "\"\<C:\\\\Users\\\\lingbotang\\\\Downloads\\\\Samples\>\""}], ";"}], 
-  "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", 
-   RowBox[{
-    RowBox[{"http", ":"}], "//", 
-    RowBox[{
-     RowBox[{
-      RowBox[{
-       RowBox[{
-        RowBox[{"www", ".", "gohomeworkhelp", ".", "com"}], "/", "admin"}], 
-       "/", "photos"}], "/", "facts"}], "-", "about", "-", "radio", "-", 
-     RowBox[{"waves", ".", "jpg"}]}]}], " ", "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"radioTower", " ", "=", " ", 
-    RowBox[{"Image", "[", 
-     RowBox[{
-      RowBox[{"Import", "[", 
-       RowBox[{"FileNameJoin", "[", 
-        RowBox[{"{", 
-         RowBox[{"sourcePath", ",", "\"\<RadioTower.jpg\>\""}], "}"}], "]"}], 
-       "]"}], ",", 
-      RowBox[{"ImageSize", "\[Rule]", 
-       RowBox[{"{", 
-        RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", 
-   RowBox[{
-    RowBox[{"http", ":"}], "//", 
-    RowBox[{
-     RowBox[{
-      RowBox[{"www", ".", "geekosystem", ".", "com"}], "/", "wp"}], "-", 
-     RowBox[{
-      RowBox[{
-       RowBox[{
-        RowBox[{"content", "/", "uploads"}], "/", "2012"}], "/", "06"}], "/", 
-      RowBox[{"microwave", ".", "jpg"}]}]}]}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"microWave", " ", "=", " ", 
-    RowBox[{"Image", "[", 
-     RowBox[{
-      RowBox[{"Import", "[", 
-       RowBox[{"FileNameJoin", "[", 
-        RowBox[{"{", 
-         RowBox[{"sourcePath", ",", "\"\<microwave1.jpg\>\""}], "}"}], "]"}], 
-       "]"}], ",", 
-      RowBox[{"ImageSize", "\[Rule]", 
-       RowBox[{"{", 
-        RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", 
-   RowBox[{
-    RowBox[{"http", ":"}], "//", 
-    RowBox[{
-     RowBox[{
-      RowBox[{"nazdorovie", ".", "in", ".", "ua"}], "/", "images"}], "/", 
-     RowBox[{"thermal", ".", "jpg"}]}]}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"inFrared", " ", "=", " ", 
-    RowBox[{"Image", "[", 
-     RowBox[{
-      RowBox[{"Import", "[", 
-       RowBox[{"FileNameJoin", "[", 
-        RowBox[{"{", 
-         RowBox[{"sourcePath", ",", "\"\<Infrared.jpg\>\""}], "}"}], "]"}], 
-       "]"}], ",", 
-      RowBox[{"ImageSize", "\[Rule]", 
-       RowBox[{"{", 
-        RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", 
-   RowBox[{
-    RowBox[{"http", ":"}], "//", 
-    RowBox[{
-     RowBox[{
-      RowBox[{"www", ".", "zengardner", ".", "com"}], "/", "wp"}], "-", 
-     RowBox[{
-      RowBox[{"content", "/", "uploads"}], "/", "HiRes"}], "-", 
-     RowBox[{"640", 
-      RowBox[{"x407", ".", "jpg"}]}]}]}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"viSible", " ", "=", " ", 
-    RowBox[{"Image", "[", 
-     RowBox[{
-      RowBox[{"Import", "[", 
-       RowBox[{"FileNameJoin", "[", 
-        RowBox[{"{", 
-         RowBox[{"sourcePath", ",", "\"\<Visible.jpg\>\""}], "}"}], "]"}], 
-       "]"}], ",", 
-      RowBox[{"ImageSize", "\[Rule]", 
-       RowBox[{"{", 
-        RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", 
-   RowBox[{
-    RowBox[{
-     RowBox[{"http", ":"}], "//", 
-     RowBox[{
-      RowBox[{
-       RowBox[{
-        RowBox[{
-         RowBox[{
-          RowBox[{
-           RowBox[{"images", ".", "techtimes", ".", "com"}], "/", "data"}], 
-          "/", "images"}], "/", "full"}], "/", "6330"}], "/", "uv"}], "-", 
-      "light", "-", "in", "-", "medical", "-", 
-      RowBox[{"device", ".", 
-       RowBox[{"jpg", "?", "w"}]}]}]}], "=", "600"}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"ultraViolet", " ", "=", " ", 
-    RowBox[{"Image", "[", 
-     RowBox[{
-      RowBox[{"Import", "[", 
-       RowBox[{"FileNameJoin", "[", 
-        RowBox[{"{", 
-         RowBox[{"sourcePath", ",", "\"\<ultraviolet2.jpg\>\""}], "}"}], 
-        "]"}], "]"}], ",", 
-      RowBox[{"ImageSize", "\[Rule]", 
-       RowBox[{"{", 
-        RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", 
-   RowBox[{
-    RowBox[{"http", ":"}], "//", 
-    RowBox[{
-     RowBox[{
-      RowBox[{
-       RowBox[{
-        RowBox[{
-         RowBox[{"www", ".", "wallpaperhi", ".", "com"}], "/", "thumbnails"}],
-         "/", "detail"}], "/", "20120722"}], "/", "cartoons"}], "%20", 
-     "abstract", "%20", "xray", "%20", "sesame", "%20", "street", "%20", 
-     "kermit", "%20", "the", "%20", "frog", "%20", "solid", "%20", 
-     "simplistic", "%20", "simple", "%20", "puppet", "%201920", "x1080", 
-     "%20", 
-     RowBox[{"wal_www", ".", "wallpaperhi", ".", "com_"}], "83.", "jpg"}]}], 
-   " ", "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"Xray", " ", "=", " ", 
-    RowBox[{"Image", "[", 
-     RowBox[{
-      RowBox[{"Import", "[", 
-       RowBox[{"FileNameJoin", "[", 
-        RowBox[{"{", 
-         RowBox[{"sourcePath", ",", "\"\<Xray.jpg\>\""}], "}"}], "]"}], "]"}],
-       ",", 
-      RowBox[{"ImageSize", "\[Rule]", 
-       RowBox[{"{", 
-        RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", 
-   RowBox[{
-    RowBox[{"http", ":"}], "//", 
-    RowBox[{
-     RowBox[{
-      RowBox[{
-       RowBox[{"www", ".", "theengineer", ".", "co", ".", "uk"}], "/", 
-       "pictures"}], "/", "649"}], 
-     RowBox[{
-      RowBox[{
-       RowBox[{
-        RowBox[{"xAny", "/", "2"}], "/", "7"}], "/", "1"}], "/", "2037271"}], 
-     "_TE", 
-     RowBox[{"_Lungs", ".", "jpg"}]}]}], " ", "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gammaRay", " ", "=", " ", 
-    RowBox[{"Image", "[", 
-     RowBox[{
-      RowBox[{"Import", "[", 
-       RowBox[{"FileNameJoin", "[", 
-        RowBox[{"{", 
-         RowBox[{"sourcePath", ",", "\"\<GammaRays.jpg\>\""}], "}"}], "]"}], 
-       "]"}], ",", 
-      RowBox[{"ImageSize", "\[Rule]", 
-       RowBox[{"{", 
-        RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", 
-  RowBox[{"(*", " ", 
-   RowBox[{
-    RowBox[{"http", ":"}], "//", 
-    RowBox[{
-     RowBox[{
-      RowBox[{
-       RowBox[{
-        RowBox[{
-         RowBox[{"butane", ".", "chem", ".", "uiuc", ".", "edu"}], "/", 
-         "pshapley"}], "/", "GenChem2"}], "/", "A3"}], "/", 
-      "electromagnetic"}], "-", 
-     RowBox[{"spectrum", ".", "jpg"}]}]}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"specTrum", " ", "=", " ", 
-    RowBox[{"Image", "[", 
-     RowBox[{
-      RowBox[{
-      "Import", "[", 
-       "\"\<C:\\\\Users\\\\lingbotang\\\\Downloads\\\\Bug_tracker\\\\\
-Spectrum2.png\>\"", "]"}], ",", 
-      RowBox[{"ImageSize", "\[Rule]", 
-       RowBox[{"{", 
-        RowBox[{"497", ",", "317"}], "}"}]}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
- CellChangeTimes->{{3.6458773360811367`*^9, 3.645877342869137*^9}, {
-   3.645877410363137*^9, 3.645877431547937*^9}, {3.6458779256387367`*^9, 
-   3.6458779261527367`*^9}, {3.64587820786128*^9, 3.6458782079402957`*^9}, {
-   3.6458800443991528`*^9, 3.6458800589381666`*^9}, {3.6458854444501867`*^9, 
-   3.645885453944186*^9}, 3.6458986126013117`*^9, {3.645899214335177*^9, 
-   3.6458992629210353`*^9}, {3.64589947198291*^9, 3.645899528867598*^9}, {
-   3.645899568710582*^9, 3.645899573334044*^9}, {3.6458997865763664`*^9, 
-   3.64589986912262*^9}, {3.6458999093346405`*^9, 3.6458999849201984`*^9}, {
-   3.6459000855662622`*^9, 3.645900128331538*^9}}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{"Column", "[", 
-    RowBox[{
-     RowBox[{"{", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Style", "[", 
-        RowBox[{"\"\<The Electronic Spectrum\>\"", ",", 
-         RowBox[{"FontFamily", "\[Rule]", "\"\<Calibri\>\""}], ",", "30"}], 
-        "]"}], ",", "\[IndentingNewLine]", "specTrum", ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"Row", "[", 
-        RowBox[{"{", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"Column", "[", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<RadioWave\>\"", ",", 
-               RowBox[{"FontFamily", "\[Rule]", "\"\<Calibri\>\""}], ",", 
-               "11"}], "]"}], ",", 
-             RowBox[{"Overlay", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"Show", "[", "radioTower", "]"}], ",", 
-                 RowBox[{"Button", "[", 
-                  RowBox[{"\"\<\>\"", ",", 
-                   RowBox[{"index", " ", "=", " ", "1"}], ",", 
-                   RowBox[{"Appearance", "\[Rule]", "None"}], ",", 
-                   RowBox[{"ImageSize", "\[Rule]", 
-                    RowBox[{"{", 
-                    RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], "}"}], ",",
-                "All", ",", "2"}], "]"}]}], "}"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"Column", "[", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<MicroWave\>\"", ",", 
-               RowBox[{"FontFamily", "\[Rule]", "\"\<Calibri\>\""}], ",", 
-               "11"}], "]"}], ",", 
-             RowBox[{"Overlay", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"Show", "[", "microWave", "]"}], ",", 
-                 RowBox[{"Button", "[", 
-                  RowBox[{"\"\<\>\"", ",", 
-                   RowBox[{"index", " ", "=", " ", "2"}], ",", 
-                   RowBox[{"Appearance", "\[Rule]", "None"}], ",", 
-                   RowBox[{"ImageSize", "\[Rule]", 
-                    RowBox[{"{", 
-                    RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], "}"}], ",",
-                "All", ",", "2"}], "]"}]}], "}"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"Column", "[", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<Infrared\>\"", ",", 
-               RowBox[{"FontFamily", "\[Rule]", "\"\<Calibri\>\""}], ",", 
-               "11"}], "]"}], ",", 
-             RowBox[{"Overlay", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"Show", "[", "inFrared", "]"}], ",", 
-                 RowBox[{"Button", "[", 
-                  RowBox[{"\"\<\>\"", ",", 
-                   RowBox[{"index", " ", "=", " ", "3"}], ",", 
-                   RowBox[{"Appearance", "\[Rule]", "None"}], ",", 
-                   RowBox[{"ImageSize", "\[Rule]", 
-                    RowBox[{"{", 
-                    RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], "}"}], ",",
-                "All", ",", "2"}], "]"}]}], "}"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"Column", "[", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<Visible\>\"", ",", 
-               RowBox[{"FontFamily", "\[Rule]", "\"\<Calibri\>\""}], ",", 
-               "11"}], "]"}], ",", 
-             RowBox[{"Overlay", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"Show", "[", "viSible", "]"}], ",", 
-                 RowBox[{"Button", "[", 
-                  RowBox[{"\"\<\>\"", ",", 
-                   RowBox[{"index", " ", "=", " ", "4"}], ",", 
-                   RowBox[{"Appearance", "\[Rule]", "None"}], ",", 
-                   RowBox[{"ImageSize", "\[Rule]", 
-                    RowBox[{"{", 
-                    RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], "}"}], ",",
-                "All", ",", "2"}], "]"}]}], "}"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"Column", "[", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<Ultraviolet\>\"", ",", 
-               RowBox[{"FontFamily", "\[Rule]", "\"\<Calibri\>\""}], ",", 
-               "11"}], "]"}], ",", 
-             RowBox[{"Overlay", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"Show", "[", "ultraViolet", "]"}], ",", 
-                 RowBox[{"Button", "[", 
-                  RowBox[{"\"\<\>\"", ",", 
-                   RowBox[{"index", " ", "=", " ", "5"}], ",", 
-                   RowBox[{"Appearance", "\[Rule]", "None"}], ",", 
-                   RowBox[{"ImageSize", "\[Rule]", 
-                    RowBox[{"{", 
-                    RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], "}"}], ",",
-                "All", ",", "2"}], "]"}]}], "}"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"Column", "[", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<Xray\>\"", ",", 
-               RowBox[{"FontFamily", "\[Rule]", "\"\<Calibri\>\""}], ",", 
-               "11"}], "]"}], ",", 
-             RowBox[{"Overlay", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"Show", "[", "Xray", "]"}], ",", 
-                 RowBox[{"Button", "[", 
-                  RowBox[{"\"\<\>\"", ",", 
-                   RowBox[{"index", " ", "=", " ", "6"}], ",", 
-                   RowBox[{"Appearance", "\[Rule]", "None"}], ",", 
-                   RowBox[{"ImageSize", "\[Rule]", 
-                    RowBox[{"{", 
-                    RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], "}"}], ",",
-                "All", ",", "2"}], "]"}]}], "}"}], "]"}], ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{"Column", "[", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"Style", "[", 
-              RowBox[{"\"\<Gammaray\>\"", ",", 
-               RowBox[{"FontFamily", "\[Rule]", "\"\<Calibri\>\""}], ",", 
-               "11"}], "]"}], ",", 
-             RowBox[{"Overlay", "[", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"Show", "[", "gammaRay", "]"}], ",", 
-                 RowBox[{"Button", "[", 
-                  RowBox[{"\"\<\>\"", ",", 
-                   RowBox[{"index", " ", "=", " ", "7"}], ",", 
-                   RowBox[{"Appearance", "\[Rule]", "None"}], ",", 
-                   RowBox[{"ImageSize", "\[Rule]", 
-                    RowBox[{"{", 
-                    RowBox[{"70", ",", "70"}], "}"}]}]}], "]"}]}], "}"}], ",",
-                "All", ",", "2"}], "]"}]}], "}"}], "]"}]}], "}"}], "]"}], ",",
-        "\[IndentingNewLine]", 
-       RowBox[{"lectureText", "[", 
-        RowBox[{"[", "index", "]"}], "]"}]}], "\[IndentingNewLine]", "}"}], 
-     ",", 
-     RowBox[{"Alignment", "\[Rule]", "Center"}]}], "]"}], ",", 
-   "\[IndentingNewLine]", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"index", ",", "1"}], "}"}], ",", 
-     RowBox[{"ControlType", "\[Rule]", "None"}]}], "}"}], ",", 
-   "\[IndentingNewLine]", 
-   RowBox[{"Initialization", "\[RuleDelayed]", 
-    RowBox[{"(", "\[IndentingNewLine]", 
-     RowBox[{"lectureText", "=", 
-      RowBox[{"{", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"Grid", "[", 
-         RowBox[{"{", 
-          RowBox[{"{", 
-           RowBox[{"Style", "[", 
-            RowBox[{
-            "\"\<This is the Radiation type Wave.\\nIt's Wave Length is \
-between \!\(\*SuperscriptBox[\(10\), \(2\)]\)m and \
-\!\(\*SuperscriptBox[\(10\), \(0\)]\)m.\\nIt's frequency will vary from 3MHz \
-to 300MHz.\\nIt's Energy will vary from 12.4neV to 1.24\[Micro]eV.\>\"", ",", 
-             RowBox[{"FontFamily", "->", "\"\<Calibri\>\""}], ",", "18", ",", 
-             RowBox[{"RGBColor", "[", 
-              RowBox[{"0.43", ",", "0.57", ",", "0.95"}], "]"}]}], "]"}], 
-           "}"}], "}"}], "]"}], ",", 
-        RowBox[{"Grid", "[", 
-         RowBox[{"{", 
-          RowBox[{"{", 
-           RowBox[{"Style", "[", 
-            RowBox[{
-            "\"\<This is the MicroWave.\\nIt's Wave Length is between \
-\!\(\*SuperscriptBox[\(10\), \(0\)]\)m and \!\(\*SuperscriptBox[\(10\), \
-\(-3\)]\)m.\\nIt's frequency will vary from 300MHz to 300GHz.\\nIt's Energy \
-will vary from 1.24\[Micro]eV to 1.24meV.\>\"", ",", 
-             RowBox[{"FontFamily", "->", "\"\<Calibri\>\""}], ",", "18", ",", 
-             RowBox[{"RGBColor", "[", 
-              RowBox[{"0.43", ",", "0.57", ",", "0.95"}], "]"}]}], "]"}], 
-           "}"}], "}"}], "]"}], ",", 
-        RowBox[{"Grid", "[", 
-         RowBox[{"{", 
-          RowBox[{"{", 
-           RowBox[{"Style", "[", 
-            RowBox[{
-            "\"\<This is a special wave called Infrared.\\nIt's slightly \
-longer than visible red light.\\nIt's Wave Length is between \
-\!\(\*SuperscriptBox[\(10\), \(-3\)]\)m and 7*\!\(\*SuperscriptBox[\(10\), \
-\(-7\)]\)m.\\nIt's frequency will vary from 300GHz to 430THz.\\nIt's Energy \
-will vary from 1.24meV to 1.7eV.\>\"", ",", 
-             RowBox[{"FontFamily", "->", "\"\<Calibri\>\""}], ",", "18", ",", 
-             RowBox[{"RGBColor", "[", 
-              RowBox[{"0.43", ",", "0.57", ",", "0.95"}], "]"}]}], "]"}], 
-           "}"}], "}"}], "]"}], ",", "\[IndentingNewLine]", 
-        RowBox[{"Grid", "[", 
-         RowBox[{"{", 
-          RowBox[{"{", 
-           RowBox[{"Style", "[", 
-            RowBox[{
-            "\"\<This is the human visible light.\\nIt's Wave Length is \
-between 3.8*\!\(\*SuperscriptBox[\(10\), \(-7\)]\)m and \
-7*\!\(\*SuperscriptBox[\(10\), \(-7\)]\)m.\\nIt's frequency will vary from \
-430GHz to 790THz.\\nIt's Energy will vary from 1.7eV to 3.3eV.\>\"", ",", 
-             RowBox[{"FontFamily", "->", "\"\<Calibri\>\""}], ",", "18", ",", 
-             RowBox[{"RGBColor", "[", 
-              RowBox[{"0.43", ",", "0.57", ",", "0.95"}], "]"}]}], "]"}], 
-           "}"}], "}"}], "]"}], ",", 
-        RowBox[{"Grid", "[", 
-         RowBox[{"{", 
-          RowBox[{"{", 
-           RowBox[{"Style", "[", 
-            RowBox[{
-            "\"\<This is another special wave called Ultraviolet.\\nIt's \
-slightly shorter than visible purple light.\\nIt's Wave Length is between \
-\!\(\*SuperscriptBox[\(10\), \(-8\)]\)m and 3.8*\!\(\*SuperscriptBox[\(10\), \
-\(-7\)]\)m.\\nIt's frequency will vary from 790THz to 30PHz.\\nIt's Energy \
-will vary from 3.3eV to 124eV.\>\"", ",", 
-             RowBox[{"FontFamily", "->", "\"\<Calibri\>\""}], ",", "18", ",", 
-             RowBox[{"RGBColor", "[", 
-              RowBox[{"0.43", ",", "0.57", ",", "0.95"}], "]"}]}], "]"}], 
-           "}"}], "}"}], "]"}], ",", 
-        RowBox[{"Grid", "[", 
-         RowBox[{"{", 
-          RowBox[{"{", 
-           RowBox[{"Style", "[", 
-            RowBox[{
-            "\"\<This is Xray!\\nIt's Wave Length is between \
-\!\(\*SuperscriptBox[\(10\), \(-11\)]\)m and \!\(\*SuperscriptBox[\(10\), \
-\(-8\)]\)m.\\nIt's frequency will vary from 30PHz to 30EHz.\\nIt's Energy \
-will vary from 124eV to 124keV.\>\"", ",", 
-             RowBox[{"FontFamily", "->", "\"\<Calibri\>\""}], ",", "18", ",", 
-             RowBox[{"RGBColor", "[", 
-              RowBox[{"0.43", ",", "0.57", ",", "0.95"}], "]"}]}], "]"}], 
-           "}"}], "}"}], "]"}], ",", "\[IndentingNewLine]", 
-        RowBox[{"Grid", "[", 
-         RowBox[{"{", 
-          RowBox[{"{", 
-           RowBox[{"Style", "[", 
-            RowBox[{
-            "\"\<This is Gamma Ray!\\nIt's Wave Length is extremly small and \
-less than \!\(\*SuperscriptBox[\(10\), \(-11\)]\)m.\\nIt's frequency extremly \
-high and higher than 30EHz.\\nIt's Energy will vary from 124keV to over \
-300GeV.\>\"", ",", 
-             RowBox[{"FontFamily", "->", "\"\<Calibri\>\""}], ",", "18", ",", 
-             RowBox[{"RGBColor", "[", 
-              RowBox[{"0.43", ",", "0.57", ",", "0.95"}], "]"}]}], "]"}], 
-           "}"}], "}"}], "]"}]}], "}"}]}], ")"}]}], ",", 
-   "\[IndentingNewLine]", 
-   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.6458776279277368`*^9, 3.6458776684417367`*^9}, {
-   3.6458777589307365`*^9, 3.645877835853737*^9}, {3.6458778699617367`*^9, 
-   3.645877897761737*^9}, {3.645878036040537*^9, 3.6458781759579005`*^9}, {
-   3.64587824321835*^9, 3.645878273044314*^9}, {3.6458785000354667`*^9, 
-   3.645878596486562*^9}, {3.6458789391707697`*^9, 3.645878942946147*^9}, {
-   3.645879316815468*^9, 3.645879323319516*^9}, {3.645879392799999*^9, 
-   3.645879416325632*^9}, {3.6458797250164223`*^9, 3.6458797537679324`*^9}, {
-   3.6458798495208364`*^9, 3.6458798547778006`*^9}, {3.6458800755675535`*^9, 
-   3.6458801007454576`*^9}, {3.645880231332673*^9, 3.645880254794321*^9}, {
-   3.6458817473040423`*^9, 3.6458818702883396`*^9}, {3.645881908876198*^9, 
-   3.645881913547665*^9}, {3.645881957409051*^9, 3.645881968142124*^9}, {
-   3.6458844333767915`*^9, 3.645884476930146*^9}, {3.6458845081952724`*^9, 
-   3.6458846249029417`*^9}, {3.645884655665018*^9, 3.645884819766426*^9}, {
-   3.645884854665916*^9, 3.6458850264690948`*^9}, 3.6458851228737345`*^9, {
-   3.645885280378186*^9, 3.6458853372041864`*^9}, {3.6458854075371866`*^9, 
-   3.645885414222186*^9}, {3.645885510538186*^9, 3.6458855136261864`*^9}, 
-   3.645886242465855*^9, {3.6458862891835265`*^9, 3.645886291905799*^9}, {
-   3.6458891874963427`*^9, 3.645889253053898*^9}, {3.6458893510766993`*^9, 
-   3.645889351945786*^9}, {3.6458898827748632`*^9, 3.6458899024318295`*^9}, {
-   3.645889965761162*^9, 3.645890029684553*^9}, {3.645898434981312*^9, 
-   3.6458984663173113`*^9}, {3.6458985015683117`*^9, 
-   3.6458985686663113`*^9}, {3.6458986206593113`*^9, 3.645898752645013*^9}, {
-   3.6458988475655036`*^9, 3.645898916815428*^9}, {3.6458989755873046`*^9, 
-   3.64589903264501*^9}, {3.6458990721039553`*^9, 3.6458991785085945`*^9}, {
-   3.645899532937005*^9, 3.645899537511462*^9}, {3.645899994623169*^9, 
-   3.645900016658372*^9}, {3.6459001301747227`*^9, 3.645900180814786*^9}}],
-
 Cell[BoxData[
  TagBox[
   StyleBox[
@@ -50208,40 +49685,18 @@ and higher than 30EHz.\nIt's Energy will vary from 124keV to over 300GeV.",
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.6458992002207656`*^9, 3.645899283943137*^9, 
-  3.6458995604137526`*^9, 3.6458995951322236`*^9, 3.6458998933360415`*^9, 
-  3.6459000395676627`*^9, 3.645900119757681*^9, 3.645900208966601*^9}]
-}, Open  ]],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.6458844303184853`*^9, 3.6458844303674903`*^9}}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.6458807854732957`*^9, 3.645880816669296*^9}, {
-   3.645881662207534*^9, 3.645881663239637*^9}, 3.645884436513105*^9}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.645884434769931*^9, 3.645884434788933*^9}}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.645881695083821*^9, 3.645881755426854*^9}, {
-   3.6458834678392344`*^9, 3.645883644742234*^9}, {3.6458839597172337`*^9, 
-   3.645883961364234*^9}, {3.645884194953952*^9, 3.645884197400196*^9}, {
-   3.645884315390994*^9, 3.6458843530227566`*^9}, 3.6458844381462684`*^9}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.6458844390383577`*^9, 3.6458844406095147`*^9}}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.645883898621234*^9, 3.6458839284462337`*^9}, {
-   3.6458843820426583`*^9, 3.6458844097554293`*^9}, 3.645884443538808*^9}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.6458844446499186`*^9, 3.6458844446589193`*^9}}]
+  Manipulate`InterpretManipulate[1]]], "Output", "PluginEmbeddedContent"]
 },
-WindowSize->{1680, 968},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+WindowSize->{585, 633},
+WindowMargins->{{539, Automatic}, {Automatic, 159}},
+Visible->True,
+AuthoredSize->{585, 633},
+ScrollingOptions->{"HorizontalScrollRange"->Fit,
+"VerticalScrollRange"->Fit},
+ShowCellBracket->False,
+Deployed->True,
+CellContext->Notebook,
+TrackCellChangeTimes->False,
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -50256,20 +49711,11 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 7839, 232, 452, "Input"],
-Cell[CellGroupData[{
-Cell[8422, 256, 14339, 298, 860, "Input"],
-Cell[22764, 556, 3027053, 49657, 663, "Output"]
-}, Open  ]],
-Cell[3049832, 50216, 96, 1, 31, "Input"],
-Cell[3049931, 50219, 166, 2, 31, "Input"],
-Cell[3050100, 50223, 92, 1, 31, "Input"],
-Cell[3050195, 50226, 318, 4, 31, "Input"],
-Cell[3050516, 50232, 96, 1, 31, "Input"],
-Cell[3050615, 50235, 170, 2, 31, "Input"],
-Cell[3050788, 50239, 96, 1, 31, "Input"]
+Cell[1464, 33, 3026866, 49654, 615, "Output"]
 }
 ]
 *)
 
 (* End of internal cache information *)
+
+(* NotebookSignature 0u0CuzkNltaSlD1X2IoNc#0n *)
