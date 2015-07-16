@@ -1,0 +1,582 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     24640,        572]
+NotebookOptionsPosition[     24206,        553]
+NotebookOutlinePosition[     24550,        568]
+CellTagsIndexPosition[     24507,        565]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Remove", "[", "\"\<Global`*\>\"", "]"}], ";"}]}], "Input"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"uP", " ", "=", " ", 
+   RowBox[{"Image", "[", 
+    RowBox[{
+     RowBox[{
+     "Import", "[", 
+      "\"\<C:\\\\Users\\\\lingbotang\\\\Downloads\\\\Up1.jpg\>\"", "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"25", ",", "20"}], "}"}]}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"doWn", " ", "=", " ", 
+   RowBox[{"Image", "[", 
+    RowBox[{
+     RowBox[{
+     "Import", "[", 
+      "\"\<C:\\\\Users\\\\lingbotang\\\\Downloads\\\\Down1.jpg\>\"", "]"}], 
+     ",", 
+     RowBox[{"ImageSize", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"25", ",", "20"}], "}"}]}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"epsilon", " ", "=", " ", 
+   RowBox[{"8.85", "*", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "12"}]]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"V", "[", 
+    RowBox[{"Z_", ",", "r_"}], "]"}], ":=", " ", 
+   RowBox[{"Z", "/", "r"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"proportion", " ", "=", " ", "\"\<\[Proportional]\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"slash", " ", "=", " ", "\"\</\>\""}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"charge", " ", "=", " ", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"radius", " ", "=", " ", "0.05"}], ";"}]}], "Input"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{3.6460531195312014`*^9, 3.6460562982460933`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Column", "[", 
+     RowBox[{
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Grid", "[", 
+         RowBox[{"{", 
+          RowBox[{"{", "\[IndentingNewLine]", 
+           RowBox[{"Row", "[", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"Show", "[", 
+               RowBox[{
+                RowBox[{"{", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"Graphics3D", "[", 
+                   RowBox[{
+                    RowBox[{"Sphere", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "1"}], 
+                    "]"}], ",", 
+                    RowBox[{"PlotRange", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "}"}]}]}], "]"}],
+                   ",", "\[IndentingNewLine]", 
+                  RowBox[{"ParametricPlot3D", "[", 
+                   RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"10", "*", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}], "/", "3"}]}], ",", 
+                    RowBox[{"10", "*", 
+                    RowBox[{
+                    RowBox[{"Sin", "[", "\[Alpha]", "]"}], "/", "3"}]}], ",", 
+                    "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"\[Alpha]", ",", "0", ",", 
+                    RowBox[{"2", "*", "\[Pi]"}]}], "}"}], ",", 
+                    RowBox[{"PlotRange", "\[Rule]", " ", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "}"}]}], ",", 
+                    RowBox[{"Background", "\[Rule]", "Black"}]}], "]"}]}], 
+                 "\[IndentingNewLine]", "}"}], ",", 
+                RowBox[{"ImageSize", "\[Rule]", " ", "Medium"}]}], "]"}], 
+              "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+              RowBox[{"Show", "[", 
+               RowBox[{"{", "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"Plot3D", "[", 
+                  RowBox[{
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "charge"}], "/", 
+                    RowBox[{"Sqrt", "[", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"x", "^", "2"}], "+", 
+                    RowBox[{"y", "^", "2"}]}], ")"}], "]"}]}], "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{"x", ",", 
+                    RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{"y", ",", 
+                    RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+                   RowBox[{"PlotRange", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"-", "20"}]}], "}"}]}], "}"}]}], ",", 
+                   RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"Opacity", "[", "0.4", "]"}], "}"}]}], ",", 
+                   RowBox[{"BoxRatios", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", " ", "1", ",", " ", "1"}], "}"}]}], ",", 
+                   RowBox[{"Mesh", "\[Rule]", "False"}], ",", 
+                   RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}], ",", 
+                 " ", "\[IndentingNewLine]", 
+                 RowBox[{"ParametricPlot3D", "[", 
+                  RowBox[{
+                   RowBox[{"{", "\[IndentingNewLine]", 
+                    RowBox[{"(*", " ", 
+                    RowBox[{"Marker", " ", "3", "D"}], " ", "*)"}], 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"radius", "*", 
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}]}], ",", 
+                    RowBox[{"radius", "*", 
+                    RowBox[{"Sin", "[", "\[Alpha]", "]"}]}], ",", 
+                    RowBox[{
+                    RowBox[{"-", "charge"}], "/", "radius"}]}], "}"}], "}"}], 
+                   ",", 
+                   RowBox[{"{", 
+                    RowBox[{"\[Alpha]", ",", "0", ",", 
+                    RowBox[{"2", "*", "\[Pi]"}]}], "}"}], ",", 
+                   RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"Red", ",", "Thick"}], "}"}]}], ",", 
+                   RowBox[{"PlotRange", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"-", "20"}]}], "}"}]}], "}"}]}], ",", 
+                   RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+                   RowBox[{"Boxed", "\[Rule]", "True"}], ",", 
+                   RowBox[{"Mesh", "\[Rule]", "False"}], ",", 
+                   RowBox[{"ImageSize", "\[Rule]", "Medium"}], ",", 
+                   RowBox[{"SphericalRegion", "\[Rule]", "True"}]}], "]"}]}], 
+                "}"}], "]"}], "\[IndentingNewLine]", ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"grid3", "=", 
+               RowBox[{"Show", "[", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"Plot", "[", 
+                   RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "charge"}], "/", 
+                    RowBox[{"Sqrt", "[", 
+                    RowBox[{"x", "^", "2"}], "]"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"x", ",", 
+                    RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+                    RowBox[{"PlotRange", "\[Rule]", " ", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"-", "20"}]}], "}"}]}], "}"}]}], ",", 
+                    RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"Black", ",", "Thin"}], "}"}]}], ",", 
+                    RowBox[{"Axes", "\[Rule]", " ", "True"}], ",", 
+                    RowBox[{"Filling", "\[Rule]", "Axis"}], ",", 
+                    RowBox[{"FillingStyle", "\[Rule]", 
+                    RowBox[{"Directive", "[", 
+                    RowBox[{"Orange", ",", 
+                    RowBox[{"Opacity", "[", "0.4", "]"}]}], "]"}]}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}], ",", 
+                  "\[IndentingNewLine]", 
+                  RowBox[{"(*", " ", 
+                   RowBox[{"Marker", " ", "2", "D"}], " ", "*)"}], 
+                  "\[IndentingNewLine]", 
+                  RowBox[{"ParametricPlot", "[", 
+                   RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"radius", "*", 
+                    RowBox[{"Cos", "[", "\[Alpha]", "]"}]}], ",", 
+                    RowBox[{
+                    RowBox[{"-", "charge"}], "/", "radius"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"\[Alpha]", ",", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "\[Pi]"}], ",", 
+                    RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+                    RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"Directive", "[", 
+                    RowBox[{"Red", ",", "Thick"}], "]"}]}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}]}], 
+                 "\[IndentingNewLine]", "}"}], "]"}]}]}], 
+             "\[IndentingNewLine]", "}"}], "]"}], "\[IndentingNewLine]", 
+           "}"}], "}"}], "]"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"Panel", "[", "\[IndentingNewLine]", 
+         RowBox[{"Row", "[", 
+          RowBox[{"{", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"Grid", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"{", 
+                RowBox[{"NumberForm", "[", 
+                 RowBox[{
+                  RowBox[{"Dynamic", "[", 
+                   RowBox[{
+                    RowBox[{"-", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "/", 
+                    RowBox[{"(", 
+                    RowBox[{"4", "*", "\[Pi]", "*", "epsilon"}], ")"}]}], 
+                    ")"}]}], "*", 
+                    RowBox[{"(", 
+                    RowBox[{"charge", "*", "1.6", "*", 
+                    RowBox[{
+                    SuperscriptBox["10", 
+                    RowBox[{"-", "19"}]], "/", 
+                    RowBox[{"(", 
+                    RowBox[{"radius", "*", "8.875", "*", 
+                    SuperscriptBox["10", 
+                    RowBox[{"-", "14"}]]}], ")"}]}]}], ")"}]}], "]"}], ",", 
+                  "3"}], "]"}], "}"}], "}"}], ",", 
+              RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"Grid", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"{", "proportion", "}"}], "}"}], ",", 
+              RowBox[{"Frame", "\[Rule]", "False"}]}], "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"Row", "[", 
+             RowBox[{"{", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"Grid", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"{", 
+                   RowBox[{"Dynamic", "[", "charge", "]"}], "}"}], "}"}], ",", 
+                 RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}], 
+               "\[IndentingNewLine]", ",", 
+               RowBox[{"Column", "[", 
+                RowBox[{"{", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"Button", "[", 
+                   RowBox[{"uP", ",", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"charge", "<", "10"}], ",", 
+                    RowBox[{"charge", "=", 
+                    RowBox[{"charge", "+", "1"}]}], ",", 
+                    RowBox[{"charge", "=", 
+                    RowBox[{"charge", "+", "0"}]}]}], "]"}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"25", ",", "20"}], "}"}]}]}], "]"}], ",", 
+                  "\[IndentingNewLine]", 
+                  RowBox[{"Button", "[", 
+                   RowBox[{"doWn", ",", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"charge", ">", "1"}], ",", 
+                    RowBox[{"charge", "=", 
+                    RowBox[{"charge", "-", "1"}]}], ",", 
+                    RowBox[{"charge", "=", 
+                    RowBox[{"charge", "-", "0"}]}]}], "]"}], ",", " ", 
+                    RowBox[{"ImageSize", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"25", ",", "20"}], "}"}]}]}], "]"}]}], 
+                 "\[IndentingNewLine]", "}"}], "]"}]}], "\[IndentingNewLine]",
+               "}"}], "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"Grid", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"{", "slash", "}"}], "}"}], ",", 
+              RowBox[{"Frame", "\[Rule]", "False"}]}], "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"Row", "[", 
+             RowBox[{"{", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"Grid", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"{", 
+                   RowBox[{"Dynamic", "[", "radius", "]"}], "}"}], "}"}], ",", 
+                 RowBox[{"Frame", "\[Rule]", "True"}]}], "]"}], 
+               "\[IndentingNewLine]", ",", 
+               RowBox[{"Column", "[", 
+                RowBox[{"{", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"Button", "[", 
+                   RowBox[{"uP", ",", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"radius", "<", "5"}], ",", 
+                    RowBox[{"radius", "=", 
+                    RowBox[{"radius", "+", "0.1"}]}], ",", 
+                    RowBox[{"radius", "=", 
+                    RowBox[{"radius", "+", "0"}]}]}], "]"}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"25", ",", "20"}], "}"}]}]}], "]"}], ",", 
+                  "\[IndentingNewLine]", 
+                  RowBox[{"Button", "[", 
+                   RowBox[{"doWn", ",", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"radius", ">", "0"}], ",", 
+                    RowBox[{"radius", "=", 
+                    RowBox[{"radius", "-", "0.1"}]}], ",", 
+                    RowBox[{"radius", "=", 
+                    RowBox[{"radius", "-", "0"}]}]}], "]"}], ",", " ", 
+                    RowBox[{"ImageSize", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"25", ",", "20"}], "}"}]}]}], "]"}]}], 
+                 "\[IndentingNewLine]", "}"}], "]"}]}], "\[IndentingNewLine]",
+               "}"}], "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], 
+         "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}], ",", 
+      RowBox[{"Alignment", "\[Rule]", "Center"}]}], "]"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"charge", ",", "None"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"radius", ",", "None"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Initialization", "\[RuleDelayed]", 
+     RowBox[{"(", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"charge", "=", "1"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"radius", "=", "0.05"}], ";"}], "\[IndentingNewLine]", ")"}]}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+     RowBox[{"{", 
+      RowBox[{"charge", ",", "radius"}], "}"}]}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.6460533474709935`*^9, 3.646053362976544*^9}, {
+  3.6460541006713057`*^9, 3.646054112800519*^9}, {3.6460550192362165`*^9, 
+  3.646055095574217*^9}, {3.646055127367217*^9, 3.6460553585072165`*^9}, {
+  3.646055426228217*^9, 3.6460554706652164`*^9}, {3.6460555244582167`*^9, 
+  3.646055625282217*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`charge$$ = 1, $CellContext`radius$$ = 
+    0.04999999999999999, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`charge$$], 0}, {
+      Hold[$CellContext`radius$$], 0}}, Typeset`size$$ = {
+    1080., {238.5, 245.5}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`charge$$ = 0, $CellContext`radius$$ = 0}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Column[{
+         Grid[{{
+            Row[{
+              Show[{
+                Graphics3D[
+                 Sphere[{0, 0, 0}, 1], 
+                 PlotRange -> {{-5, 5}, {-5, 5}, {-5, 5}}], 
+                
+                ParametricPlot3D[{
+                 10 (Cos[$CellContext`\[Alpha]]/3), 
+                  10 (Sin[$CellContext`\[Alpha]]/3), 
+                  0}, {$CellContext`\[Alpha], 0, 2 Pi}, 
+                 PlotRange -> {{-10, 10}, {-10, 10}, {-10, 10}}, Background -> 
+                 Black]}, ImageSize -> Medium], 
+              Show[{
+                
+                Plot3D[{(-$CellContext`charge$$)/
+                  Sqrt[$CellContext`x^2 + $CellContext`y^2]}, \
+{$CellContext`x, -1, 1}, {$CellContext`y, -1, 1}, 
+                 PlotRange -> {{-1, 1}, {-1, 1}, {0, -20}}, PlotStyle -> {
+                   Opacity[0.4]}, BoxRatios -> {1, 1, 1}, Mesh -> False, 
+                 ImageSize -> Medium], 
+                
+                ParametricPlot3D[{{$CellContext`radius$$ 
+                   Cos[$CellContext`\[Alpha]], $CellContext`radius$$ 
+                   Sin[$CellContext`\[Alpha]], \
+(-$CellContext`charge$$)/$CellContext`radius$$}}, {$CellContext`\[Alpha], 0, 
+                  2 Pi}, PlotStyle -> {Red, Thick}, 
+                 PlotRange -> {{-1, 1}, {-1, 1}, {0, -20}}, Axes -> True, 
+                 Boxed -> True, Mesh -> False, ImageSize -> Medium, 
+                 SphericalRegion -> True]}], $CellContext`grid3 = Show[{
+                 
+                 Plot[{(-$CellContext`charge$$)/
+                   Sqrt[$CellContext`x^2]}, {$CellContext`x, -1, 1}, 
+                  PlotRange -> {{-1, 1}, {0, -20}}, 
+                  PlotStyle -> {Black, Thin}, Axes -> True, Filling -> Axis, 
+                  FillingStyle -> Directive[Orange, 
+                    Opacity[0.4]], ImageSize -> Medium], 
+                 
+                 ParametricPlot[{$CellContext`radius$$ 
+                   Cos[$CellContext`\[Alpha]], \
+(-$CellContext`charge$$)/$CellContext`radius$$}, {$CellContext`\[Alpha], (-2) 
+                   Pi, 2 Pi}, PlotStyle -> Directive[Red, Thick], ImageSize -> 
+                  Medium]}]}]}}], 
+         Panel[
+          Row[{
+            Grid[{{
+               NumberForm[
+                
+                Dynamic[(-(1/(4 
+                   Pi $CellContext`epsilon))) ($CellContext`charge$$ 
+                  1.6 (10^(-19)/($CellContext`radius$$ 8.875 10^(-14))))], 
+                3]}}, Frame -> True], 
+            Grid[{{$CellContext`proportion}}, Frame -> False], 
+            Row[{
+              Grid[{{
+                 Dynamic[$CellContext`charge$$]}}, Frame -> True], 
+              Column[{
+                Button[$CellContext`uP, 
+                 
+                 If[$CellContext`charge$$ < 
+                  10, $CellContext`charge$$ = $CellContext`charge$$ + 
+                   1, $CellContext`charge$$ = $CellContext`charge$$ + 0], 
+                 ImageSize -> {25, 20}], 
+                Button[$CellContext`doWn, 
+                 
+                 If[$CellContext`charge$$ > 
+                  1, $CellContext`charge$$ = $CellContext`charge$$ - 
+                   1, $CellContext`charge$$ = $CellContext`charge$$ + 0], 
+                 ImageSize -> {25, 20}]}]}], 
+            Grid[{{$CellContext`slash}}, Frame -> False], 
+            Row[{
+              Grid[{{
+                 Dynamic[$CellContext`radius$$]}}, Frame -> True], 
+              Column[{
+                Button[$CellContext`uP, 
+                 If[$CellContext`radius$$ < 
+                  5, $CellContext`radius$$ = $CellContext`radius$$ + 
+                   0.1, $CellContext`radius$$ = $CellContext`radius$$ + 0], 
+                 ImageSize -> {25, 20}], 
+                Button[$CellContext`doWn, 
+                 
+                 If[$CellContext`radius$$ > 
+                  0, $CellContext`radius$$ = $CellContext`radius$$ - 
+                   0.1, $CellContext`radius$$ = $CellContext`radius$$ + 0], 
+                 ImageSize -> {25, 20}]}]}]}]]}, Alignment -> Center], 
+      "Specifications" :> {{$CellContext`charge$$, 0, ControlType -> 
+         None}, {$CellContext`radius$$, 0, ControlType -> None}}, 
+      "Options" :> {
+       TrackedSymbols :> {$CellContext`charge$$, $CellContext`radius$$}}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{1131., {271., 278.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>(($CellContext`charge$$ = 1; $CellContext`radius$$ = 0.05; 
+      Null); Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.646055362020217*^9, 3.6460554368062167`*^9, 
+  3.646055480495217*^9, 3.646055627787217*^9, 3.6460563017294416`*^9}]
+}, Open  ]]
+},
+WindowSize->{1680, 968},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 192, 5, 52, "Input"],
+Cell[753, 27, 1380, 42, 172, "Input"],
+Cell[2136, 71, 94, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[2255, 76, 15923, 348, 1073, "Input"],
+Cell[18181, 426, 6009, 124, 566, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
