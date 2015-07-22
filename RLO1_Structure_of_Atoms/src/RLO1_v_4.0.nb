@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1433489,      24013]
-NotebookOptionsPosition[   1432989,      23993]
-NotebookOutlinePosition[   1433335,      24008]
-CellTagsIndexPosition[   1433292,      24005]
+NotebookDataLength[   1433519,      24014]
+NotebookOptionsPosition[   1433019,      23994]
+NotebookOutlinePosition[   1433365,      24009]
+CellTagsIndexPosition[   1433322,      24006]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22012,7 +22012,7 @@ IYQQQgghhBBCiKPC/w+u8nl/
        "Options" :> {
         TrackedSymbols :> {$CellContext`j$$}, SynchronousInitialization -> 
          False}, "DefaultOptions" :> {}],
-      ImageSizeCache->{292., {92., 99.}},
+      ImageSizeCache->{451., {301., 308.}},
       SingleEvaluation->True],
      Deinitialization:>None,
      DynamicModuleValues:>{},
@@ -22038,7 +22038,7 @@ $CellContext`\[Theta]$, $CellContext`\[Phi]$]; $CellContext`y1$ = \
 $CellContext`b$; $CellContext`y2$ = 
              ExpToTrig[($CellContext`a$ - $CellContext`b$)/Sqrt[
                2]]; $CellContext`y3$ = 
-             ExpToTrig[($CellContext`a$ + $CellContext`b$) Sqrt[2]^(-1)/I]; 
+             ExpToTrig[($CellContext`a$ + $CellContext`b$) (Sqrt[2]^(-1)/I)]; 
             If[$CellContext`m$ == 0, 
               AppendTo[$CellContext`fun$, $CellContext`y1$], 
               
@@ -23960,7 +23960,7 @@ $CellContext`s$), (-13.6)/$CellContext`s$^2}}]}, Axes -> True,
      UntrackedVariables:>{Typeset`size$$}], "Manipulate",
     Deployed->True,
     StripOnInput->False],
-   Manipulate`InterpretManipulate[1]]}}, 1,
+   Manipulate`InterpretManipulate[1]]}}, 2,
   ControlPlacement->Top]], "Output",
  CellChangeTimes->{
   3.6441676378481946`*^9, {3.644167902837691*^9, 3.6441679226066675`*^9}, {
@@ -23988,7 +23988,8 @@ $CellContext`s$), (-13.6)/$CellContext`s$^2}}]}, Axes -> True,
    3.644692224934663*^9, 3.644692286939663*^9}, {3.644692332901663*^9, 
    3.644692435628663*^9}, {3.6446926063436627`*^9, 3.6446926078436627`*^9}, {
    3.644692657694663*^9, 3.644692659222663*^9}, {3.6446927426886625`*^9, 
-   3.6446927444756627`*^9}, {3.6446929042186627`*^9, 3.6446929077786627`*^9}}]
+   3.6446927444756627`*^9}, {3.6446929042186627`*^9, 3.6446929077786627`*^9}, 
+   3.646584263738534*^9}]
 }, Open  ]]
 },
 WindowSize->{1680, 1008},
@@ -24010,10 +24011,10 @@ Notebook[{
 Cell[558, 20, 2371, 66, 192, "Input"],
 Cell[2932, 88, 32230, 705, 1112, "Input"],
 Cell[35165, 795, 17556, 398, 882, "Input"],
-Cell[52724, 1195, 7248, 174, 280, "Input"],
+Cell[52724, 1195, 7248, 174, 252, "Input"],
 Cell[CellGroupData[{
 Cell[59997, 1373, 1583, 40, 52, "Input"],
-Cell[61583, 1415, 1371390, 22575, 831, "Output"]
+Cell[61583, 1415, 1371420, 22576, 798, "Output"]
 }, Open  ]]
 }
 ]
