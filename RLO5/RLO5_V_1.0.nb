@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   3170493,      52407]
-NotebookOptionsPosition[   3169221,      52367]
-NotebookOutlinePosition[   3169568,      52382]
-CellTagsIndexPosition[   3169525,      52379]
+NotebookDataLength[   3175423,      52532]
+NotebookOptionsPosition[   3174153,      52492]
+NotebookOutlinePosition[   3174497,      52507]
+CellTagsIndexPosition[   3174454,      52504]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -124,7 +124,7 @@ Cell[BoxData[{
    RowBox[{"txtF", "[", "text_", "]"}], ":=", 
    RowBox[{"Style", "[", 
     RowBox[{"text", ",", 
-     RowBox[{"FontFamily", "\[Rule]", "\"\<Calibri\>\""}], ",", "14"}], 
+     RowBox[{"FontFamily", "\[Rule]", "\"\<Calibri\>\""}], ",", "16"}], 
     "]"}]}], ";"}]}], "Input",
  CellChangeTimes->{{3.646681963998947*^9, 3.646681964222969*^9}, {
    3.6466820091864653`*^9, 3.646682030942869*^9}, 3.646683013853054*^9, {
@@ -137,7 +137,7 @@ Cell[BoxData[{
    3.6466845229860535`*^9, 3.6466845233210535`*^9}, {3.6466849086770535`*^9, 
    3.646684919348054*^9}, {3.646684983011054*^9, 3.646684987678054*^9}, {
    3.6466850695640535`*^9, 3.646685079674054*^9}, {3.646685119948054*^9, 
-   3.646685129610054*^9}}],
+   3.646685129610054*^9}, {3.6467568720124426`*^9, 3.6467568724114428`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -291,7 +291,8 @@ FontColor->RGBColor[1, 0.5, 0]]\)\>\"", ",", " ",
      RowBox[{"{", 
       RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
      RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]}], 
-  ";"}]], "Input"],
+  ";"}]], "Input",
+ CellChangeTimes->{{3.6467563686004424`*^9, 3.6467565400144424`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -300,12 +301,17 @@ Cell[BoxData[
     RowBox[{
      RowBox[{
       RowBox[{"subtabTitle", "[", "\"\<LIGHT\>\"", "]"}], " ", "->", " ", 
-      "\"\<\\r The PE effect CANNOT be understood by just thinking of light \
-as a wave.\\r Try it.\>\""}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+      "txtF", "[", 
+       "\"\<\\r The PE effect CANNOT be understood by just thinking of light \
+as a wave.\\r Try it.\>\"", "]"}]}], ",", "\[IndentingNewLine]", 
      "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"subtabTitle", "[", "\"\<MATTER\>\"", "]"}], " ", "\[Rule]", 
-      " ", "\"\<\\r Matter is made of atoms.\n Atoms are held together by \
+      " ", 
+      RowBox[{
+      "txtF", "[", 
+       "\"\<\\r Matter is made of atoms.\n Atoms are held together by \
 electrical force.\n Atoms are prevented from collapse by quantum mechanics.\n\
 \\r Atoms contain \!\(\*
 StyleBox[\"bound\",
@@ -313,40 +319,45 @@ FontVariations->{\"Underline\"->True}]\)\!\(\*
 StyleBox[\" \",
 FontVariations->{\"Underline\"->True}]\)\!\(\*
 StyleBox[\"electrons\",
-FontVariations->{\"Underline\"->True}]\).\>\""}], ",", "\[IndentingNewLine]", 
-     "\[IndentingNewLine]", 
+FontVariations->{\"Underline\"->True}]\).\>\"", "]"}]}], ",", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"subtabTitle", "[", "\"\<BOUND\\nELECTRONS\>\"", "]"}], " ", "->",
        " ", "\[IndentingNewLine]", 
-      "\"\<\\r The electron is a fundamental particle.\n It has a negative \
+      RowBox[{
+      "txtF", "[", 
+       "\"\<\\r The electron is a fundamental particle.\n It has a negative \
 charge.\n It is a fermion with spin 1/2.\n The PE effect concerns electrons \
-bound in atoms.\n\\r Light can kick bound electrons out of their \
-atoms.\>\""}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+bound in atoms.\n\\r Light can kick bound electrons out of their atoms.\>\"", 
+       "]"}]}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"subtabTitle", "[", "\"\<Einstein &\\nQuanta\>\"", "]"}], " ", 
       "\[Rule]", " ", 
       RowBox[{"Grid", "[", " ", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{
-         "{", "\"\<Einstein analyzed the photoelectric effect in terms of \
-quanta in 1905. As follows ... TBD\>\"", "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+          "txtF", "[", 
+           "\"\<Einstein analyzed the photoelectric effect in terms of quanta \
+in 1905. As follows ... TBD\>\"", "]"}], "}"}], ",", 
          RowBox[{"{", " ", "EinsteinPic", " ", "}"}]}], " ", "}"}], "]"}]}], 
      ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"subtabTitle", "[", "\"\<The Strange Theory\>\"", "]"}], " ", 
       "\[Rule]", "  ", 
-      "\"\<\\r Interactions between light and electrons are completely \
+      RowBox[{
+      "txtF", "[", 
+       "\"\<\\r Interactions between light and electrons are completely \
 central to our life in this universe.\n This is how electromagnetism works. \n\
  Classical electromagnetism is summarized by Maxwell's equations (1865 ish).\n\
  \\r However the quantum theory of electromagnetism is a 20th Century \
 achievement. \nThis is described in a little book for a general audience \
-called: \n'The Strange Theory of Light and Matter' by Richard \
-Feynman.\>\""}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", " ", "}"}]}],
-   ";"}]], "Input",
+called: \n'The Strange Theory of Light and Matter' by Richard Feynman.\>\"", 
+       "]"}]}]}], "\[IndentingNewLine]", " ", "}"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.646684740386054*^9, 3.646684765665054*^9}, {
   3.646684924006054*^9, 3.646684941740054*^9}, {3.646685144506054*^9, 
-  3.646685150985054*^9}}],
+  3.646685150985054*^9}, {3.646757189815796*^9, 3.6467572380634437`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -359,17 +370,23 @@ Cell[BoxData[
       RowBox[{"Grid", "[", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{
-         "{", "\"\<\\r The PE effect of a medically applied radiation beam on \
+         RowBox[{"{", 
+          RowBox[{
+          "txtF", "[", 
+           "\"\<\\r The PE effect of a medically applied radiation beam on \
 the human body. \\r In the PE effect the photon is absorbed, for the case of \
-X-rays this represents radiation dose. This X-ray absorption effect is \
+X-rays this represents radiation dose.\\r This X-ray absorption effect is \
 important both in all forms of X-ray imaging and in radiotherapy cancer \
-treatment.\>\"", "}"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"{", "\"\<\\r Tissue is composed of low Z atoms.\>\"", "}"}],
-          ",", "\[IndentingNewLine]", 
-         RowBox[{
-         "{", "\"\<log-log PLOT OF MASS PHOTOELECTRIC ABSORPTION COEFF VS. \
-PHOTON ENERGY \>\"", "}"}], ",", 
+treatment.\\rTissue is composed of low Z atoms.\>\"", "]"}], "}"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"txtF", "[", "\"\<\>\"", "]"}], "}"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{
+          "txtF", "[", 
+           "\"\<\\r\\rlog-log PLOT OF MASS PHOTOELECTRIC ABSORPTION COEFF VS. \
+PHOTON ENERGY \>\"", "]"}], "}"}], ",", 
          RowBox[{"{", "mySin", "}"}]}], "}"}], "]"}]}], ",", 
      "\[IndentingNewLine]", "\[IndentingNewLine]", 
      RowBox[{
@@ -378,25 +395,33 @@ PHOTON ENERGY \>\"", "}"}], ",",
       RowBox[{"Grid", "[", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{
-         "{", "\"\<TBD the PE effect of a radiation beam for high Z metal. \
-k-edge effects \>\"", "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+          "txtF", "[", 
+           "\"\<TBD the PE effect of a radiation beam for high Z metal. \
+k-edge effects \>\"", "]"}], "}"}], ",", " ", 
          RowBox[{"{", "myExp", "}"}]}], "}"}], "]"}]}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"subtabTitle", "[", "\"\<Application\\n  3  \>\"", "]"}], " ", 
-      "\[Rule]", " ", "\"\<Technology\>\""}]}], "\[IndentingNewLine]", 
-    "}"}]}], ";"}]], "Input",
+      "\[Rule]", " ", 
+      RowBox[{"txtF", "[", "\"\<Technology\>\"", "]"}]}]}], 
+    "\[IndentingNewLine]", "}"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.6466847689100537`*^9, 3.646684789966054*^9}, {
-  3.6466851565030537`*^9, 3.646685188949054*^9}}],
+  3.6466851565030537`*^9, 3.646685188949054*^9}, {3.6467572476313567`*^9, 
+  3.646757279873804*^9}, {3.6467579026668935`*^9, 3.6467579126628933`*^9}, {
+  3.646757996267253*^9, 3.6467579963622627`*^9}, {3.646758282488872*^9, 
+  3.6467582837389975`*^9}}],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"tab03Prerequisites", " ", "=", " ", 
    RowBox[{"Grid", "[", 
-    RowBox[{"{", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"{", "\"\<\\r \!\(\*
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"txtF", "[", "\"\<\\r\!\(\*
 StyleBox[\"The\",
 FontFamily->\"Courier New\",
 FontSize->14]\)\!\(\*
@@ -405,20 +430,32 @@ FontFamily->\"Courier New\",
 FontSize->14]\)\!\(\*
 StyleBox[\"players\",
 FontFamily->\"Courier New\",
-FontSize->14]\)\\r\>\"", "}"}], ",", "\[IndentingNewLine]", 
-      RowBox[{"{", 
-       RowBox[{"TabView", "[", 
-        RowBox[{"particleTabs", ",", " ", 
-         RowBox[{"ControlPlacement", "\[Rule]", "Top"}]}], "]"}], "}"}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{
-      "{", "\"\<\\r ANIMATION HERE OF LIGHT HITTING A TARGET, WITH ELECTRONS \
-BEING EMITTED\>\"", "}"}], ",", "\[IndentingNewLine]", 
-      RowBox[{
-      "{", "\"\<\\r THE PURPOSE IS TO INTRODUCE THE BASIC EFFECT, WITHOUT \
-DETAILS, i.e. light in, electrons out.\n\tno interaction is necessary\>\"", 
-       "}"}]}], "\[IndentingNewLine]", "}"}], "]"}]}], ";"}]], "Input",
- CellChangeTimes->{3.6466850152290535`*^9}],
+FontSize->14]\)\\r\>\"", "]"}], "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"TabView", "[", 
+         RowBox[{"particleTabs", ",", " ", 
+          RowBox[{"ControlPlacement", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"Top", ",", "Center"}], "}"}]}]}], "]"}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{
+        "txtF", "[", 
+         "\"\<\\r ANIMATION HERE OF LIGHT HITTING A TARGET, WITH ELECTRONS \
+BEING EMITTED\\r THE PURPOSE IS TO INTRODUCE THE BASIC EFFECT, WITHOUT \
+DETAILS, i.e. light in, electrons out.\\r No interaction is necessary\>\"", 
+         "]"}], "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"txtF", "[", "\"\<\>\"", "]"}], "}"}]}], 
+      "\[IndentingNewLine]", "}"}], ",", 
+     RowBox[{"Alignment", "\[Rule]", "Center"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.6466850152290535`*^9, {3.6467568443494425`*^9, 3.6467568683164425`*^9}, {
+   3.6467569179954424`*^9, 3.6467569293054423`*^9}, {3.6467569820234423`*^9, 
+   3.6467569845014424`*^9}, {3.6467570224214425`*^9, 3.646757027445442*^9}, {
+   3.6467577313277617`*^9, 3.646757737343363*^9}, {3.646757780462674*^9, 
+   3.646757791825811*^9}, {3.646758331131736*^9, 3.6467583571313353`*^9}, {
+   3.6467583888135033`*^9, 3.6467583897876005`*^9}, 3.646760074041231*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -591,26 +628,36 @@ Cell[BoxData[
       "tab03Prerequisites"}], ",", "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{
-      "tabTitle", " ", "[", "\"\<LIGHT IN \\nElECTRONS OUT\>\"", "]"}], 
+      "tabTitle", " ", "[", "\"\< LIGHT IN \\n ELECTRONS OUT\>\"", "]"}], 
       "\[Rule]", 
       RowBox[{"Grid", "[", 
        RowBox[{"{", " ", 
         RowBox[{
          RowBox[{"{", "theClassicExpt", "}"}], ",", 
-         RowBox[{
-         "{", "\"\<This behaviour cannot be explained by a wave model...Why \
-not?\>\"", "}"}]}], "}"}], "]"}]}], ",", "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{
+          "txtF", "[", 
+           "\"\<This behaviour cannot be explained by a wave model...Why not?\
+\>\"", "]"}], "}"}]}], "}"}], "]"}]}], ",", "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"tabTitle", "[", "\"\<APPLICATIONS\>\"", "]"}], " ", "\[Rule]", 
       " ", 
-      RowBox[{"TabView", "[", "applicationTabs", "]"}]}], ",", 
+      RowBox[{"TabView", "[", 
+       RowBox[{"applicationTabs", ",", 
+        RowBox[{"Alignment", "\[Rule]", "Center"}], ",", 
+        RowBox[{"ControlPlacement", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"Top", ",", "Center"}], "}"}]}]}], "]"}]}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"tabTitle", "[", "\"\<CREDITS\>\"", "]"}], "\[Rule]", " ", 
       "tbdtext"}]}], "\[IndentingNewLine]", "}"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.646682046174822*^9, 3.6466821697581005`*^9}, {
   3.646682940834054*^9, 3.6466830047530537`*^9}, {3.646683238066054*^9, 
-  3.646683265764054*^9}}],
+  3.646683265764054*^9}, {3.6467562857764425`*^9, 3.6467562860614424`*^9}, {
+  3.646757063379442*^9, 3.6467570703849144`*^9}, {3.6467573134955273`*^9, 
+  3.6467573184695215`*^9}, {3.6467574656842*^9, 3.6467574696215935`*^9}, {
+  3.646758055773203*^9, 3.646758058732499*^9}}],
 
 Cell[CellGroupData[{
 
@@ -620,12 +667,13 @@ Cell[BoxData[
    RowBox[{"Appearance", "\[Rule]", 
     RowBox[{"{", 
      RowBox[{"\"\<Limited\>\"", ",", "5"}], "}"}]}], ",", 
+   RowBox[{"Alignment", "\[Rule]", "Center"}], ",", 
    RowBox[{"ControlPlacement", "\[Rule]", 
     RowBox[{"{", 
      RowBox[{"Top", ",", "Center"}], "}"}]}]}], "]"}]], "Input",
  CellChangeTimes->{{3.646683041787054*^9, 3.6466830638660536`*^9}, {
   3.646683282541054*^9, 3.6466833003000536`*^9}, {3.6466833432740536`*^9, 
-  3.646683349643054*^9}}],
+  3.646683349643054*^9}, {3.6467562738374424`*^9, 3.646756281565442*^9}}],
 
 Cell[BoxData[
  TabViewBox[{{1,
@@ -650,13 +698,13 @@ Cell[BoxData[
      Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
      Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
      "\"untitled\"", Typeset`specs$$ = {{
-       Hold[$CellContext`x$$], 0, 1}}, Typeset`size$$ = {727., {231., 238.}}, 
+       Hold[$CellContext`x$$], 0, 1}}, Typeset`size$$ = {846., {233., 240.}}, 
      Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-     False, $CellContext`x$58749$$ = 0}, 
+     False, $CellContext`x$30677$$ = 0}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       1, StandardForm, "Variables" :> {$CellContext`x$$ = 0}, 
        "ControllerVariables" :> {
-         Hold[$CellContext`x$$, $CellContext`x$58749$$, 0]}, 
+         Hold[$CellContext`x$$, $CellContext`x$30677$$, 0]}, 
        "OtherVariables" :> {
         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -672,22 +720,22 @@ Cell[BoxData[
             EmitSound[$CellContext`mySound]]}}], 
        "Specifications" :> {{$CellContext`x$$, 0, 1}}, "Options" :> {}, 
        "DefaultOptions" :> {}],
-      ImageSizeCache->{778., {278., 285.}},
+      ImageSizeCache->{897., {280., 287.}},
       SingleEvaluation->True],
      Deinitialization:>None,
      DynamicModuleValues:>{},
      Initialization:>({$CellContext`overviewText = Column[{
            Style[
            "The photoelectric effect is the liberation of bound electrons \
-from matter by the absorption of light.", FontFamily -> "Calibri", 14], 
+from matter by the absorption of light.", FontFamily -> "Calibri", 16], 
            Style[
            "The photoelectric effect played an important role in the \
 development of mordern physics, earning Einstein", FontFamily -> "Calibri", 
-            14], 
+            16], 
            Style[
            "his Nobel Prize for a paper written in 1905. It occurs for light \
 and lower energy X-rays. It is also know as Photoelectric Absorption.", 
-            FontFamily -> "Calibri", 14]}], $CellContext`overviewImage = 
+            FontFamily -> "Calibri", 16]}], $CellContext`overviewImage = 
         Image[CompressedData["
 1:eJzsveVjFFm3PXxf+SN+9733PvfRcWWEcQUGexgBBgaHmcHdYQYZ3N0dBofB
 dZABBneXICEJEZLWdPi837P2OafqVHUHktBJdyf1YVNNp6XqVHWtLWuv/bd2
@@ -43294,11 +43342,15 @@ X/hIz4/4hn88XZNBX9/rqfhBnCGOH3wa/mLye3SixCN4Xkc7T3wkfBVx+sD7
    ImageSize->{250, 80},
    StripOnInput->False]->
   TagBox[GridBox[{
-     {"\<\"\\r \\!\\(\\*\\nStyleBox[\\\"The\\\",\\nFontFamily->\\\"Courier \
-New\\\",\\nFontSize->14]\\)\\!\\(\\*\\nStyleBox[\\\" \
+     {
+      StyleBox["\<\"\\r\\!\\(\\*\\nStyleBox[\\\"The\\\",\\nFontFamily->\\\"\
+Courier New\\\",\\nFontSize->14]\\)\\!\\(\\*\\nStyleBox[\\\" \
 \\\",\\nFontFamily->\\\"Courier \
 New\\\",\\nFontSize->14]\\)\\!\\(\\*\\nStyleBox[\\\"players\\\",\\nFontFamily-\
->\\\"Courier New\\\",\\nFontSize->14]\\)\\r\"\>"},
+>\\\"Courier New\\\",\\nFontSize->14]\\)\\r\"\>",
+       StripOnInput->False,
+       FontFamily->"Calibri",
+       FontSize->16]},
      {
       TabViewBox[{{1,
        FrameBox[
@@ -43315,9 +43367,12 @@ New\\\",\\nFontSize->14]\\)\\!\\(\\*\\nStyleBox[\\\"players\\\",\\nFontFamily-\
         Alignment->Center,
         Background->RGBColor[0.22, 0.28, 0.72],
         ImageSize->{100, 50},
-        StripOnInput->
-         False]->"\<\"\\r The PE effect CANNOT be understood by just thinking \
-of light as a wave.\\r Try it.\"\>"}, {2,
+        StripOnInput->False]->
+       StyleBox["\<\"\\r The PE effect CANNOT be understood by just thinking \
+of light as a wave.\\r Try it.\"\>",
+        StripOnInput->False,
+        FontFamily->"Calibri",
+        FontSize->16]}, {2,
        FrameBox[
         StyleBox["\<\"MATTER\"\>",
          StripOnInput->False,
@@ -43332,14 +43387,17 @@ of light as a wave.\\r Try it.\"\>"}, {2,
         Alignment->Center,
         Background->RGBColor[0.22, 0.28, 0.72],
         ImageSize->{100, 50},
-        StripOnInput->
-         False]->"\<\"\\r Matter is made of atoms.\\n Atoms are held together \
+        StripOnInput->False]->
+       StyleBox["\<\"\\r Matter is made of atoms.\\n Atoms are held together \
 by electrical force.\\n Atoms are prevented from collapse by quantum \
 mechanics.\\n\\r Atoms contain \
 \\!\\(\\*\\nStyleBox[\\\"bound\\\",\\nFontVariations->{\\\"Underline\\\"->\
 True}]\\)\\!\\(\\*\\nStyleBox[\\\" \
 \\\",\\nFontVariations->{\\\"Underline\\\"->True}]\\)\\!\\(\\*\\nStyleBox[\\\"\
-electrons\\\",\\nFontVariations->{\\\"Underline\\\"->True}]\\).\"\>"}, {3,
+electrons\\\",\\nFontVariations->{\\\"Underline\\\"->True}]\\).\"\>",
+        StripOnInput->False,
+        FontFamily->"Calibri",
+        FontSize->16]}, {3,
        FrameBox[
         StyleBox["\<\"BOUND\\nELECTRONS\"\>",
          StripOnInput->False,
@@ -43354,11 +43412,14 @@ electrons\\\",\\nFontVariations->{\\\"Underline\\\"->True}]\\).\"\>"}, {3,
         Alignment->Center,
         Background->RGBColor[0.22, 0.28, 0.72],
         ImageSize->{100, 50},
-        StripOnInput->
-         False]->"\<\"\\r The electron is a fundamental particle.\\n It has a \
+        StripOnInput->False]->
+       StyleBox["\<\"\\r The electron is a fundamental particle.\\n It has a \
 negative charge.\\n It is a fermion with spin 1/2.\\n The PE effect concerns \
 electrons bound in atoms.\\n\\r Light can kick bound electrons out of their \
-atoms.\"\>"}, {4,
+atoms.\"\>",
+        StripOnInput->False,
+        FontFamily->"Calibri",
+        FontSize->16]}, {4,
        FrameBox[
         StyleBox["\<\"Einstein &\\nQuanta\"\>",
          StripOnInput->False,
@@ -43375,8 +43436,13 @@ atoms.\"\>"}, {4,
         ImageSize->{100, 50},
         StripOnInput->False]->
        TagBox[GridBox[{
-          {"\<\"Einstein analyzed the photoelectric effect in terms of quanta \
-in 1905. As follows ... TBD\"\>"},
+          {
+           
+           StyleBox["\<\"Einstein analyzed the photoelectric effect in terms \
+of quanta in 1905. As follows ... TBD\"\>",
+            StripOnInput->False,
+            FontFamily->"Calibri",
+            FontSize->16]},
           {
            GraphicsBox[
             TagBox[RasterBox[CompressedData["
@@ -50260,25 +50326,38 @@ SYWGg99sKYR/BQd/B6vWagc=
         Alignment->Center,
         Background->RGBColor[0.22, 0.28, 0.72],
         ImageSize->{100, 50},
-        StripOnInput->
-         False]->"\<\"\\r Interactions between light and electrons are \
+        StripOnInput->False]->
+       StyleBox["\<\"\\r Interactions between light and electrons are \
 completely central to our life in this universe.\\n This is how \
 electromagnetism works. \\n Classical electromagnetism is summarized by \
 Maxwell's equations (1865 ish).\\n \\r However the quantum theory of \
 electromagnetism is a 20th Century achievement. \\nThis is described in a \
 little book for a general audience called: \\n'The Strange Theory of Light \
-and Matter' by Richard Feynman.\"\>"}}, 1,
-       ControlPlacement->Top]},
-     {"\<\"\\r ANIMATION HERE OF LIGHT HITTING A TARGET, WITH ELECTRONS BEING \
-EMITTED\"\>"},
-     {"\<\"\\r THE PURPOSE IS TO INTRODUCE THE BASIC EFFECT, WITHOUT DETAILS, \
-i.e. light in, electrons out.\\n\\tno interaction is necessary\"\>"}
+and Matter' by Richard Feynman.\"\>",
+        StripOnInput->False,
+        FontFamily->"Calibri",
+        FontSize->16]}}, 1,
+       ControlPlacement->{Top, Center}]},
+     {
+      StyleBox["\<\"\\r ANIMATION HERE OF LIGHT HITTING A TARGET, WITH \
+ELECTRONS BEING EMITTED\\r THE PURPOSE IS TO INTRODUCE THE BASIC EFFECT, \
+WITHOUT DETAILS, i.e. light in, electrons out.\\r No interaction is necessary\
+\"\>",
+       StripOnInput->False,
+       FontFamily->"Calibri",
+       FontSize->16]},
+     {
+      StyleBox["\<\"\"\>",
+       StripOnInput->False,
+       FontFamily->"Calibri",
+       FontSize->16]}
     },
     AutoDelete->False,
+    GridBoxAlignment->{"Columns" -> {{Center}}},
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Grid"]}, {3,
   FrameBox[
-   StyleBox["\<\"LIGHT IN \\nElECTRONS OUT\"\>",
+   StyleBox["\<\" LIGHT IN \\n ELECTRONS OUT\"\>",
     StripOnInput->False,
     LineColor->GrayLevel[1],
     FrontFaceColor->GrayLevel[1],
@@ -50307,17 +50386,17 @@ i.e. light in, electrons out.\\n\\tno interaction is necessary\"\>"}
            RGBColor[1, 0, 0]}, {
            Hold[$CellContext`theLightIntensity$$], 1, 4}}, Typeset`size$$ = {
          360., {193., 198.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-         Typeset`skipInitDone$$ = False, $CellContext`time$58767$$ = 
-         0, $CellContext`theLightIntensity$58768$$ = 0}, 
+         Typeset`skipInitDone$$ = False, $CellContext`time$30695$$ = 
+         0, $CellContext`theLightIntensity$30696$$ = 0}, 
          DynamicBox[Manipulate`ManipulateBoxes[
           1, StandardForm, 
            "Variables" :> {$CellContext`LightColour$$ = 
              RGBColor[1, 0, 0], $CellContext`theLightIntensity$$ = 
              1, $CellContext`time$$ = 0}, "ControllerVariables" :> {
-             Hold[$CellContext`time$$, $CellContext`time$58767$$, 0], 
+             Hold[$CellContext`time$$, $CellContext`time$30695$$, 0], 
              
              Hold[$CellContext`theLightIntensity$$, \
-$CellContext`theLightIntensity$58768$$, 0]}, 
+$CellContext`theLightIntensity$30696$$, 0]}, 
            "OtherVariables" :> {
             Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
              Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -50354,7 +50433,12 @@ $CellContext`theLightIntensity$58768$$, 0]},
         Deployed->True,
         StripOnInput->False],
        Manipulate`InterpretManipulate[1]]},
-     {"\<\"This behaviour cannot be explained by a wave model...Why not?\"\>"}
+     {
+      StyleBox["\<\"This behaviour cannot be explained by a wave model...Why \
+not?\"\>",
+       StripOnInput->False,
+       FontFamily->"Calibri",
+       FontSize->16]}
     },
     AutoDelete->False,
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
@@ -50391,14 +50475,26 @@ $CellContext`theLightIntensity$58768$$, 0]},
     ImageSize->{100, 50},
     StripOnInput->False]->
    TagBox[GridBox[{
-      {"\<\"\\r The PE effect of a medically applied radiation beam on the \
-human body. \\r In the PE effect the photon is absorbed, for the case of \
-X-rays this represents radiation dose. This X-ray absorption effect is \
+      {
+       StyleBox["\<\"\\r The PE effect of a medically applied radiation beam \
+on the human body. \\r In the PE effect the photon is absorbed, for the case \
+of X-rays this represents radiation dose.\\r This X-ray absorption effect is \
 important both in all forms of X-ray imaging and in radiotherapy cancer \
-treatment.\"\>"},
-      {"\<\"\\r Tissue is composed of low Z atoms.\"\>"},
-      {"\<\"log-log PLOT OF MASS PHOTOELECTRIC ABSORPTION COEFF VS. PHOTON \
-ENERGY \"\>"},
+treatment.\\rTissue is composed of low Z atoms.\"\>",
+        StripOnInput->False,
+        FontFamily->"Calibri",
+        FontSize->16]},
+      {
+       StyleBox["\<\"\"\>",
+        StripOnInput->False,
+        FontFamily->"Calibri",
+        FontSize->16]},
+      {
+       StyleBox["\<\"\\r\\rlog-log PLOT OF MASS PHOTOELECTRIC ABSORPTION \
+COEFF VS. PHOTON ENERGY \"\>",
+        StripOnInput->False,
+        FontFamily->"Calibri",
+        FontSize->16]},
       {
        TagBox[
         StyleBox[
@@ -50410,17 +50506,17 @@ ENERGY \"\>"},
             Hold[$CellContext`Frequency$$], 1, 3}, {
             Hold[$CellContext`Phase$$], 0, 6}}, Typeset`size$$ = {
           360., {104., 108.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-          Typeset`skipInitDone$$ = True, $CellContext`Frequency$58788$$ = 
-          0, $CellContext`Phase$58789$$ = 0}, 
+          Typeset`skipInitDone$$ = True, $CellContext`Frequency$30716$$ = 
+          0, $CellContext`Phase$30717$$ = 0}, 
           
           DynamicBox[Manipulate`ManipulateBoxes[
            1, StandardForm, 
             "Variables" :> {$CellContext`Frequency$$ = 
               1, $CellContext`Phase$$ = 0}, "ControllerVariables" :> {
               
-              Hold[$CellContext`Frequency$$, $CellContext`Frequency$58788$$, 
+              Hold[$CellContext`Frequency$$, $CellContext`Frequency$30716$$, 
                0], 
-              Hold[$CellContext`Phase$$, $CellContext`Phase$58789$$, 0]}, 
+              Hold[$CellContext`Phase$$, $CellContext`Phase$30717$$, 0]}, 
             "OtherVariables" :> {
              Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
               Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -50463,8 +50559,12 @@ $CellContext`Phase$$], {$CellContext`t, 0, 2}],
     ImageSize->{100, 50},
     StripOnInput->False]->
    TagBox[GridBox[{
-      {"\<\"TBD the PE effect of a radiation beam for high Z metal. k-edge \
-effects \"\>"},
+      {
+       StyleBox["\<\"TBD the PE effect of a radiation beam for high Z metal. \
+k-edge effects \"\>",
+        StripOnInput->False,
+        FontFamily->"Calibri",
+        FontSize->16]},
       {
        TagBox[
         StyleBox[
@@ -50476,15 +50576,15 @@ effects \"\>"},
             Hold[$CellContext`Z1$$], 1, 10}, {
             Hold[$CellContext`Z2$$], 2, 10}}, Typeset`size$$ = {
           360., {117., 121.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-          Typeset`skipInitDone$$ = True, $CellContext`Z1$58808$$ = 
-          0, $CellContext`Z2$58809$$ = 0}, 
+          Typeset`skipInitDone$$ = True, $CellContext`Z1$30736$$ = 
+          0, $CellContext`Z2$30737$$ = 0}, 
           
           DynamicBox[Manipulate`ManipulateBoxes[
            1, StandardForm, 
             "Variables" :> {$CellContext`Z1$$ = 1, $CellContext`Z2$$ = 2}, 
             "ControllerVariables" :> {
-              Hold[$CellContext`Z1$$, $CellContext`Z1$58808$$, 0], 
-              Hold[$CellContext`Z2$$, $CellContext`Z2$58809$$, 0]}, 
+              Hold[$CellContext`Z1$$, $CellContext`Z1$30736$$, 0], 
+              Hold[$CellContext`Z2$$, $CellContext`Z2$30737$$, 0]}, 
             "OtherVariables" :> {
              Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
               Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -50525,7 +50625,13 @@ effects \"\>"},
     Alignment->Center,
     Background->RGBColor[0.22, 0.28, 0.72],
     ImageSize->{100, 50},
-    StripOnInput->False]->"\<\"Technology\"\>"}}, 1]}, {5,
+    StripOnInput->False]->
+   StyleBox["\<\"Technology\"\>",
+    StripOnInput->False,
+    FontFamily->"Calibri",
+    FontSize->16]}}, 1,
+   Alignment->Center,
+   ControlPlacement->{Top, Center}]}, {5,
   FrameBox[
    StyleBox["\<\"CREDITS\"\>",
     StripOnInput->False,
@@ -52339,7 +52445,8 @@ AAAAAAAAAAAAAAAAAAAAHib/H58iLIc=
     Selectable->False],
    BaseStyle->"ImageGraphics",
    ImageSizeRaw->{774, 766},
-   PlotRange->{{0, 774}, {0, 766}}]}}, 3,
+   PlotRange->{{0, 774}, {0, 766}}]}}, 1,
+  Alignment->Center,
   ControlPlacement->{Top, Center}]], "Output",
  CellChangeTimes->{{3.646683074662054*^9, 3.646683110118054*^9}, 
    3.646683229504054*^9, 3.6466832757100534`*^9, {3.646683311846054*^9, 
@@ -52355,7 +52462,25 @@ AAAAAAAAAAAAAAAAAAAAHib/H58iLIc=
    3.6466848016230536`*^9, 3.6466848076940536`*^9}, {3.6466848974170537`*^9, 
    3.6466849012650537`*^9}, {3.646684954389054*^9, 3.6466849642690535`*^9}, {
    3.6466849971730537`*^9, 3.646685035577054*^9}, {3.6466850899180536`*^9, 
-   3.646685105317054*^9}, {3.6466852017260537`*^9, 3.646685220525054*^9}}]
+   3.646685105317054*^9}, {3.6466852017260537`*^9, 3.646685220525054*^9}, {
+   3.6467562703804426`*^9, 3.6467562964304423`*^9}, {3.6467563408004427`*^9, 
+   3.6467563522074423`*^9}, 3.646756402190442*^9, {3.6467564426194425`*^9, 
+   3.6467564920494423`*^9}, 3.646756528945442*^9, {3.6467567515214424`*^9, 
+   3.6467567645364428`*^9}, {3.6467568593384423`*^9, 3.646756893905442*^9}, {
+   3.646756939815442*^9, 3.6467569591424427`*^9}, {3.6467569928514423`*^9, 
+   3.6467570019794426`*^9}, {3.6467570377324424`*^9, 
+   3.6467570904749317`*^9}, {3.6467572919222136`*^9, 
+   3.6467573454389143`*^9}, {3.646757452277859*^9, 3.6467574605426855`*^9}, {
+   3.646757491227754*^9, 3.646757521400771*^9}, {3.64675768180881*^9, 
+   3.6467577175053797`*^9}, {3.6467577521488433`*^9, 3.646757769567585*^9}, {
+   3.6467578084644747`*^9, 3.646757809741602*^9}, {3.6467578522478523`*^9, 
+   3.6467578627599034`*^9}, {3.646757922125839*^9, 3.646757930690696*^9}, {
+   3.6467579762372503`*^9, 3.6467579771813445`*^9}, {3.646758008549481*^9, 
+   3.6467580757291985`*^9}, {3.646758258385462*^9, 3.6467582599216156`*^9}, {
+   3.6467582917708*^9, 3.6467583040270257`*^9}, {3.646758367438366*^9, 
+   3.64675837067769*^9}, {3.646758401050727*^9, 3.646758412167839*^9}, {
+   3.646758776872306*^9, 3.6467588266022778`*^9}, {3.6467600653232307`*^9, 
+   3.646760083171231*^9}}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -52365,8 +52490,8 @@ Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.6466818141999683`*^9, 3.6466818191444626`*^9}, 
    3.646683062122054*^9}]
 },
-WindowSize->{1680, 1008},
-WindowMargins->{{1672, Automatic}, {Automatic, -8}},
+WindowSize->{1680, 968},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -52387,31 +52512,30 @@ Cell[889, 33, 87, 3, 31, "Input"],
 Cell[979, 38, 185, 5, 31, "Input"],
 Cell[1167, 45, 271, 7, 31, "Input"],
 Cell[1441, 54, 463, 13, 31, "Input"],
-Cell[1907, 69, 2910, 70, 112, "Input"],
-Cell[4820, 141, 549, 18, 31, "Input"],
-Cell[5372, 161, 613, 17, 31, "Input"],
-Cell[5988, 180, 613, 17, 31, "Input"],
-Cell[6604, 199, 890, 24, 31, "Input"],
-Cell[7497, 225, 1265, 36, 74, "Input"],
-Cell[8765, 263, 930, 30, 33, "Input"],
-Cell[9698, 295, 2639, 53, 532, "Input"],
-Cell[12340, 350, 1766, 40, 232, "Input"],
-Cell[14109, 392, 1072, 28, 152, "Input"],
-Cell[15184, 422, 79, 2, 31, "Input"],
-Cell[15266, 426, 2441, 59, 212, "Input"],
-Cell[17710, 487, 2980, 76, 72, "Input"],
-Cell[20693, 565, 293, 4, 31, "Input"],
-Cell[20989, 571, 258, 7, 31, "Input"],
-Cell[21250, 580, 1368, 32, 172, "Input"],
+Cell[1907, 69, 2960, 70, 112, "Input"],
+Cell[4870, 141, 549, 18, 31, "Input"],
+Cell[5422, 161, 613, 17, 31, "Input"],
+Cell[6038, 180, 613, 17, 31, "Input"],
+Cell[6654, 199, 890, 24, 31, "Input"],
+Cell[7547, 225, 1265, 36, 74, "Input"],
+Cell[8815, 263, 1000, 31, 33, "Input"],
+Cell[9818, 296, 2904, 63, 512, "Input"],
+Cell[12725, 361, 2217, 52, 252, "Input"],
+Cell[14945, 415, 1781, 42, 172, "Input"],
+Cell[16729, 459, 79, 2, 31, "Input"],
+Cell[16811, 463, 2441, 59, 212, "Input"],
+Cell[19255, 524, 2980, 76, 72, "Input"],
+Cell[22238, 602, 293, 4, 31, "Input"],
+Cell[22534, 608, 258, 7, 31, "Input"],
+Cell[22795, 617, 1875, 42, 172, "Input"],
 Cell[CellGroupData[{
-Cell[22643, 616, 479, 11, 31, "Input"],
-Cell[23125, 629, 3145882, 51728, 888, "Output"]
+Cell[24695, 663, 580, 12, 31, "Input"],
+Cell[25278, 677, 3148661, 51805, 888, "Output"]
 }, Open  ]],
-Cell[3169022, 52360, 70, 1, 31, "Input"],
-Cell[3169095, 52363, 122, 2, 31, "Input"]
+Cell[3173954, 52485, 70, 1, 31, "Input"],
+Cell[3174027, 52488, 122, 2, 64, "Input"]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
