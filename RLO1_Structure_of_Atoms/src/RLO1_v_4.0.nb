@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1433519,      24014]
-NotebookOptionsPosition[   1433019,      23994]
-NotebookOutlinePosition[   1433365,      24009]
-CellTagsIndexPosition[   1433322,      24006]
+NotebookDataLength[   1433544,      24014]
+NotebookOptionsPosition[   1433043,      23994]
+NotebookOutlinePosition[   1433390,      24009]
+CellTagsIndexPosition[   1433347,      24006]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -20646,7 +20646,7 @@ $CellContext`t$$ + 0.2; Show[{
         TrackedSymbols :> {$CellContext`Orbitals$$, $CellContext`t$$}, 
          SynchronousInitialization -> False, ControlPlacement -> Left}, 
        "DefaultOptions" :> {}],
-      ImageSizeCache->{883., {328., 335.}},
+      ImageSizeCache->{795., {328., 335.}},
       SingleEvaluation->True],
      Deinitialization:>None,
      DynamicModuleValues:>{},
@@ -23890,8 +23890,8 @@ GrnrFp6cOPb/AylngaM=
    "Grid"]->
   TagBox[
    StyleBox[
-    DynamicModuleBox[{$CellContext`series$$ = "Lyman", $CellContext`t$$ = 1, 
-     Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    DynamicModuleBox[{$CellContext`series$$ = "Paschen", $CellContext`t$$ = 1,
+      Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
      Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
      1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
         Hold[$CellContext`t$$], 1, "levels"}, 1, 7, 1}, {{
@@ -23960,7 +23960,7 @@ $CellContext`s$), (-13.6)/$CellContext`s$^2}}]}, Axes -> True,
      UntrackedVariables:>{Typeset`size$$}], "Manipulate",
     Deployed->True,
     StripOnInput->False],
-   Manipulate`InterpretManipulate[1]]}}, 2,
+   Manipulate`InterpretManipulate[1]]}}, 3,
   ControlPlacement->Top]], "Output",
  CellChangeTimes->{
   3.6441676378481946`*^9, {3.644167902837691*^9, 3.6441679226066675`*^9}, {
@@ -23989,11 +23989,11 @@ $CellContext`s$), (-13.6)/$CellContext`s$^2}}]}, Axes -> True,
    3.644692435628663*^9}, {3.6446926063436627`*^9, 3.6446926078436627`*^9}, {
    3.644692657694663*^9, 3.644692659222663*^9}, {3.6446927426886625`*^9, 
    3.6446927444756627`*^9}, {3.6446929042186627`*^9, 3.6446929077786627`*^9}, 
-   3.646584263738534*^9}]
+   3.646584263738534*^9, 3.646658749680381*^9}]
 }, Open  ]]
 },
 WindowSize->{1680, 1008},
-WindowMargins->{{1672, Automatic}, {Automatic, 0}},
+WindowMargins->{{1672, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -24011,10 +24011,10 @@ Notebook[{
 Cell[558, 20, 2371, 66, 192, "Input"],
 Cell[2932, 88, 32230, 705, 1112, "Input"],
 Cell[35165, 795, 17556, 398, 882, "Input"],
-Cell[52724, 1195, 7248, 174, 252, "Input"],
+Cell[52724, 1195, 7248, 174, 280, "Input"],
 Cell[CellGroupData[{
 Cell[59997, 1373, 1583, 40, 52, "Input"],
-Cell[61583, 1415, 1371420, 22576, 798, "Output"]
+Cell[61583, 1415, 1371444, 22576, 798, "Output"]
 }, Open  ]]
 }
 ]
